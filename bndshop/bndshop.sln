@@ -25,7 +25,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "_0_Framework", "_0_Framewor
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopManagement.Configuration", "ShopManagement.Configuration\ShopManagement.Configuration.csproj", "{A30E584D-04C0-4CF7-A1E0-B421817B40D0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_01_BndShopQuery", "_01_BndShopQuery\_01_BndShopQuery.csproj", "{A74963DB-446F-4653-AD13-5575CA1D0532}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "_01_BndShopQuery", "_01_BndShopQuery\_01_BndShopQuery.csproj", "{A74963DB-446F-4653-AD13-5575CA1D0532}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "InventoryMangement", "InventoryMangement", "{E7567F9A-0E6A-4905-90CA-C7B48272559B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AccountManagement", "AccountManagement", "{8615CDAC-88CD-4096-B434-AEE6A8E8DAA6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BlogManagement", "BlogManagement", "{06BF6603-7DDC-4F9E-98EC-18856B0A993E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CommentManagem", "CommentManagem", "{8F8EF5D9-62B1-4D06-9568-E085AD96F641}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DiscountManagement", "DiscountManagement", "{1885DBDF-0CA2-4016-BA64-2155D2A4CBA6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

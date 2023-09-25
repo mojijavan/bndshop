@@ -21,4 +21,8 @@
     <ProjectReference Include="..\ShopManagement.Configuration\ShopManagement.Configuration.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Pages\Shared\Components\" />
+  </ItemGroup>
+
 </Project>
