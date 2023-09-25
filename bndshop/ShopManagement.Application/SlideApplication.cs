@@ -20,7 +20,7 @@ namespace ShopManagement.Application
         {
             var operation = new OperationResult();
 
-            var pictureName = "";// _fileUploader.Upload(command.Picture, "slides");
+            var pictureName = command.Picture;// _fileUploader.Upload(command.Picture, "slides");
 
             var slide = new Slide(pictureName, command.PictureAlt, command.PictureTitle,
                 command.Heading, command.Title, command.Text, command.Link, command.BtnText);
@@ -37,7 +37,7 @@ namespace ShopManagement.Application
             if (slide == null)
                 return operation.Failed(ApplicationMessages.RecordNotFound);
 
-            var pictureName = "";// _fileUploader.Upload(command.Picture, "slides");
+            var pictureName = command.Picture;// _fileUploader.Upload(command.Picture, "slides");
 
             slide.Edit(pictureName, command.PictureAlt, command.PictureTitle,
                 command.Heading, command.Title, command.Text, command.Link, command.BtnText);

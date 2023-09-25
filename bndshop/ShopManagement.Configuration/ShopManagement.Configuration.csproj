@@ -9,13 +9,14 @@
     <ProjectReference Include="..\ShopManagement.Application\ShopManagement.Application.csproj" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.17" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.17" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.17" >
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.17">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
     <ProjectReference Include="..\ShopManagement.Domain\ShopManagement.Domain.csproj" />
     <ProjectReference Include="..\ShopManagement.Infrastructure.EFCore\ShopManagement.Infrastructure.EFCore.csproj" />
+    <ProjectReference Include="..\_01_BndShopQuery\_01_BndShopQuery.csproj" />
     <ProjectReference Include="..\_0_Framework\_0_Framework.csproj" />
   </ItemGroup>
 

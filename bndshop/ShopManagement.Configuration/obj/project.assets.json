@@ -3350,6 +3350,19 @@
           "bin/placeholder/ShopManagement.Infrastructure.EFCore.dll": {}
         }
       },
+      "_01_BndShopQuery/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "ShopManagement.Infrastructure.EFCore": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/_01_BndShopQuery.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/_01_BndShopQuery.dll": {}
+        }
+      },
       "_0_Framework/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -10147,6 +10160,11 @@
       "path": "../ShopManagement.Infrastructure.EFCore/ShopManagement.Infrastructure.EFCore.csproj",
       "msbuildProject": "../ShopManagement.Infrastructure.EFCore/ShopManagement.Infrastructure.EFCore.csproj"
     },
+    "_01_BndShopQuery/1.0.0": {
+      "type": "project",
+      "path": "../_01_BndShopQuery/_01_BndShopQuery.csproj",
+      "msbuildProject": "../_01_BndShopQuery/_01_BndShopQuery.csproj"
+    },
     "_0_Framework/1.0.0": {
       "type": "project",
       "path": "../_0_Framework/_0_Framework.csproj",
@@ -10163,6 +10181,7 @@
       "ShopManagement.Application.Contracts >= 1.0.0",
       "ShopManagement.Domain >= 1.0.0",
       "ShopManagement.Infrastructure.EFCore >= 1.0.0",
+      "_01_BndShopQuery >= 1.0.0",
       "_0_Framework >= 1.0.0"
     ]
   },
@@ -10208,6 +10227,9 @@
             },
             "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj": {
               "projectPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj"
+            },
+            "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\_01_BndShopQuery\\_01_BndShopQuery.csproj": {
+              "projectPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\_01_BndShopQuery\\_01_BndShopQuery.csproj"
             },
             "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\_0_Framework\\_0_Framework.csproj": {
               "projectPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\_0_Framework\\_0_Framework.csproj"

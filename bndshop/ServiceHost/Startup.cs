@@ -1,3 +1,4 @@
+using DiscountManagement.Configuration;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -43,6 +44,7 @@ namespace ServiceHost
             //services.AddTransient<IPermissionExposer, ShopPermissionExposer>();
             //services.AddDbContext<ShopContext>(x => x.UseSqlServer(connectionString));
             ShopManagementBootstrapper.Configure(services,Configuration.GetConnectionString("BndShopDB1"));
+            DiscountManagementBootstrapper.Configure(services,Configuration.GetConnectionString("BndShopDB1"));
             services.AddRazorPages();
         }
 

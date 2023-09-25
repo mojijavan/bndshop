@@ -1,7 +1,9 @@
-﻿using _0_Framework.Infrastructure;
-
+﻿
+using _01_BndShopQuery.Contracts.ProductCategory;
+using _01_BndShopQuery.Contracts.Slide;
+using _01_BndShopQuery.Query;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Design;
+
 using Microsoft.Extensions.DependencyInjection;
 using ShopManagement.Application;
 using ShopManagement.Application.Contracts.Product;
@@ -37,17 +39,18 @@ namespace ShopManagement.Configuration
 
             services.AddTransient<ISlideApplication, SlideApplication>();
             services.AddTransient<ISlideRepository, SlideRepository>();
-
+            services.AddTransient<ISlideQuery, SlideQuery>();
+            services.AddTransient<IProductCategoryQuery, ProductCategoryQuery>();
             //services.AddTransient<IOrderRepository, OrderRepository>();
             //services.AddTransient<IOrderApplication, OrderApplication>();
 
             //services.AddSingleton<ICartService, CartService>();
 
-          
 
-            
 
-            
+
+
+
             services.AddDbContext<ShopContext>(x => x.UseSqlServer(connectionString));
         }
 
