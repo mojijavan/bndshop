@@ -1,6 +1,10 @@
 ﻿
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Design;
+using ShopManagement.Domain.ProductAgg;
 using ShopManagement.Domain.ProductCategoryAgg;
+using ShopManagement.Domain.ProductPictureAgg;
+using ShopManagement.Domain.SlideAgg;
 using ShopManagement.Infrastructure.EFCore.Mapping;
 
 namespace ShopManagement.Infrastructure.EFCore
@@ -8,17 +12,26 @@ namespace ShopManagement.Infrastructure.EFCore
     public class ShopContext:DbContext
     {
         public DbSet<ProductCategory> ProductCategories { get; set; }
+        public DbSet<Product> Products { get; set; }
+        public DbSet<ProductPicture> ProductPictures { get; set; }
 
+        public DbSet<Slide> Slides { get; set; }
+        //public DbSet<Order> Orders { get; set; }
         public ShopContext(DbContextOptions options) : base(options)
         {
         }
-
+        
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             var assembly = typeof(ProductCategoryMapping).Assembly;
             modelBuilder.ApplyConfigurationsFromAssembly(assembly);
+            //modelBuilder.ApplyConfiguration(new ProductCategoryMapping());
+            //modelBuilder.ApplyConfiguration(new ProductPictureMapping());
+            //modelBuilder.ApplyConfiguration(new SlideMapping());
+            //modelBuilder.ApplyConfiguration(new ProductMapping());
 
             base.OnModelCreating(modelBuilder);
         }
     }
+    
 }

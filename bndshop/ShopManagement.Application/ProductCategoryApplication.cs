@@ -20,30 +20,30 @@ namespace ShopManagement.Application
 
         public OperationResult Create(CreateProductCategory command)
         {
-            OperationResult _operationResult = new OperationResult();
+            OperationResult operation = new OperationResult();
             if (_productCategoryRepository.Exists(x=>x.Name==command.Name))
-                return _operationResult.Failed("نام رکورد تکراری می باشد. دوباره تلاش کنید");
+                return operation.Failed(ApplicationMessages.DuplicatedRecord);
             var slug = command.Slug.Slugify();
             var ProductCategory = new ProductCategory(command.Name, command.Description, command.Picture,
                                         command.PictureAlt, command.PictureTitle, command.Keywords, command.MetaDescription, slug);
             _productCategoryRepository.Create(ProductCategory);
             _productCategoryRepository.SaveChanges();
-            return _operationResult.Succeded();
+            return operation.Succedded();
         }
 
-        public OperationResult Edit(EditProductCategory command)
+        public OperationResult Edit(EditProductCategory command) 
         {
             var productCategory = _productCategoryRepository.Get(command.Id);
-            OperationResult _operationResult = new OperationResult();
+            OperationResult operation = new OperationResult();
             if (productCategory==null)
-                return _operationResult.Failed("گزینه مورد نظر یافت نشد. دوباره تلاش کنید");
+                return operation.Failed(ApplicationMessages.RecordNotFound);
             if (_productCategoryRepository.Exists(x=>x.Name==command.Name&&x.Id!=command.Id))
-                return _operationResult.Failed("نام رکورد تکراری می باشد. دوباره تلاش کنید");
+                return operation.Failed(ApplicationMessages.DuplicatedRecord);
             var slug = command.Slug.Slugify();
             productCategory.Edit(command.Name, command.Description, command.Picture,
                 command.PictureAlt, command.PictureTitle, command.Keywords, command.MetaDescription, slug);
             _productCategoryRepository.SaveChanges();
-            return _operationResult.Succeded();
+            return operation.Succedded();
         }
 
         public List<ProductCategoryViewModel> Search(ProductCategorySearchModel searchModel)
@@ -54,6 +54,11 @@ namespace ShopManagement.Application
         public EditProductCategory GetDetails(long id)
         {
             return _productCategoryRepository.GetDetails(id);
+        }
+
+        public List<ProductCategoryViewModel> GetProductCategories()
+        {
+            return _productCategoryRepository.GetProductCategories();
         }
     }
 }

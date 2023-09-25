@@ -2,8 +2,8 @@ C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Application.
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Application.Contracts\bin\Debug\net5.0\ShopManagement.Application.Contracts.dll
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Application.Contracts\bin\Debug\net5.0\ref\ShopManagement.Application.Contracts.dll
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Application.Contracts\bin\Debug\net5.0\ShopManagement.Application.Contracts.pdb
-C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Application.Contracts\bin\Debug\net5.0\0_Framework.dll
-C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Application.Contracts\bin\Debug\net5.0\0_Framework.pdb
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Application.Contracts\bin\Debug\net5.0\_0_Framework.dll
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Application.Contracts\bin\Debug\net5.0\_0_Framework.pdb
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Application.Contracts\obj\Debug\net5.0\ShopManagement.Application.Contracts.csproj.AssemblyReference.cache
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Application.Contracts\obj\Debug\net5.0\ShopManagement.Application.Contracts.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Application.Contracts\obj\Debug\net5.0\ShopManagement.Application.Contracts.AssemblyInfoInputs.cache

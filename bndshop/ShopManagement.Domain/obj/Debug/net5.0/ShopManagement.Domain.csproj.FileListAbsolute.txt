@@ -2,10 +2,10 @@ C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Domain\bin\D
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Domain\bin\Debug\net5.0\ShopManagement.Domain.dll
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Domain\bin\Debug\net5.0\ref\ShopManagement.Domain.dll
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Domain\bin\Debug\net5.0\ShopManagement.Domain.pdb
-C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Domain\bin\Debug\net5.0\0_Framework.dll
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Domain\bin\Debug\net5.0\ShopManagement.Application.Contracts.dll
-C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Domain\bin\Debug\net5.0\0_Framework.pdb
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Domain\bin\Debug\net5.0\_0_Framework.dll
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Domain\bin\Debug\net5.0\ShopManagement.Application.Contracts.pdb
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Domain\bin\Debug\net5.0\_0_Framework.pdb
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Domain\obj\Debug\net5.0\ShopManagement.Domain.csproj.AssemblyReference.cache
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Domain\obj\Debug\net5.0\ShopManagement.Domain.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Domain\obj\Debug\net5.0\ShopManagement.Domain.AssemblyInfoInputs.cache

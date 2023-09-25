@@ -1,0 +1,12 @@
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\_01_BndShopQuery\bin\Debug\net5.0\_01_BndShopQuery.deps.json
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\_01_BndShopQuery\bin\Debug\net5.0\_01_BndShopQuery.dll
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\_01_BndShopQuery\bin\Debug\net5.0\ref\_01_BndShopQuery.dll
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\_01_BndShopQuery\bin\Debug\net5.0\_01_BndShopQuery.pdb
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\_01_BndShopQuery\obj\Debug\net5.0\_01_BndShopQuery.csproj.AssemblyReference.cache
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\_01_BndShopQuery\obj\Debug\net5.0\_01_BndShopQuery.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\_01_BndShopQuery\obj\Debug\net5.0\_01_BndShopQuery.AssemblyInfoInputs.cache
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\_01_BndShopQuery\obj\Debug\net5.0\_01_BndShopQuery.AssemblyInfo.cs
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\_01_BndShopQuery\obj\Debug\net5.0\_01_BndShopQuery.csproj.CoreCompileInputs.cache
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\_01_BndShopQuery\obj\Debug\net5.0\_01_BndShopQuery.dll
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\_01_BndShopQuery\obj\Debug\net5.0\ref\_01_BndShopQuery.dll
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\_01_BndShopQuery\obj\Debug\net5.0\_01_BndShopQuery.pdb
