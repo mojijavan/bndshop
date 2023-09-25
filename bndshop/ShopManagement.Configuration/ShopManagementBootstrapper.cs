@@ -9,7 +9,7 @@ using ShopManagement.Application.Contracts.Product;
 using ShopManagement.Application.Contracts.ProductCategory;
 using ShopManagement.Application.Contracts.ProductPicture;
 using ShopManagement.Application.Contracts.Slide;
-using ShopManagement.Configuration.Permissions;
+
 using ShopManagement.Domain.ProductAgg;
 using ShopManagement.Domain.ProductCategoryAgg;
 using ShopManagement.Domain.ProductPictureAgg;
@@ -21,7 +21,8 @@ using ShopManagement.Infrastructure.EFCore.Repository;
 
 namespace ShopManagement.Configuration
 {
-    public class ShopManagementBootstrapper : IDesignTimeDbContextFactory<ShopContext>
+    public class ShopManagementBootstrapper
+        /* : IDesignTimeDbContextFactory<ShopContext>*/
     {
         public static void Configure(IServiceCollection services, string connectionString)
         {
@@ -46,17 +47,17 @@ namespace ShopManagement.Configuration
 
             
 
-            services.AddTransient<IPermissionExposer, ShopPermissionExposer>();
+            
             services.AddDbContext<ShopContext>(x => x.UseSqlServer(connectionString));
         }
 
-        public ShopContext CreateDbContext(string[] args)
-        {
-            var optionsBuilder = new DbContextOptionsBuilder<ShopContext>();
+        //public ShopContext CreateDbContext(string[] args)
+        //{
+        //    var optionsBuilder = new DbContextOptionsBuilder<ShopContext>();
 
-            optionsBuilder.UseSqlServer("your connection string");
+        //    optionsBuilder.UseSqlServer("your connection string");
 
-            return new ShopContext(optionsBuilder.Options);
-        }
+        //    return new ShopContext(optionsBuilder.Options); 
+        //}
     }
 }

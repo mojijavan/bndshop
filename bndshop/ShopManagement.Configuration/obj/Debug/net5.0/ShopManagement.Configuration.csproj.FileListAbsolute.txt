@@ -1,4 +1,6 @@
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Configuration\bin\Debug\net5.0\ShopManagement.Configuration.deps.json
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Configuration\bin\Debug\net5.0\ShopManagement.Configuration.runtimeconfig.json
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Configuration\bin\Debug\net5.0\ShopManagement.Configuration.runtimeconfig.dev.json
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Configuration\bin\Debug\net5.0\ShopManagement.Configuration.dll
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Configuration\bin\Debug\net5.0\ref\ShopManagement.Configuration.dll
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Configuration\bin\Debug\net5.0\ShopManagement.Configuration.pdb
@@ -21,3 +23,4 @@ C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Configuratio
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Configuration\obj\Debug\net5.0\ShopManagement.Configuration.dll
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Configuration\obj\Debug\net5.0\ref\ShopManagement.Configuration.dll
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Configuration\obj\Debug\net5.0\ShopManagement.Configuration.pdb
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Configuration\obj\Debug\net5.0\ShopManagement.Configuration.genruntimeconfig.cache
