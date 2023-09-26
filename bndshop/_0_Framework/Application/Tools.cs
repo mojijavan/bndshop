@@ -94,11 +94,20 @@ namespace _0_Framework.Application
 
         public static DateTime ToGeorgianDateTime(this string persianDate)
         {
-            persianDate = persianDate.ToEnglishNumber();
-            var year = Convert.ToInt32(persianDate.Substring(0, 4));
-            var month = Convert.ToInt32(persianDate.Substring(5, 2));
-            var day = Convert.ToInt32(persianDate.Substring(8, 2));
-            return new DateTime(year, month, day, new PersianCalendar());
+            string[] x1 = new string[3];
+            //string[] x2 = new string[3];
+            x1 = (persianDate.Split(' '))[0].Split('/');
+           // x2 = (persianDate.Split(' '))[1].Split(':');
+
+            PersianCalendar x = new PersianCalendar();
+           // DateTime dt = x.ToDateTime(int.Parse(x1[0]), int.Parse(x1[1]), int.Parse(x1[2]), int.Parse(x2[0]), int.Parse(x2[1]), int.Parse(x2[2]), 0, 0);
+            return new DateTime(int.Parse(x1[0]), int.Parse(x1[1]), int.Parse(x1[2]), new PersianCalendar());
+            //return dt;
+            //persianDate = persianDate.ToEnglishNumber();
+            //var year = Convert.ToInt32(persianDate.Substring(0, 4));
+            //var month = Convert.ToInt32(persianDate.Substring(5, 2));
+            //var day = Convert.ToInt32(persianDate.Substring(8, 2));
+            //return new DateTime(year, month, day, new PersianCalendar());
         }
 
         public static string ToMoney(this double myMoney)
