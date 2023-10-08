@@ -1,0 +1,5 @@
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\CommnetManagement.Infrastructure.EFCore\obj\Debug\net5.0\CommnetManagement.Infrastructure.EFCore.csproj.AssemblyReference.cache
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\CommnetManagement.Infrastructure.EFCore\obj\Debug\net5.0\CommnetManagement.Infrastructure.EFCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\CommnetManagement.Infrastructure.EFCore\obj\Debug\net5.0\CommnetManagement.Infrastructure.EFCore.AssemblyInfoInputs.cache
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\CommnetManagement.Infrastructure.EFCore\obj\Debug\net5.0\CommnetManagement.Infrastructure.EFCore.AssemblyInfo.cs
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\CommnetManagement.Infrastructure.EFCore\obj\Debug\net5.0\CommnetManagement.Infrastructure.EFCore.csproj.CoreCompileInputs.cache

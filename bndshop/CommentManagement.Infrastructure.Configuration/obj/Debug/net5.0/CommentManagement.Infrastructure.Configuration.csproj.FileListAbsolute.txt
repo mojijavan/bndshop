@@ -1,0 +1,5 @@
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\CommentManagement.Infrastructure.Configuration\obj\Debug\net5.0\CommentManagement.Infrastructure.Configuration.csproj.AssemblyReference.cache
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\CommentManagement.Infrastructure.Configuration\obj\Debug\net5.0\CommentManagement.Infrastructure.Configuration.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\CommentManagement.Infrastructure.Configuration\obj\Debug\net5.0\CommentManagement.Infrastructure.Configuration.AssemblyInfoInputs.cache
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\CommentManagement.Infrastructure.Configuration\obj\Debug\net5.0\CommentManagement.Infrastructure.Configuration.AssemblyInfo.cs
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\CommentManagement.Infrastructure.Configuration\obj\Debug\net5.0\CommentManagement.Infrastructure.Configuration.csproj.CoreCompileInputs.cache

@@ -1,7 +1,7 @@
 ﻿using _0_Framework.Infrastructure;
 using _01_BndShopQuery.Contracts.Inventory;
 using _01_BndShopQuery.Query;
-using _01_BndShopQuery.Contracts.Inventory;
+
 using InventoryManagement.Application;
 using InventoryManagement.Application.Contract.Inventory;
 using InventoryManagement.Domain.InventoryAgg;

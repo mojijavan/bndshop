@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "g81x3n30y+wYfYDsl8jLJ7kaiFiFoV9X6BY93w0WPKQ4YsOM4CNHmKgWP/KOIx+vC+LbW87l1lRIrh/N8dhHNQ==",
+  "dgSpecHash": "AItT+d9TlaROMzUbnusmzo4FSvlTDtXqZEOsgwEJL+T69BUbGrCaDWEuQEylq+Tx56ImHhhvvObVGPH/pMK/lQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\InventoryMangement.Infrastructure.EFCore\\InventoryMangement.Infrastructure.EFCore.csproj",
   "expectedPackageFiles": [

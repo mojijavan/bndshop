@@ -1,4 +1,14 @@
+using System.Text.Encodings.Web;
+using System.Text.Unicode;
+using _0_Framework.Application;
+using _0_Framework.Application.Email;
+using _0_Framework.Application.Sms;
+using _0_Framework.Application.ZarinPal;
+using AccountManagement.Configuration;
+using BlogManagement.Infrastructure.Configuration;
+using CommentManagement.Infrastructure.Configuration;
 using DiscountManagement.Configuration;
+using InventoryManagement.Infrastructure.Configuration;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -43,8 +53,27 @@ namespace ServiceHost
             //var connectionString = Configuration.GetConnectionString("BndShopDB");
             //services.AddTransient<IPermissionExposer, ShopPermissionExposer>();
             //services.AddDbContext<ShopContext>(x => x.UseSqlServer(connectionString));
-            ShopManagementBootstrapper.Configure(services,Configuration.GetConnectionString("BndShopDB1"));
-            DiscountManagementBootstrapper.Configure(services,Configuration.GetConnectionString("BndShopDB1"));
+            var connectionString = Configuration.GetConnectionString("BndShopDB1");
+            ShopManagementBootstrapper.Configure(services, connectionString);
+            DiscountManagementBootstrapper.Configure(services, connectionString);
+            InventoryManagementBootstrapper.Configure(services, connectionString);
+            BlogManagementBootstrapper.Configure(services, connectionString);
+            CommentManagementBootstrapper.Configure(services, connectionString);
+            AccountManagementBootstrapper.Configure(services, connectionString);
+
+            services.AddSingleton(HtmlEncoder.Create(UnicodeRanges.BasicLatin, UnicodeRanges.Arabic));
+            services.AddSingleton<IPasswordHasher, PasswordHasher>();
+            services.AddTransient<IFileUploader, FileUploader>();
+            services.AddTransient<IAuthHelper, AuthHelper>();
+            services.AddTransient<IZarinPalFactory, ZarinPalFactory>();
+            services.AddTransient<ISmsService, SmsService>();
+            services.AddTransient<IEmailService, EmailService>();
+
+
+            //ShopManagementBootstrapper.Configure(services,connectionString);
+            //DiscountManagementBootstrapper.Configure(services,connectionString);
+            //InventoryManagementBootstrapper.Configure(services, connectionString);
+            //AccountManagementBootstrapper.Configure(services,connectionString);
             services.AddRazorPages();
         }
 
