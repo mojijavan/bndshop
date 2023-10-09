@@ -1,5 +1,17 @@
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AccountManagement.Domain\bin\Debug\net5.0\AccountManagement.Domain.deps.json
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AccountManagement.Domain\bin\Debug\net5.0\AccountManagement.Domain.dll
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AccountManagement.Domain\bin\Debug\net5.0\ref\AccountManagement.Domain.dll
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AccountManagement.Domain\bin\Debug\net5.0\AccountManagement.Domain.pdb
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AccountManagement.Domain\bin\Debug\net5.0\AccountManagement.Application.Contracts.dll
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AccountManagement.Domain\bin\Debug\net5.0\_0_Framework.dll
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AccountManagement.Domain\bin\Debug\net5.0\AccountManagement.Application.Contracts.pdb
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AccountManagement.Domain\bin\Debug\net5.0\_0_Framework.pdb
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AccountManagement.Domain\obj\Debug\net5.0\AccountManagement.Domain.csproj.AssemblyReference.cache
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AccountManagement.Domain\obj\Debug\net5.0\AccountManagement.Domain.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AccountManagement.Domain\obj\Debug\net5.0\AccountManagement.Domain.AssemblyInfoInputs.cache
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AccountManagement.Domain\obj\Debug\net5.0\AccountManagement.Domain.AssemblyInfo.cs
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AccountManagement.Domain\obj\Debug\net5.0\AccountManagement.Domain.csproj.CoreCompileInputs.cache
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AccountManagement.Domain\obj\Debug\net5.0\AccountManagement.Domain.csproj.CopyComplete
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AccountManagement.Domain\obj\Debug\net5.0\AccountManagement.Domain.dll
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AccountManagement.Domain\obj\Debug\net5.0\ref\AccountManagement.Domain.dll
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AccountManagement.Domain\obj\Debug\net5.0\AccountManagement.Domain.pdb

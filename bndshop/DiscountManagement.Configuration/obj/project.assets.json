@@ -3428,6 +3428,7 @@
           "Microsoft.AspNetCore.Mvc": "2.2.0",
           "Microsoft.EntityFrameworkCore": "5.0.17",
           "Microsoft.Extensions.Configuration.Abstractions": "7.0.0",
+          "Newtonsoft.Json": "13.0.3",
           "RestSharp": "110.2.0",
           "RestSharp.Newtonsoft.Json.Extensions": "1.0.4",
           "RestSharp.Serializers.NewtonsoftJson": "110.2.0",
