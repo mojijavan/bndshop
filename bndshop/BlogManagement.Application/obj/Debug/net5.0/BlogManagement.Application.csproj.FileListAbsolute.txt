@@ -8,7 +8,6 @@ C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\BlogManagement.Application\
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\BlogManagement.Application\bin\Debug\net5.0\BlogManagement.Application.Contracts.pdb
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\BlogManagement.Application\bin\Debug\net5.0\BlogManagement.Domain.pdb
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\BlogManagement.Application\bin\Debug\net5.0\_0_Framework.pdb
-C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\BlogManagement.Application\obj\Debug\net5.0\BlogManagement.Application.csproj.AssemblyReference.cache
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\BlogManagement.Application\obj\Debug\net5.0\BlogManagement.Application.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\BlogManagement.Application\obj\Debug\net5.0\BlogManagement.Application.AssemblyInfoInputs.cache
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\BlogManagement.Application\obj\Debug\net5.0\BlogManagement.Application.AssemblyInfo.cs

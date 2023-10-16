@@ -32,27 +32,19 @@ namespace ServiceHost
         {
             //services.AddTransient<IProductCategoryApplication, ProductCategoryApplication>();
             //services.AddTransient<IProductCategoryRepository, ProductCategoryRepository>();
-
             //services.AddTransient<IProductApplication, ProductApplication>();
             //services.AddTransient<IProductRepository, ProductRepository>();
-
             //services.AddTransient<IProductPictureApplication, ProductPictureApplication>();
             //services.AddTransient<IProductPictureRepository, ProductPictureRepository>();
-
             //services.AddTransient<ISlideApplication, SlideApplication>();
             //services.AddTransient<ISlideRepository, SlideRepository>();
-
             //services.AddTransient<IOrderRepository, OrderRepository>();
             //services.AddTransient<IOrderApplication, OrderApplication>();
-
             //services.AddSingleton<ICartService, CartService>();
-
-
-
-
             //var connectionString = Configuration.GetConnectionString("BndShopDB");
             //services.AddTransient<IPermissionExposer, ShopPermissionExposer>();
             //services.AddDbContext<ShopContext>(x => x.UseSqlServer(connectionString));
+            services.AddHttpContextAccessor();
             var connectionString = Configuration.GetConnectionString("BndShopDB1");
             ShopManagementBootstrapper.Configure(services, connectionString);
             DiscountManagementBootstrapper.Configure(services, connectionString);
@@ -64,8 +56,9 @@ namespace ServiceHost
             services.AddSingleton(HtmlEncoder.Create(UnicodeRanges.BasicLatin, UnicodeRanges.Arabic));
             services.AddSingleton<IPasswordHasher, PasswordHasher>();
             services.AddTransient<IFileUploader, FileUploader>();
-            //services.AddTransient<IAuthHelper, AuthHelper>();
+            services.AddTransient<IAuthHelper, AuthHelper>();
             //services.AddTransient<IZarinPalFactory, ZarinPalFactory>();
+            services.AddTransient<ISmsService, SmsService>();
             services.AddTransient<ISmsService, SmsService>();
             services.AddTransient<IEmailService, EmailService>();
 

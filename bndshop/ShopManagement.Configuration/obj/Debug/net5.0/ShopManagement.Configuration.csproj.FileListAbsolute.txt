@@ -56,3 +56,7 @@ C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Configuratio
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Configuration\obj\Debug\net5.0\ref\ShopManagement.Configuration.dll
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Configuration\obj\Debug\net5.0\ShopManagement.Configuration.pdb
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Configuration\obj\Debug\net5.0\ShopManagement.Configuration.genruntimeconfig.cache
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Configuration\bin\Debug\net5.0\ShopManagement.Infrastructure.AccountAcl.dll
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Configuration\bin\Debug\net5.0\ShopManagement.Infrastructure.InventoryAcl.dll
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Configuration\bin\Debug\net5.0\ShopManagement.Infrastructure.AccountAcl.pdb
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Configuration\bin\Debug\net5.0\ShopManagement.Infrastructure.InventoryAcl.pdb

@@ -24,16 +24,39 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
             return _context.ProductPictures.Select(x => new EditProductPicture()
             {
                 Id = x.Id,
-              
+                ProductId = x.ProductId,
                 PictureAlt = x.PictureAlt,
-                PictureTitle = x.PictureTitle,
+                PictureTitle = x.PictureTitle
                
             }).FirstOrDefault(x => x.Id == id);
         }
 
+        public ProductPicture GetWithProductAndCategory(long id)
+        {
+            return _context.ProductPictures
+                .Include(x => x.Product)
+                .ThenInclude(x => x.Category)
+                .FirstOrDefault(x => x.Id==id);
+        }
+
         public List<ProductPictureViewModel> Search(ProductPictureSearchModel searchModel)
         {
-            throw new NotImplementedException();
+            var query = _context.ProductPictures
+                .Include(x => x.Product)
+                .Select(x => new ProductPictureViewModel
+                {
+                    Id = x.Id,
+                    Product = x.Product.Name,
+                    CreationDate = x.CreationDate.ToString(),
+                    Picture = x.Picture,
+                    ProductId = x.ProductId,
+                    IsRemoved = x.IsRemoved
+                });
+
+            if (searchModel.ProductId != 0)
+                query = query.Where(x => x.ProductId == searchModel.ProductId);
+
+            return query.OrderByDescending(x => x.Id).ToList();
         }
     }
 }

@@ -25,7 +25,7 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
             var x= _context.ProductCategories.Where(x => x.Id == id).Select(x => new EditProductCategory()
             {
                 Id = x.Id,Description = x.Description,Keywords = x.Keywords,
-                MetaDescription = x.MetaDescription,Name = x.Name,Picture = x.Picture,
+                MetaDescription = x.MetaDescription,Name = x.Name,/*Picture ="",*/
                 PictureAlt = x.PictureAlt,Slug = x.Slug,PictureTitle = x.PictureTitle
 
             }).FirstOrDefault();
@@ -53,6 +53,11 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
             {
                 Id=x.Id,Name = x.Name
             }).ToList();
+        }
+
+        public string GetSlugById(long id)
+        {
+            return _context.ProductCategories.FirstOrDefault(x => x.Id == id).Slug;
         }
     }
 }

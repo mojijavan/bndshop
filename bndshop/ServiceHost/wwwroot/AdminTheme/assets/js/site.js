@@ -58,6 +58,7 @@ $(document).ready(function () {
                         CallBackHandler(data, action, form);
                     });
             } else {
+                //use this code when sending form contains file or picture 
                 var formData = new FormData(this);
                 $.ajax({
                     url: url,
@@ -196,15 +197,15 @@ jQuery.validator.addMethod("maxFileSize",
     });
 jQuery.validator.unobtrusive.adapters.addBool("maxFileSize");
 
-//jQuery.validator.addMethod("maxFileSize",
-//    function (value, element, params) {
-//        var size = element.files[0].size;
-//        var maxSize = 3 * 1024 * 1024;
-//        debugger;
-//        if (size > maxSize)
-//            return false;
-//        else {
-//            return true;
-//        }
-//    });
-//jQuery.validator.unobtrusive.adapters.addBool("maxFileSize");
+jQuery.validator.addMethod("FileExtentionLimit",
+    function (value, element, params) {
+        var type = element.files[0].type;
+       
+        debugger; 
+        if (type == "image/jpeg")
+            return true;
+        else {
+            return false;
+        }
+    });
+jQuery.validator.unobtrusive.adapters.addBool("FileExtentionLimit");

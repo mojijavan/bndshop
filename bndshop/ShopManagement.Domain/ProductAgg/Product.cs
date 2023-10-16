@@ -1,4 +1,5 @@
 ﻿
+using System;
 using System.Collections.Generic;
 using _0_Framework.Domain;
 using ShopManagement.Domain.ProductCategoryAgg;
@@ -42,6 +43,7 @@ namespace ShopManagement.Domain.ProductAgg
             Picture = picture;
             PictureAlt = pictureAlt;
             IsInStock = true;
+            CreationDate=DateTime.Now;
             PictureTitle = pictureTitle;
             Slug = slug;
             Keywords = keywords;
@@ -56,7 +58,8 @@ namespace ShopManagement.Domain.ProductAgg
             UnitPrice = unitPrice;
             ShortDescription = shortDescription;
             Description = description;
-            Picture = picture;
+            if(!string.IsNullOrWhiteSpace(picture))
+                Picture = picture;
             PictureAlt = pictureAlt;
             PictureTitle = pictureTitle;
             Slug = slug;

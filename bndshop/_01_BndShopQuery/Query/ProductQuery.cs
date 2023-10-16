@@ -50,6 +50,8 @@ namespace _01_BndShopQuery.Query
                     PictureAlt = x.PictureAlt,
                     PictureTitle = x.PictureTitle,
                     Slug = x.Slug,
+                    DoublePrice = x.UnitPrice,
+                    Price = x.UnitPrice.ToMoney(),
                     CategorySlug = x.Category.Slug,
                     Code = x.Code,
                     Description = x.Description,
