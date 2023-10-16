@@ -22,13 +22,17 @@ C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Configuratio
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Configuration\bin\Debug\net5.0\ShopManagement.Application.Contracts.dll
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Configuration\bin\Debug\net5.0\ShopManagement.Application.dll
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Configuration\bin\Debug\net5.0\ShopManagement.Domain.dll
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Configuration\bin\Debug\net5.0\ShopManagement.Infrastructure.AccountAcl.dll
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Configuration\bin\Debug\net5.0\ShopManagement.Infrastructure.EFCore.dll
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Configuration\bin\Debug\net5.0\ShopManagement.Infrastructure.InventoryAcl.dll
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Configuration\bin\Debug\net5.0\_01_BndShopQuery.dll
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Configuration\bin\Debug\net5.0\_0_Framework.dll
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Configuration\bin\Debug\net5.0\ShopManagement.Application.Contracts.pdb
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Configuration\bin\Debug\net5.0\ShopManagement.Application.pdb
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Configuration\bin\Debug\net5.0\ShopManagement.Domain.pdb
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Configuration\bin\Debug\net5.0\ShopManagement.Infrastructure.AccountAcl.pdb
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Configuration\bin\Debug\net5.0\ShopManagement.Infrastructure.EFCore.pdb
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Configuration\bin\Debug\net5.0\ShopManagement.Infrastructure.InventoryAcl.pdb
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Configuration\bin\Debug\net5.0\_01_BndShopQuery.pdb
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Configuration\bin\Debug\net5.0\_0_Framework.pdb
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Configuration\bin\Debug\net5.0\AccountManagement.Application.Contracts.pdb
@@ -56,7 +60,3 @@ C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Configuratio
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Configuration\obj\Debug\net5.0\ref\ShopManagement.Configuration.dll
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Configuration\obj\Debug\net5.0\ShopManagement.Configuration.pdb
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Configuration\obj\Debug\net5.0\ShopManagement.Configuration.genruntimeconfig.cache
-C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Configuration\bin\Debug\net5.0\ShopManagement.Infrastructure.AccountAcl.dll
-C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Configuration\bin\Debug\net5.0\ShopManagement.Infrastructure.InventoryAcl.dll
-C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Configuration\bin\Debug\net5.0\ShopManagement.Infrastructure.AccountAcl.pdb
-C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Configuration\bin\Debug\net5.0\ShopManagement.Infrastructure.InventoryAcl.pdb

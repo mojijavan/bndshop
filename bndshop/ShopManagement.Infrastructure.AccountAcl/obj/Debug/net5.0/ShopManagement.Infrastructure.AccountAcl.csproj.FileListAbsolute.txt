@@ -10,7 +10,6 @@ C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Infrastructu
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Infrastructure.AccountAcl\bin\Debug\net5.0\ShopManagement.Domain.pdb
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Infrastructure.AccountAcl\bin\Debug\net5.0\ShopManagement.Application.Contracts.pdb
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Infrastructure.AccountAcl\bin\Debug\net5.0\_0_Framework.pdb
-C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Infrastructure.AccountAcl\obj\Debug\net5.0\ShopManagement.Infrastructure.AccountAcl.csproj.AssemblyReference.cache
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Infrastructure.AccountAcl\obj\Debug\net5.0\ShopManagement.Infrastructure.AccountAcl.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Infrastructure.AccountAcl\obj\Debug\net5.0\ShopManagement.Infrastructure.AccountAcl.AssemblyInfoInputs.cache
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Infrastructure.AccountAcl\obj\Debug\net5.0\ShopManagement.Infrastructure.AccountAcl.AssemblyInfo.cs
