@@ -94,9 +94,6 @@
             "projectReferences": {
               "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\AccountManagement.Application.Contracts\\AccountManagement.Application.Contracts.csproj": {
                 "projectPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\AccountManagement.Application.Contracts\\AccountManagement.Application.Contracts.csproj"
-              },
-              "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\_0_Framework\\_0_Framework.csproj": {
-                "projectPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\_0_Framework\\_0_Framework.csproj"
               }
             }
           }
@@ -1123,6 +1120,12 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
+              "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj": {
+                "projectPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj"
+              },
+              "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\InventoryMangement.Infrastructure.EFCore\\InventoryMangement.Infrastructure.EFCore.csproj": {
+                "projectPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\InventoryMangement.Infrastructure.EFCore\\InventoryMangement.Infrastructure.EFCore.csproj"
+              },
               "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj": {
                 "projectPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj"
               },

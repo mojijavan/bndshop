@@ -72,13 +72,27 @@ namespace ShopManagement.Infrastructure.EFCore.Migrations
                     b.Property<long>("CategoryId")
                         .HasColumnType("bigint");
 
-                    b.Property<string>("Code")
-                        .IsRequired()
+                    b.Property<int>("Code")
                         .HasMaxLength(15)
-                        .HasColumnType("nvarchar(15)");
+                        .HasColumnType("int");
+
+                    b.Property<int>("ColleagueDiscountRate")
+                        .HasColumnType("int");
+
+                    b.Property<double>("ColleagueUnitPrice")
+                        .HasColumnType("float");
+
+                    b.Property<long>("Count")
+                        .HasColumnType("bigint");
 
                     b.Property<DateTime>("CreationDate")
                         .HasColumnType("datetime2");
+
+                    b.Property<int>("CustomerDiscountRate")
+                        .HasColumnType("int");
+
+                    b.Property<double>("CustomerUnitPrice")
+                        .HasColumnType("float");
 
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
@@ -140,6 +154,9 @@ namespace ShopManagement.Infrastructure.EFCore.Migrations
                         .HasColumnType("bigint")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<int>("Code")
+                        .HasColumnType("int");
+
                     b.Property<DateTime>("CreationDate")
                         .HasColumnType("datetime2");
 
@@ -151,6 +168,9 @@ namespace ShopManagement.Infrastructure.EFCore.Migrations
                         .IsRequired()
                         .HasMaxLength(80)
                         .HasColumnType("nvarchar(80)");
+
+                    b.Property<int>("LastProductCode")
+                        .HasColumnType("int");
 
                     b.Property<string>("MetaDescription")
                         .IsRequired()

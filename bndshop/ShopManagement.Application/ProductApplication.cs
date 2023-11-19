@@ -1,9 +1,9 @@
-﻿using System;
+﻿
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 using _0_Framework.Application;
+using DiscountManagement.Infrastructure.EFCore;
+using InventoryMangement.Infrastructure.EFCore;
 using ShopManagement.Application.Contracts.Product;
 using ShopManagement.Domain.ProductAgg;
 using ShopManagement.Domain.ProductCategoryAgg;
@@ -15,30 +15,42 @@ namespace ShopManagement.Application
        private readonly IProductRepository _productRepository; 
        private readonly IFileUploader _fileUploader;
        private readonly IProductCategoryRepository _productCategoryRepository;
+       private readonly InventoryContext _inventoryContext;
+       private readonly DiscountContext _discountContext;
 
-
-        public ProductApplication(IProductRepository productRepository, IFileUploader fileUploader, IProductCategoryRepository productCategoryRepository)
+        public ProductApplication(IProductRepository productRepository, IFileUploader fileUploader, IProductCategoryRepository productCategoryRepository, InventoryContext inventoryContext, DiscountContext discountContext)
         {
             _productRepository = productRepository;
             _fileUploader = fileUploader;
             _productCategoryRepository = productCategoryRepository;
+            _inventoryContext = inventoryContext;
+            _discountContext = discountContext;
         }
 
        public OperationResult Create(CreateProduct command)
        {
+           //CustomerDiscountRate = x.CustomerDiscountRate,
+           //CustomerUnitPrice = x.CustomerUnitPrice,
+           //ColleagueDiscountRate = x.ColleagueDiscountRate,
+           //ColleagueUnitPrice = x.ColleagueUnitPrice,
+           //Count = x.Count,
            var operation = new OperationResult();
            if (_productRepository.Exists(x => x.Name == command.Name))
                return operation.Failed(ApplicationMessages.DuplicatedRecord);
            var slug = command.Slug.Slugify();
            var categorySlug = _productCategoryRepository.GetSlugById(command.CategoryId);
            var path = $"{categorySlug}//{slug}";
+           var Code = _productCategoryRepository.GetNewProductCodeById(command.CategoryId);
            var picturePath = _fileUploader.Upload(command.Picture, path);
-            var product = new Product(command.Name, command.Code, command.UnitPrice, command.ShortDescription,
+            var product = new Product(command.Name, Code, command.ShortDescription,
                command.MetaDescription, picturePath
                , command.PictureAlt, command.PictureTitle, slug, command.Keywords, command.MetaDescription,
-               command.CategoryId);
+               command.CategoryId,command.UnitPrice);
             _productRepository.Create(product);
             _productRepository.SaveChanges();
+            var ProductCategory = _productCategoryRepository.Get(product.CategoryId);
+            ProductCategory.EditLastProductCode(Code);
+            _productCategoryRepository.SaveChanges();
             return operation.Succedded();
        }
 
@@ -54,8 +66,11 @@ namespace ShopManagement.Application
             var path = $"{product.Category.Slug}//{slug}";
             var picturePath = _fileUploader.Upload(command.Picture, path);
             //var FileName = _fileUploader.Upload(command.Picture, slug);
-            product.Edit(command.Name,command.Code,command.UnitPrice,command.ShortDescription,command.MetaDescription,picturePath
-            ,command.PictureAlt,command.PictureTitle,slug,command.Keywords,command.MetaDescription,command.CategoryId);
+            product.Edit(command.Name, command.Code, command.ShortDescription,
+                command.MetaDescription, picturePath
+                , command.PictureAlt, command.PictureTitle, slug, command.Keywords, command.MetaDescription,
+                command.CategoryId, command.CustomerDiscountRate, command.ColleagueDiscountRate
+                , command.CustomerUnitPrice, command.ColleagueUnitPrice, command.Count,command.UnitPrice);
             _productRepository.SaveChanges();
             return operation.Succedded();
 
@@ -100,6 +115,55 @@ namespace ShopManagement.Application
         public List<ProductViewModel> GetProducts()
         {
             return _productRepository.GetProducts();
+        }
+
+        public OperationResult UpdatePrice(long id, double unitPrice)
+        {
+            var operation = new OperationResult();
+            var product = _productRepository.Get(id);
+            if (product == null)
+                return operation.Failed(ApplicationMessages.RecordNotFound);
+
+
+            product.UpdatePrice(unitPrice);
+            _productRepository.SaveChanges();
+            return operation.Succedded();
+        }
+
+        public OperationResult UpdateCount(long id, long count)
+        {
+            var operation = new OperationResult();
+            var product = _productRepository.Get(id);
+            if (product == null)
+                return operation.Failed(ApplicationMessages.RecordNotFound);
+
+
+            product.UpdateCount(count);
+            _productRepository.SaveChanges();
+            return operation.Succedded();
+        }
+
+
+        public OperationResult UpdateCustomerDiscountRate(long id, int customerDiscountRate)
+        {
+            var operation = new OperationResult();
+            var product = _productRepository.Get(id);
+            if (product == null)
+                return operation.Failed(ApplicationMessages.RecordNotFound);
+            product.UpdateCustomerDiscountRate(customerDiscountRate);
+            _productRepository.SaveChanges();
+            return operation.Succedded();
+        }
+
+        public OperationResult UpdateColleagueDiscountRate(long id, int colleagueDiscountRate)
+        {
+            var operation = new OperationResult();
+            var product = _productRepository.Get(id);
+            if (product == null)
+                return operation.Failed(ApplicationMessages.RecordNotFound);
+            product.UpdateColleagueDiscountRate(colleagueDiscountRate);
+            _productRepository.SaveChanges();
+            return operation.Succedded();
         }
    }
 }

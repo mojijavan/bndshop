@@ -2698,8 +2698,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
-          "AccountManagement.Application.Contracts": "1.0.0",
-          "_0_Framework": "1.0.0"
+          "AccountManagement.Application.Contracts": "1.0.0"
         },
         "compile": {
           "bin/placeholder/AccountManagement.Domain.dll": {}
@@ -8352,8 +8351,7 @@
   "projectFileDependencyGroups": {
     "net5.0": [
       "AccountManagement.Application.Contracts >= 1.0.0",
-      "AccountManagement.Domain >= 1.0.0",
-      "_0_Framework >= 1.0.0"
+      "AccountManagement.Domain >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -8392,9 +8390,6 @@
             },
             "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\AccountManagement.Domain\\AccountManagement.Domain.csproj": {
               "projectPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\AccountManagement.Domain\\AccountManagement.Domain.csproj"
-            },
-            "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\_0_Framework\\_0_Framework.csproj": {
-              "projectPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\_0_Framework\\_0_Framework.csproj"
             }
           }
         }

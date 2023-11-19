@@ -3292,8 +3292,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
-          "AccountManagement.Application.Contracts": "1.0.0",
-          "_0_Framework": "1.0.0"
+          "AccountManagement.Application.Contracts": "1.0.0"
         },
         "compile": {
           "bin/placeholder/AccountManagement.Domain.dll": {}

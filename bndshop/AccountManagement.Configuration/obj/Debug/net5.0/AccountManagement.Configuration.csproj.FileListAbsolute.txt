@@ -11,8 +11,8 @@ C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AccountManagement.Configura
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AccountManagement.Configuration\bin\Debug\net5.0\_0_Framework.dll
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AccountManagement.Configuration\bin\Debug\net5.0\AccountManagement.Application.Contracts.pdb
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AccountManagement.Configuration\bin\Debug\net5.0\AccountManagement.Application.pdb
-C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AccountManagement.Configuration\bin\Debug\net5.0\AccountManagement.Domain.pdb
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AccountManagement.Configuration\bin\Debug\net5.0\AccountMangement.Infrastructure.EFCore.pdb
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AccountManagement.Configuration\bin\Debug\net5.0\AccountManagement.Domain.pdb
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AccountManagement.Configuration\bin\Debug\net5.0\_0_Framework.pdb
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AccountManagement.Configuration\obj\Debug\net5.0\AccountManagement.Configuration.csproj.AssemblyReference.cache
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AccountManagement.Configuration\obj\Debug\net5.0\AccountManagement.Configuration.GeneratedMSBuildEditorConfig.editorconfig

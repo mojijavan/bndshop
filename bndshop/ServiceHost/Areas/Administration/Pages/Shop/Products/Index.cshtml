@@ -75,7 +75,7 @@
                                     <td>@item.Name</td>
                                     <td>@item.Code</td>
                                     <td>@item.Category</td>
-                                    <td>@item.UnitPrice</td>
+                                    <td>@item.CustomerUnitPrice</td>
                                     <td>@item.CreationDate</td>
                                     <td class="text-center">
                                         @if (@item.IsInStock)
@@ -116,7 +116,9 @@
     <script type="text/javascript">
         $(document).ready(function () {
 
-            $('#datatable').dataTable();
+            $('#datatable').dataTable({
+                order: [[0, 'desc']]
+            });
         });
     </script>
 }

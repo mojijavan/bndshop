@@ -70,6 +70,7 @@ namespace ServiceHost.Areas.Administration.Pages.Inventory
             var command = new IncreaseInventory()
             {
                 InventoryId = id
+                
             };
             return Partial("Increase", command);
         }

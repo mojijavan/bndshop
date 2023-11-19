@@ -7,9 +7,16 @@
 @await Component.InvokeAsync("Slide")
 
 @await Component.InvokeAsync("ProductCategory")
-@await Component.InvokeAsync("LatestArrivals")
+@await Component.InvokeAsync("ProductCategoryWithProduct")
+@await Component.InvokeAsync("SlickSlider", new { id = "LatestArrivals" })
+@await Component.InvokeAsync("SlickSlider", new { id = "MaxDiscount" })
 
-    @*@await Component.InvokeAsync("ProductCategoryWithProduct")*@
+
+@*@await Component.InvokeAsync("LatestArticle")
+
+    @await Component.InvokeAsync("ArticleCategory")*@
+
+@*@await Component.InvokeAsync("ProductCategoryWithProduct")*@
 
 
 

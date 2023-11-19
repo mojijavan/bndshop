@@ -6,7 +6,7 @@ namespace _01_BndShopQuery.Contracts.Product
     public interface IProductQuery
     {
         ProductQueryModel GetProductDetails(string slug);
-        List<ProductQueryModel> GetLatestArrivals();
+        SlickSliderModel SlickSlider(string id);
         List<ProductQueryModel> Search(string value);
         List<CartItem> CheckInventoryStatus(List<CartItem> cartItems);
     }

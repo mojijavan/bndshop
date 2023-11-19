@@ -13,6 +13,8 @@ namespace ShopManagement.Domain.OrderAgg
         public bool IsPaid { get; private set; }
         public bool IsCanceled { get; private set; }
         public string IssueTrackingNo { get; private set; }
+        
+        //this is payment id - bank send to me if payment be successful
         public long RefId { get; private set; }
         public List<OrderItem> Items { get; private set; }
 
@@ -21,7 +23,7 @@ namespace ShopManagement.Domain.OrderAgg
             AccountId = accountId;
             TotalAmount = totalAmount;
             DiscountAmount = discountAmount;
-            PayAmount = payAmount;
+            PayAmount = payAmount; 
             PaymentMethod = paymentMethod;
             IsPaid = false;
             IsCanceled = false;

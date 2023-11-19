@@ -3280,8 +3280,7 @@
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
           "AccountManagement.Application.Contracts": "1.0.0",
-          "AccountManagement.Domain": "1.0.0",
-          "_0_Framework": "1.0.0"
+          "AccountManagement.Domain": "1.0.0"
         },
         "compile": {
           "bin/placeholder/AccountManagement.Application.dll": {}
@@ -3307,8 +3306,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
-          "AccountManagement.Application.Contracts": "1.0.0",
-          "_0_Framework": "1.0.0"
+          "AccountManagement.Application.Contracts": "1.0.0"
         },
         "compile": {
           "bin/placeholder/AccountManagement.Domain.dll": {}
@@ -10104,7 +10102,6 @@
     "net5.0": [
       "AccountManagement.Application >= 1.0.0",
       "AccountManagement.Application.Contracts >= 1.0.0",
-      "AccountManagement.Domain >= 1.0.0",
       "AccountMangement.Infrastructure.EFCore >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 5.0.17",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.17",
@@ -10147,9 +10144,6 @@
             },
             "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\AccountManagement.Application\\AccountManagement.Application.csproj": {
               "projectPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\AccountManagement.Application\\AccountManagement.Application.csproj"
-            },
-            "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\AccountManagement.Domain\\AccountManagement.Domain.csproj": {
-              "projectPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\AccountManagement.Domain\\AccountManagement.Domain.csproj"
             },
             "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\AccountMangement.Infrastructure.EFCore\\AccountMangement.Infrastructure.EFCore.csproj": {
               "projectPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\AccountMangement.Infrastructure.EFCore\\AccountMangement.Infrastructure.EFCore.csproj"

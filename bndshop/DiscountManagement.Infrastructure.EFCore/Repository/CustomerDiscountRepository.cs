@@ -28,8 +28,8 @@ namespace DiscountManagement.Infrastructure.EFCore.Repository
                 Id = x.Id,
                 ProductId = x.ProductId,
                 DiscountRate = x.DiscountRate,
-                StartDate = x.StartDate.ToString(CultureInfo.InvariantCulture),
-                EndDate = x.EndDate.ToString(CultureInfo.InvariantCulture),
+                StartDate = x.StartDate.ToFarsi(),//.ToString(CultureInfo.InvariantCulture),
+                EndDate = x.EndDate.ToFarsi(),//.ToString(CultureInfo.InvariantCulture),
                 Reason = x.Reason
             }).FirstOrDefault(x => x.Id == id);
         }

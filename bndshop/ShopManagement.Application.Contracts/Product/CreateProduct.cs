@@ -14,10 +14,14 @@ namespace ShopManagement.Application.Contracts.Product
         public string Name { get;  set; }
         
         [Required(ErrorMessage = ValidationMessages.IsRequired)]
-        public string Code { get;  set; }
+        public int Code { get;  set; }
 
-        [Required(ErrorMessage = ValidationMessages.IsRequired)]
-        public double UnitPrice { get;  set; }
+        public int CustomerDiscountRate { get;  set; }
+        public int ColleagueDiscountRate { get;  set; }
+        public double CustomerUnitPrice { get;  set; }
+        public double ColleagueUnitPrice { get;  set; }
+        public double UnitPrice { get; set; }
+        public long Count { get;  set; }
 
         [Required(ErrorMessage = ValidationMessages.IsRequired)]
         public string ShortDescription { get;  set; }

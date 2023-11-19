@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using _0_Framework.Domain;
 using ShopManagement.Domain.ProductAgg;
+using ShopManagement.Domain.ProductCategoryPropertyAgg;
+using ShopManagement.Domain.ProductPropertyAgg;
 
 namespace ShopManagement.Domain.ProductCategoryAgg
 {
@@ -13,12 +15,20 @@ namespace ShopManagement.Domain.ProductCategoryAgg
         public string PictureAlt { get; private set; }
         public string PictureTitle { get; private set; }
         public string Keywords { get; private set; }
-
+        public int Code { get; private set; }
+        public int LastProductCode { get; private set; }
         public string MetaDescription { get; private set; }
         public string Slug { get; private set; }
         public List<Product>Products { get; private set; }
+        public long ParentId { get; private set; }
+        public List<ProductCategoryProperty> ProductCategoryProperties { get; set; }
 
-        public ProductCategory(string name, string description, string picture, string pictureAlt, string pictureTitle, string keywords, string metaDescription, string slug)
+        public ProductCategory()
+        {
+            ProductCategoryProperties = new List<ProductCategoryProperty>();
+        }
+
+        public ProductCategory(string name, string description, string picture, string pictureAlt, string pictureTitle, string keywords, string metaDescription, string slug,int code,long parentId)
         {
             Name = name;
             Description = description;
@@ -28,8 +38,12 @@ namespace ShopManagement.Domain.ProductCategoryAgg
             Keywords = keywords;
             MetaDescription = metaDescription;
             Slug = slug;
+            Code = code;
+            ParentId = 0;
+            LastProductCode = (code * 10000);
+            ParentId = parentId;
         }
-        public void Edit(string name, string description, string picture, string pictureAlt, string pictureTitle, string keywords, string metaDescription, string slug)
+        public void Edit(string name, string description, string picture, string pictureAlt, string pictureTitle, string keywords, string metaDescription, string slug,int code,int lastProductCode,long parentId)
         {
             Name = name;
             Description = description;
@@ -40,6 +54,13 @@ namespace ShopManagement.Domain.ProductCategoryAgg
             Keywords = keywords;
             MetaDescription = metaDescription;
             Slug = slug;
+            Code = code;
+            ParentId = parentId;
+            LastProductCode = lastProductCode;
+        }
+        public void EditLastProductCode(int lastProductCode)
+        {
+            LastProductCode = lastProductCode;
         }
     }
 }

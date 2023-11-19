@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "zgBjdUBITO+X55Lumn1tmnFbfRcLzM94te8Mw930Ak2FW2XxSSCKp7aSglUnrZaM2FmJxXOzivU+oVuTgQAMRg==",
+  "dgSpecHash": "2fJImJf2GJFPma7Gimlq61hndzTld/kGsMuLxFr87DSFbH0F9pHsVg+AtAX+Ne4MDoRsHcnY+vUyZtIpOQDwDg==",
   "success": true,
   "projectFilePath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\AccountMangement.Infrastructure.EFCore\\AccountMangement.Infrastructure.EFCore.csproj",
   "expectedPackageFiles": [

@@ -14,5 +14,9 @@ namespace ShopManagement.Application.Contracts.Product
        OperationResult NotInStock(long id);
        List<ProductViewModel> Search(ProductSearchModel searchModel);
        List<ProductViewModel> GetProducts();
-   }
+       OperationResult UpdatePrice(long id,double unitPrice);
+       OperationResult UpdateCount(long id, long count);
+       OperationResult UpdateCustomerDiscountRate(long id, int customerDiscountRate);
+       OperationResult UpdateColleagueDiscountRate(long id, int colleagueDiscountRate);
+    }
 }

@@ -1,5 +1,6 @@
-﻿@model _01_BndShopQuery.MenuModel
-@*@inject _0_Framework.Application.IAuthHelper AuthHelper*@
+﻿
+@model _01_BndShopQuery.MenuModel
+@inject _0_Framework.Application.IAuthHelper AuthHelper
 
 <div class="header-area header-sticky">
     <div class="container">
@@ -42,7 +43,10 @@
                                 <li>
                                     <a href="contact.html">تماس با ما</a>
                                 </li>
-                                @*@if (AuthHelper.IsAuthenticated())
+                                <li>
+                                    <a href="/Administration/Shop/Products/Index">مدیریت</a>
+                                </li>
+                                @if (AuthHelper.IsAuthenticated())
                                 {
                                     <li>
                                         <a asp-page="/Account" asp-page-handler="Logout">خروج</a>
@@ -53,7 +57,7 @@
                                     <li>
                                         <a asp-page="/Account">وورد / ثبت نام</a>
                                     </li>
-                                }*@
+                                }
                             </ul>
                         </nav>
                     </div>
@@ -95,12 +99,22 @@
                                         <div class="single-settings-block">
                                             <h4 class="title">پروفایل من </h4>
                                             <ul>
+                                                @if (AuthHelper.IsAuthenticated())
+                                                {
                                                 <li>
-                                                    <a asp-page="/Account">ثبت نام</a>
+                                                    <a asp-page="/Account" asp-page-handler="Logout">حساب کاربری</a>
                                                 </li>
-                                                <li>
-                                                    <a asp-page="/Account">ورود</a>
-                                                </li>
+                                                    <li>
+                                                        <a asp-page="/Account" asp-page-handler="Logout">خروج</a>
+                                                    </li>
+                                                }
+                                                else
+                                                {
+                                                    <li>
+                                                        <a asp-page="/Account">وورد / ثبت نام</a>
+                                                    </li>
+                                                }
+                                                
                                             </ul>
                                         </div>
                                         @*<div class="single-settings-block">
@@ -140,7 +154,7 @@
                     <div class="row align-items-center">
                         <div class="col-6 col-md-6">
                             <div class="header-logo">
-                                <a href="index.html">
+                                <a href="/index">
                                     <img src="~/Theme/assets/img/logo.png" class="img-fluid" alt="">
                                 </a>
                             </div>
@@ -232,10 +246,10 @@
                             <a href="#">پروفایل من </a>
                             <ul class="sub-menu">
                                 <li>
-                                    <a href="login-register.html">ثبت نام</a>
+                                    <a asp-page="/Account">ثبت نام</a>
                                 </li>
                                 <li>
-                                    <a href="login-register.html">ورود</a>
+                                    <a asp-page="/Account">ورود</a>
                                 </li>
                             </ul>
                         </li>
@@ -255,7 +269,7 @@
                                 </a>
                             </li>
                             <li>
-                                <i class="ion-android-mail"></i> <a href="mailto:info@yourdomain.com">info@atriya.com</a>
+                                <i class="ion-android-mail"></i> <a href="mailto:info@yourdomain.com">info@bndweb.com</a>
                             </li>
                         </ul>
                     </div>

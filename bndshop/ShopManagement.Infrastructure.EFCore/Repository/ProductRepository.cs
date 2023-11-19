@@ -28,11 +28,16 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
                 CategoryId = x.CategoryId,
                 Description = x.Description,
                 Keywords = x.Keywords,
+                CustomerDiscountRate = x.CustomerDiscountRate,
+                CustomerUnitPrice = x.CustomerUnitPrice,
+                ColleagueDiscountRate = x.ColleagueDiscountRate,
+                ColleagueUnitPrice = x.ColleagueUnitPrice,
+                Count = x.Count,
                 CreationDate = x.CreationDate.ToString(),
                 MetaDescription = x.MetaDescription,
                 PictureAlt = x.PictureAlt,
                 PictureTitle = x.PictureTitle,
-                ShortDescription = x.ShortDescription,
+                ShortDescription = x.ShortDescription
             }).FirstOrDefault(x => x.Id == id);
         }
 
@@ -64,14 +69,17 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
                     Code = x.Code,
                     IsInStock = x.IsInStock,
                     Picture = x.Picture,
-                    UnitPrice = x.UnitPrice
+                    CustomerDiscountRate = x.CustomerDiscountRate,
+                    CustomerUnitPrice = x.CustomerUnitPrice,
+                    ColleagueDiscountRate = x.ColleagueDiscountRate,
+                    ColleagueUnitPrice = x.ColleagueUnitPrice
                 });
 
             if (!string.IsNullOrWhiteSpace(searchModel.Name))
                 query = query.Where(x => x.Name.Contains(searchModel.Name));
 
-            if (!string.IsNullOrWhiteSpace(searchModel.Code))
-                query = query.Where(x => x.Code.Contains(searchModel.Code));
+            if (searchModel.Code!=0)
+                query = query.Where(x => x.Code==searchModel.Code);
 
             if (searchModel.CategoryId != 0)
                 query = query.Where(x => x.CategoryId == searchModel.CategoryId);

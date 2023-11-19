@@ -21,13 +21,13 @@ namespace ServiceHost.Pages
         private readonly IAuthHelper _authHelper;
         private readonly ICartService _cartService;
         private readonly IProductQuery _productQuery;
-        //private readonly IZarinPalFactory _zarinPalFactory;
+        private readonly IZarinPalFactory _zarinPalFactory;
         private readonly IOrderApplication _orderApplication;
         private readonly ICartCalculatorService _cartCalculatorService;
 
         public CheckoutModel(ICartCalculatorService cartCalculatorService, ICartService cartService,
             IProductQuery productQuery, IOrderApplication orderApplication, 
-            //IZarinPalFactory zarinPalFactory,
+            IZarinPalFactory zarinPalFactory,
             IAuthHelper authHelper)
         {
             Cart = new Cart();
@@ -35,7 +35,7 @@ namespace ServiceHost.Pages
             _cartService = cartService;
             _productQuery = productQuery;
             _orderApplication = orderApplication;
-            //_zarinPalFactory = zarinPalFactory;
+            _zarinPalFactory = zarinPalFactory;
             _authHelper = authHelper;
         }
 
@@ -63,12 +63,12 @@ namespace ServiceHost.Pages
             var orderId = _orderApplication.PlaceOrder(cart);
             if (paymentMethod == 1)
             {
-                //var paymentResponse = _zarinPalFactory.CreatePaymentRequest(
-                //    cart.PayAmount.ToString(CultureInfo.InvariantCulture), "", "",
-                //    "خرید از درگاه لوازم خانگی و دکوری", orderId);
+                var paymentResponse = _zarinPalFactory.CreatePaymentRequest(
+                    cart.PayAmount.ToString(CultureInfo.InvariantCulture), "", "",
+                    "خرید از درگاه لوازم خانگی و دکوری", orderId);
 
-                //return Redirect(
-                //    $"https://{_zarinPalFactory.Prefix}.zarinpal.com/pg/StartPay/{paymentResponse.Authority}");
+                return Redirect(
+                    $"https://{_zarinPalFactory.Prefix}.zarinpal.com/pg/StartPay/{paymentResponse.Authority}");
             }
 
             var paymentResult = new PaymentResult();
@@ -81,18 +81,18 @@ namespace ServiceHost.Pages
             [FromQuery] long oId)
         {
             var orderAmount = _orderApplication.GetAmountBy(oId);
-            //var verificationResponse =
-            //    _zarinPalFactory.CreateVerificationRequest(authority,
-            //        orderAmount.ToString(CultureInfo.InvariantCulture));
+            var verificationResponse =
+                _zarinPalFactory.CreateVerificationRequest(authority,
+                    orderAmount.ToString(CultureInfo.InvariantCulture));
 
             var result = new PaymentResult();
-            //if (status == "OK" && verificationResponse.Status >= 100)
-            //{
-            //    var issueTrackingNo = _orderApplication.PaymentSucceeded(oId, verificationResponse.RefID);
-            //    Response.Cookies.Delete("cart-items");
-            //    result = result.Succeeded("پرداخت با موفقیت انجام شد.", issueTrackingNo);
-            //    return RedirectToPage("/PaymentResult", result);
-            //}
+            if (status == "OK" && verificationResponse.Status >= 100)
+            {
+                var issueTrackingNo = _orderApplication.PaymentSucceeded(oId, verificationResponse.RefID);
+                Response.Cookies.Delete("cart-items");
+                result = result.Succeeded("پرداخت با موفقیت انجام شد.", issueTrackingNo);
+                return RedirectToPage("/PaymentResult", result);
+            }
 
             result = result.Failed(
                 "پرداخت با موفقیت انجام نشد. درصورت کسر وجه از حساب، مبلغ تا 24 ساعت دیگر به حساب شما بازگردانده خواهد شد.");

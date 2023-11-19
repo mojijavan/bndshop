@@ -4,8 +4,11 @@
     {
         public long Id { get; set; }
         public string Name { get; set; }
-        public string Code { get; set; }
-        public double UnitPrice { get; set; }
+        public int Code { get; set; }
+        public int CustomerDiscountRate { get; set; }
+        public int ColleagueDiscountRate { get; set; }
+        public double CustomerUnitPrice { get; set; }
+        public double ColleagueUnitPrice { get; set; }
         public string Picture { get; set; }
         public string  CreationDate { get; set; }
         public bool IsInStock { get; set; }

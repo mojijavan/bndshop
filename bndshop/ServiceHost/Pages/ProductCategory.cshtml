@@ -76,7 +76,7 @@
                                                         @if (product.HasDiscount)
                                                         {
                                                             <div class="single-grid-product__label">
-                                                                <span class="sale">-@product.DiscountRate%</span>
+                                                                <span class="sale">@product.DiscountRate%</span>
                                                             </div>
                                                         }
                                                         <a asp-page="/Product" asp-route-id="@product.Slug">
@@ -89,13 +89,13 @@
                                                             <span class="category">
                                                                 <a asp-page="/ProductCategory" asp-route-id="@Model.ProductCategory.Slug">@Model.ProductCategory.Name</a>
                                                             </span>
-                                                            <span class="rating">
+                                                            @*<span class="rating">
                                                                 <i class="ion-android-star active"></i>
                                                                 <i class="ion-android-star active"></i>
                                                                 <i class="ion-android-star active"></i>
                                                                 <i class="ion-android-star active"></i>
                                                                 <i class="ion-android-star-outline"></i>
-                                                            </span>
+                                                            </span>*@
                                                         </div>
 
                                                         <h2 class="single-grid-product__title">
@@ -105,17 +105,39 @@
                                                             @if (product.HasDiscount)
                                                             {
                                                                 <span class="discounted-price">@product.PriceWithDiscount تومان</span>
-                                                                <span class="main-price discounted">@product.Price تومان</span>
+                                                                <span class="main-price discounted">@product.UnitPrice تومان</span>
                                                             }
                                                             else
                                                             {
-                                                                <span class="main-price">@product.Price تومان</span>
+                                                                @if (@product.IsInStock)
+                                                                {
+                                                                    <span class="main-price">@product.UnitPrice تومان</span>
+                                                                }
+                                                                else
+                                                                {
+                                                                    <span class="main-price">عدم موجودی</span>
+                                                                }
+
                                                             }
                                                         </p>
-                                                        @if (product.HasDiscount)
+                                                        @*@if (@product.IsInStock)
+                                                        {
+                                                            <div class="product-actions">
+                                                                <div class="quantity-selection">
+                                                                    <label>تعداد</label>
+                                                                    <input type="number" value="1" min="1" id="productCount">
+                                                                </div>
+                                                                <div class="product-buttons">
+                                                                    <a class="cart-btn" onclick="addToCart('@product.Id', '@product.Name', '@product.DoublePriceWithDiscount', '@product.Picture')">
+                                                                        <i class="ion-bag"></i> افزودن به سبد خرید
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        }*@
+                                                        @*@if (product.HasDiscount)
                                                         {
                                                             <div class="product-countdown" data-countdown="@product.DiscountExpireDate"></div>
-                                                        }
+                                                        }*@
                                                     </div>
                                                 </div>
                                             </div>

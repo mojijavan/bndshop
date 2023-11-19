@@ -3,16 +3,19 @@ using DiscountManagement.Application.Contract.ColleagueDiscount;
 using DiscountManagement.Domain.ColleagueDiscountAgg;
 using System;
 using System.Collections.Generic;
+using ShopManagement.Application.Contracts.Product;
 
 namespace DiscountManagement.Application
 {
     public class ColleagueDiscountApplication : IColleagueDiscountApplication
     {
         private readonly IColleagueDiscountRepository _colleagueDiscountRepository;
+        private readonly IProductApplication _productApplication;
 
-        public ColleagueDiscountApplication(IColleagueDiscountRepository colleagueDiscountRepository)
+        public ColleagueDiscountApplication(IColleagueDiscountRepository colleagueDiscountRepository, IProductApplication productApplication)
         {
             _colleagueDiscountRepository = colleagueDiscountRepository;
+            _productApplication = productApplication;
         }
 
         public OperationResult Define(DefineColleagueDiscount command)
@@ -25,6 +28,7 @@ namespace DiscountManagement.Application
 
             _colleagueDiscountRepository.Create(colleagueDiscount);
             _colleagueDiscountRepository.SaveChanges();
+            _productApplication.UpdateColleagueDiscountRate(command.ProductId, command.DiscountRate);
             return operation.Succedded();
         }
 
@@ -39,7 +43,7 @@ namespace DiscountManagement.Application
                 return operation.Failed(ApplicationMessages.DuplicatedRecord);
 
             colleagueDiscount.Edit(command.ProductId, command.DiscountRate);
-
+            _productApplication.UpdateColleagueDiscountRate(colleagueDiscount.ProductId, command.DiscountRate);
             _colleagueDiscountRepository.SaveChanges();
             return operation.Succedded();
         }
@@ -55,9 +59,8 @@ namespace DiscountManagement.Application
             var colleagueDiscount = _colleagueDiscountRepository.Get(id);
             if (colleagueDiscount == null)
                 return operation.Failed(ApplicationMessages.RecordNotFound);
-
             colleagueDiscount.Remove();
-
+            _productApplication.UpdateColleagueDiscountRate(colleagueDiscount.ProductId, 0);
             _colleagueDiscountRepository.SaveChanges();
             return operation.Succedded();
         }
@@ -70,7 +73,7 @@ namespace DiscountManagement.Application
                 return operation.Failed(ApplicationMessages.RecordNotFound);
 
             colleagueDiscount.Restore();
-
+            _productApplication.UpdateColleagueDiscountRate(colleagueDiscount.ProductId, 0);
             _colleagueDiscountRepository.SaveChanges();
             return operation.Succedded();
         }

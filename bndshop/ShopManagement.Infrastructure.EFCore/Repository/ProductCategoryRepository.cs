@@ -27,7 +27,7 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
                 Id = x.Id,Description = x.Description,Keywords = x.Keywords,
                 MetaDescription = x.MetaDescription,Name = x.Name,/*Picture ="",*/
                 PictureAlt = x.PictureAlt,Slug = x.Slug,PictureTitle = x.PictureTitle
-
+                ,Code = x.Code,LastProductCode = x.LastProductCode
             }).FirstOrDefault();
             return x;
         }
@@ -37,6 +37,7 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
             var query = _context.ProductCategories.Select(x => new ProductCategoryViewModel()
             {
                 Id = x.Id,
+                Code = x.Code,
                 CreationDate = x.CreationDate.ToString(),
                 Name = x.Name,
                 Picture = x.Picture
@@ -59,5 +60,12 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
         {
             return _context.ProductCategories.FirstOrDefault(x => x.Id == id).Slug;
         }
+
+        public int GetNewProductCodeById(long id)
+        {
+            return _context.ProductCategories.FirstOrDefault(x => x.Id == id).LastProductCode+1;
+        }
+
+        
     }
 }

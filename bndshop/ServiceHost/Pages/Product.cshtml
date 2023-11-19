@@ -133,12 +133,12 @@
                                         <p class="single-grid-product__price" style="direction: rtl">
                                             @if (Model.Product.HasDiscount)
                                             {
-                                                <span class="main-price discounted">@Model.Product.Price تومان</span>
+                                                <span class="main-price discounted">@Model.Product.UnitPrice تومان</span>
                                                 <span class="discounted-price">@Model.Product.PriceWithDiscount تومان</span>
                                             }
                                             else
                                             {
-                                                <span class="main-price">@Model.Product.Price تومان</span>
+                                                <span class="main-price">@Model.Product.UnitPrice تومان</span>
                                             }
 
                                         </p>
@@ -162,18 +162,21 @@
                                         {
                                             <div class="product-countdown" data-countdown="@Model.Product.DiscountExpireDate"></div>
                                         }
-
-                                        <div class="product-actions">
-                                            <div class="quantity-selection">
-                                                <label>تعداد</label>
-                                                <input type="number" value="1" min="1" id="productCount">
+                                        @if (Model.Product.IsInStock)
+                                        {
+                                            <div class="product-actions">
+                                                <div class="quantity-selection">
+                                                    <label>تعداد</label>
+                                                    <input type="number" value="1" min="1" id="productCount">
+                                                </div>
+                                                <div class="product-buttons">
+                                                    <a class="cart-btn" onclick="addToCart('@Model.Product.Id', '@Model.Product.Name', '@Model.Product.DoublePriceWithDiscount', '@Model.Product.Picture')">
+                                                        <i class="ion-bag"></i> افزودن به سبد خرید
+                                                    </a>
+                                                </div>
                                             </div>
-                                            <div class="product-buttons">
-                                                <a class="cart-btn" onclick="addToCart('@Model.Product.Id', '@Model.Product.Name', '@Model.Product.DoublePrice', '@Model.Product.Picture')">
-                                                    <i class="ion-bag"></i> افزودن به سبد خرید
-                                                </a>
-                                            </div>
-                                        </div>
+                                        }
+                                       
 
                                         <div class="social-share-buttons mt-20">
                                             <h5>این محصول را به اشتراک بگذارید</h5>
@@ -303,7 +306,7 @@
                                                                 </div>
                                                                 <div class="col-md-6 col-12 form-group">
                                                                     <label for="email">ایمیل:</label>
-                                                                    <input id="email" placeholder="مثال: contact@atriya.com" name="email" type="text">
+                                                                    <input id="email" placeholder="مثال: contact@bndweb.com" name="email" type="text">
                                                                 </div>
                                                                 <div class="col-12 form-group">
                                                                     <label for="your-review">نظر شما:</label>

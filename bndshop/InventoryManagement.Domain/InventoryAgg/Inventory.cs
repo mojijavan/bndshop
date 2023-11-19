@@ -31,7 +31,7 @@ namespace InventoryManagement.Domain.InventoryAgg
             return plus - minus;
         }
 
-        public void Increase(long count, long operatorId, string description)
+        public long Increase(long count, long operatorId, string description)
         {
             var currentCount = CalculateCurrentCount() + count;
             var operation = new InventoryOperation(true, count, operatorId, currentCount, description, 0, Id);
@@ -43,14 +43,16 @@ namespace InventoryManagement.Domain.InventoryAgg
             //    InStock = false;
 
             InStock = currentCount > 0;
+            return currentCount;
         }
 
-        public void Reduce(long count, long operatorId, string description, long orderId)
+        public long Reduce(long count, long operatorId, string description, long orderId)
         {
             var currentCount = CalculateCurrentCount() - count;
             var operation = new InventoryOperation(false, count, operatorId, currentCount, description, orderId, Id);
             Operations.Add(operation);
             InStock = currentCount > 0;
+            return currentCount;
         }
     }
 }

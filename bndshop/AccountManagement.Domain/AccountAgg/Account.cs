@@ -1,4 +1,5 @@
-﻿using _0_Framework.Domain;
+﻿
+using _0_Framework.Domain;
 using AccountManagement.Domain.RoleAgg;
 
 namespace AccountManagement.Domain.AccountAgg

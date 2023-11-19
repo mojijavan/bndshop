@@ -32,5 +32,6 @@ namespace DiscountManagement.Domain.CustomerDiscountAgg
             EndDate = endDate;
             Reason = reason;
         }
+       
     }
 }

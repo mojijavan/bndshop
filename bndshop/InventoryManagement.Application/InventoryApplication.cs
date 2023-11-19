@@ -3,18 +3,21 @@ using InventoryManagement.Application.Contract.Inventory;
 using InventoryManagement.Domain.InventoryAgg;
 using System;
 using System.Collections.Generic;
+using ShopManagement.Application.Contracts.Product;
 
 namespace InventoryManagement.Application
 {
     public class InventoryApplication : IInventoryApplication
     {
-        //private readonly IAuthHelper _authHelper;
+        private readonly IAuthHelper _authHelper;
         private readonly IInventoryRepository _inventoryRepository;
+        private readonly IProductApplication _productApplication;
 
-        public InventoryApplication(IInventoryRepository inventoryRepository)//, IAuthHelper authHelper)
+        public InventoryApplication(IInventoryRepository inventoryRepository, IAuthHelper authHelper, IProductApplication productApplication)
         {
             _inventoryRepository = inventoryRepository;
-            //_authHelper = authHelper;
+            _authHelper = authHelper;
+            _productApplication = productApplication;
         }
 
         public OperationResult Create(CreateInventory command)
@@ -26,6 +29,7 @@ namespace InventoryManagement.Application
             var inventory = new Inventory(command.ProductId, command.UnitPrice);
             _inventoryRepository.Create(inventory);
             _inventoryRepository.SaveChanges();
+            _productApplication.UpdatePrice(command.ProductId, command.UnitPrice);
             return operation.Succedded();
         }
 
@@ -41,6 +45,7 @@ namespace InventoryManagement.Application
 
             inventory.Edit(command.ProductId, command.UnitPrice);
             _inventoryRepository.SaveChanges();
+            _productApplication.UpdatePrice(command.ProductId, command.UnitPrice);
             return operation.Succedded();
         }
 
@@ -62,8 +67,9 @@ namespace InventoryManagement.Application
                 return operation.Failed(ApplicationMessages.RecordNotFound);
 
             const long operatorId = 1;
-            inventory.Increase(command.Count, operatorId, command.Description);
+            var count=inventory.Increase(command.Count, operatorId, command.Description);
             _inventoryRepository.SaveChanges();
+            _productApplication.UpdateCount(inventory.ProductId, count);
             return operation.Succedded();
         }
 
@@ -74,20 +80,23 @@ namespace InventoryManagement.Application
             if (inventory == null)
                 return operation.Failed(ApplicationMessages.RecordNotFound);
 
-            var operatorId = 1;// _authHelper.CurrentAccountId();
-            inventory.Reduce(command.Count, operatorId, command.Description, 0);
+            var operatorId = _authHelper.CurrentAccountId();
+            var count = inventory.Reduce(command.Count, operatorId, command.Description, 0);
             _inventoryRepository.SaveChanges();
+            _productApplication.UpdateCount(inventory.ProductId, count);
             return operation.Succedded();
         }
 
         public OperationResult Reduce(List<ReduceInventory> command)
         {
             var operation = new OperationResult();
-            var operatorId = 1;//_authHelper.CurrentAccountId();
+            var operatorId = _authHelper.CurrentAccountId();
+            
             foreach (var item in command)
             {
                 var inventory = _inventoryRepository.GetBy(item.ProductId);
-                inventory.Reduce(item.Count, operatorId, item.Description, item.OrderId);
+                var count=inventory.Reduce(item.Count, operatorId, item.Description, item.OrderId);
+                _productApplication.UpdateCount(inventory.ProductId, count);
             }
 
             _inventoryRepository.SaveChanges();

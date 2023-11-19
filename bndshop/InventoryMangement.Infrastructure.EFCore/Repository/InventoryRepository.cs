@@ -40,7 +40,7 @@ namespace InventoryMangement.Infrastructure.EFCore.Repository
 
         public List<InventoryOperationViewModel> GetOperationLog(long inventoryId)
         {
-            var accounts = _accountContext.Accounts.Select(x => new {x.Id, x.Fullname}).ToList();
+            var accounts = _accountContext.Accounts.Select(x => new { x.Id, x.Fullname }).ToList();
             var inventory = _inventoryContext.Inventory.FirstOrDefault(x => x.Id == inventoryId);
             var operations = inventory.Operations.Select(x => new InventoryOperationViewModel
             {
@@ -64,7 +64,7 @@ namespace InventoryMangement.Infrastructure.EFCore.Repository
 
         public List<InventoryViewModel> Search(InventorySearchModel searchModel)
         {
-            var products = _shopContext.Products.Select(x => new {x.Id, x.Name}).ToList();
+            var products = _shopContext.Products.Select(x => new { x.Id, x.Name }).ToList();
             var query = _inventoryContext.Inventory.Select(x => new InventoryViewModel
             {
                 Id = x.Id,

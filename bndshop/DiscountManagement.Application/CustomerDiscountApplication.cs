@@ -1,6 +1,7 @@
 ﻿using _0_Framework.Application;
 using DiscountManagement.Application.Contract.CustomerDiscount;
 using DiscountManagement.Domain.CustomerDiscountAgg;
+using ShopManagement.Application.Contracts.Product;
 using System;
 using System.Collections.Generic;
 
@@ -9,10 +10,11 @@ namespace DiscountManagement.Application
     public class CustomerDiscountApplication : ICustomerDiscountApplication
     {
         private readonly ICustomerDiscountRepository _customerDiscountRepository;
-
-        public CustomerDiscountApplication(ICustomerDiscountRepository customerDiscountRepository)
+        private readonly IProductApplication _productApplication;
+        public CustomerDiscountApplication(ICustomerDiscountRepository customerDiscountRepository, IProductApplication productApplication)
         {
             _customerDiscountRepository = customerDiscountRepository;
+            _productApplication = productApplication;
         }
 
         public OperationResult Define(DefineCustomerDiscount command)
@@ -27,6 +29,7 @@ namespace DiscountManagement.Application
                 startDate, endDate, command.Reason);
             _customerDiscountRepository.Create(customerDiscount);
             _customerDiscountRepository.SaveChanges();
+            _productApplication.UpdateCustomerDiscountRate(command.ProductId, command.DiscountRate);
             return operation.Succedded();
         }
 
@@ -46,6 +49,7 @@ namespace DiscountManagement.Application
             var endDate = command.EndDate.ToGeorgianDateTime();
             customerDiscount.Edit(command.ProductId, command.DiscountRate, startDate, endDate, command.Reason);
             _customerDiscountRepository.SaveChanges();
+            _productApplication.UpdateCustomerDiscountRate(command.ProductId, command.DiscountRate);
             return operation.Succedded();
         }
 

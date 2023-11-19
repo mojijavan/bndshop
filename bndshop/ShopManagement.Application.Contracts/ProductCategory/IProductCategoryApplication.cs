@@ -13,5 +13,6 @@ namespace ShopManagement.Application.Contracts.ProductCategory
         EditProductCategory GetDetails(long id);
 
         List<ProductCategoryViewModel> GetProductCategories();
+        OperationResult UpdateLastProductCode(long id, int lastProductCode);
     }
 }

@@ -44,6 +44,8 @@
                             <thead>
                                 <tr>
                                     <th>#</th>
+                                    <th>کد</th>
+
                                     <th>نام</th>
                                     <th>عکس</th>
                                     <th>تاریخ ایجاد</th>
@@ -55,8 +57,9 @@
                             {
                                 <tr>
                                     <td>@item.Id</td>
+                                    <td>@item.Code</td>
                                     <td>@item.Name</td>
-                                    <td><img src="~/ProductPictures/@item.Picture" style="height: 70px; width: 70px;"/></td>
+                                    <td><img src="~/ProductPictures/@item.Picture" style="height: 70px; width: 70px;" /></td>
                                     <td>@item.CreationDate</td>
                                     <td>
                                         <a href="#showmodal=@Url.Page("./Index","Edit",new{id=item.Id})" class="btn btn-warning pull-right m-rl-5"><i class="fa fa-edit"></i>ویرایش</a>
@@ -77,8 +80,9 @@
     <script src="~/AdminTheme/assets/datatables/dataTables.bootstrap.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
-
-            $('#datatable').dataTable();
+            $('#datatable').dataTable({
+                order: [[0, 'desc']]
+            });
         });
     </script>
 }

@@ -4,7 +4,7 @@ using System.Linq;
 using _0_Framework.Application;
 using _0_Framework.Infrastructure;
 using _01_BndShopQuery.Contracts;
-using _01_BndShopQuery.Contracts;
+
 using DiscountManagement.Infrastructure.EFCore;
 using ShopManagement.Application.Contracts.Order;
 

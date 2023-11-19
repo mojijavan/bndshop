@@ -15,7 +15,6 @@
   <ItemGroup>
     <ProjectReference Include="..\AccountManagement.Application.Contracts\AccountManagement.Application.Contracts.csproj" />
     <ProjectReference Include="..\AccountManagement.Application\AccountManagement.Application.csproj" />
-    <ProjectReference Include="..\AccountManagement.Domain\AccountManagement.Domain.csproj" />
     <ProjectReference Include="..\AccountMangement.Infrastructure.EFCore\AccountMangement.Infrastructure.EFCore.csproj" />
   </ItemGroup>
 </Project>

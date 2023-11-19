@@ -1177,6 +1177,14 @@ lesshat-selector { -lh-property: 0; }
     width: 240px;
     background: #317eeb;
 }
+.topbar .topbar-right {
+    float: left;
+    height: 70px;
+    position: relative;
+    z-index: 1;
+    width: 240px;
+    background: #317eeb;
+}
 
 .logo h1 {
     margin: 0px auto;

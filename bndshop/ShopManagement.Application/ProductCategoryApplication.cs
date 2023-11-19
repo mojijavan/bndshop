@@ -26,7 +26,7 @@ namespace ShopManagement.Application
             var slug = command.Slug.Slugify();
             var FileName = _fileUploader.Upload(command.Picture, slug);
             var ProductCategory = new ProductCategory(command.Name, command.Description, FileName,
-                                        command.PictureAlt, command.PictureTitle, command.Keywords, command.MetaDescription, slug);
+                                        command.PictureAlt, command.PictureTitle, command.Keywords, command.MetaDescription, slug,command.Code);
             _productCategoryRepository.Create(ProductCategory);
             _productCategoryRepository.SaveChanges();
             return operation.Succedded();
@@ -43,7 +43,7 @@ namespace ShopManagement.Application
             var slug = command.Slug.Slugify();
             var FileName = _fileUploader.Upload(command.Picture,slug);
             productCategory.Edit(command.Name, command.Description, FileName,
-                command.PictureAlt, command.PictureTitle, command.Keywords, command.MetaDescription, slug);
+                command.PictureAlt, command.PictureTitle, command.Keywords, command.MetaDescription, slug,command.Code,command.LastProductCode);
             _productCategoryRepository.SaveChanges();
             return operation.Succedded();
         }
@@ -61,6 +61,17 @@ namespace ShopManagement.Application
         public List<ProductCategoryViewModel> GetProductCategories()
         {
             return _productCategoryRepository.GetProductCategories();
+        }
+        public OperationResult UpdateLastProductCode(long id, int lastProductCode)
+        {
+            var productCategory = _productCategoryRepository.Get(id);
+            OperationResult operation = new OperationResult();
+            if (productCategory == null)
+                return operation.Failed(ApplicationMessages.RecordNotFound);
+            
+            productCategory.EditLastProductCode(lastProductCode);
+            _productCategoryRepository.SaveChanges();
+            return operation.Succedded();
         }
     }
 }

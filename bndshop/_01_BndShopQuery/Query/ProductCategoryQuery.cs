@@ -9,6 +9,7 @@ using ShopManagement.Infrastructure.EFCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using ShopManagement.Domain.ProductPictureAgg;
 
 namespace _01_BndShopQuery.Query
 {
@@ -17,12 +18,15 @@ namespace _01_BndShopQuery.Query
         private readonly ShopContext _context;
         private readonly InventoryContext _inventoryContext;
         private readonly DiscountContext _discountContext;
-
-        public ProductCategoryQuery(ShopContext context, InventoryContext inventoryContext, DiscountContext discountContext)
+      
+        private readonly IAuthHelper _authHelper;
+        public ProductCategoryQuery(ShopContext context, InventoryContext inventoryContext, DiscountContext discountContext, IAuthHelper authHelper)
         {
             _context = context;
             _discountContext = discountContext;
+            _authHelper = authHelper;
             _inventoryContext = inventoryContext;
+
         }
 
         public List<ProductCategoryQueryModel> GetProductCategories()
@@ -37,14 +41,25 @@ namespace _01_BndShopQuery.Query
                 Slug = x.Slug
             }).AsNoTracking().ToList();
         }
-
+        //private ProductQueryModel MapProduct(Product x)
+        //{
+        //    if (_authHelper.IsColleagueUser())
+        //    {
+        //        return new ProductQueryModel(x.Id, x.Category.Name, x.Name, x.IsInStock,
+        //            x.Picture, x.PictureAlt, x.PictureTitle, x.Slug, x.UnitPrice, x.ColleagueUnitPrice, x.ColleagueDiscountRate, x.ProductPictures);
+        //    }
+        //    return new ProductQueryModel(x.Id, x.Category.Name, x.Name, x.IsInStock,
+        //        x.Picture, x.PictureAlt, x.PictureTitle, x.Slug, x.UnitPrice, x.CustomerDiscountRate, x.CustomerDiscountRate, x.ProductPictures);
+        //}
+        
+       
         public List<ProductCategoryQueryModel> GetProductCategoriesWithProducts()
         {
-            var inventory = _inventoryContext.Inventory.Select(x =>
-                new { x.ProductId, x.UnitPrice }).ToList();
+            bool IsColleagueUser = false;
+            IsColleagueUser = _authHelper.IsColleagueUser();
             var discounts = _discountContext.CustomerDiscounts
                 .Where(x => x.StartDate < DateTime.Now && x.EndDate > DateTime.Now)
-                .Select(x => new { x.DiscountRate, x.ProductId }).ToList();
+                .Select(x => new { x.DiscountRate, x.ProductId, x.EndDate }).ToList();
 
             var categories = _context.ProductCategories
                 .Include(x => x.Products)
@@ -53,57 +68,44 @@ namespace _01_BndShopQuery.Query
                 {
                     Id = x.Id,
                     Name = x.Name,
-                    Products = MapProducts(x.Products)
+                    Products = MapProducts(x.Products,IsColleagueUser)
                 }).AsNoTracking().ToList();
 
             foreach (var category in categories)
             {
                 foreach (var product in category.Products)
                 {
-                    var productInventory = inventory.FirstOrDefault(x => x.ProductId == product.Id);
-                    if (productInventory != null)
-                    {
-                        var price = productInventory.UnitPrice;
-                        product.Price = price.ToMoney();
-                        var discount = discounts.FirstOrDefault(x => x.ProductId == product.Id);
+                    var discount = discounts.FirstOrDefault(x => x.ProductId == product.Id);
                         if (discount != null)
                         {
-                            int discountRate = discount.DiscountRate;
-                            product.DiscountRate = discountRate;
-                            product.HasDiscount = discountRate > 0;
-                            var discountAmount = Math.Round((price * discountRate) / 100);
-                            product.PriceWithDiscount = (price - discountAmount).ToMoney();
+                            product.DiscountExpireDate = discount.EndDate.ToDiscountFormat();
                         }
-                    }
                 }
             }
-
             return categories;
         }
 
-        private static List<ProductQueryModel> MapProducts(List<Product> products)
+        private static List<ProductQueryModel> MapProducts(List<Product> products,bool IsColleagueUser)
         {
-            return products.Select(product => new ProductQueryModel
+            List<ProductQueryModel> productQueryModels = new List<ProductQueryModel>();
+            //ProductQueryModel productQueryModel = new ProductQueryModel();
+            foreach (var product in products)
             {
-                Id = product.Id,
-                Category = product.Category.Name,
-                Name = product.Name,
-                Picture = product.Picture,
-                PictureAlt = product.PictureAlt,
-                PictureTitle = product.PictureTitle,
-                Slug = product.Slug
-            }).ToList();
+                productQueryModels.Add(new ProductQueryModel(product,IsColleagueUser));
+            }
+            return productQueryModels.ToList();
+           
         }
 
         public ProductCategoryQueryModel GetProductCategoryWithProducstsBy(string slug)
         {
-            var inventory = _inventoryContext.Inventory.Select(x =>
-                new { x.ProductId, x.UnitPrice }).ToList();
+            bool IsColleagueUser = false;
+            IsColleagueUser = _authHelper.IsColleagueUser();
             var discounts = _discountContext.CustomerDiscounts
                 .Where(x => x.StartDate < DateTime.Now && x.EndDate > DateTime.Now)
                 .Select(x => new { x.DiscountRate, x.ProductId, x.EndDate }).ToList();
-
-            var catetory = _context.ProductCategories
+            
+            var category = _context.ProductCategories
                 .Include(a => a.Products)
                 .ThenInclude(x => x.Category)
                 .Select(x => new ProductCategoryQueryModel
@@ -114,30 +116,18 @@ namespace _01_BndShopQuery.Query
                     MetaDescription = x.MetaDescription,
                     Keywords = x.Keywords,
                     Slug = x.Slug,
-                    Products = MapProducts(x.Products)
+                    Products = MapProducts(x.Products,IsColleagueUser)
                 }).AsNoTracking().FirstOrDefault(x => x.Slug == slug);
 
-            foreach (var product in catetory.Products)
+            foreach (var product in category.Products)
             {
-                var productInventory = inventory.FirstOrDefault(x => x.ProductId == product.Id);
-                if (productInventory != null)
+                var discount = discounts.FirstOrDefault(x => x.ProductId == product.Id);
+                if (discount != null)
                 {
-                    var price = productInventory.UnitPrice;
-                    product.Price = price.ToMoney();
-                    var discount = discounts.FirstOrDefault(x => x.ProductId == product.Id);
-                    if (discount != null)
-                    {
-                        int discountRate = discount.DiscountRate;
-                        product.DiscountRate = discountRate;
-                        product.DiscountExpireDate = discount.EndDate.ToDiscountFormat();
-                        product.HasDiscount = discountRate > 0;
-                        var discountAmount = Math.Round((price * discountRate) / 100);
-                        product.PriceWithDiscount = (price - discountAmount).ToMoney();
-                    }
+                    product.DiscountExpireDate = discount.EndDate.ToDiscountFormat();
                 }
             }
-
-            return catetory;
+            return category;
         }
     }
 }
