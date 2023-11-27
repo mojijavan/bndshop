@@ -5,5 +5,7 @@ namespace _0_Framework.Application
     public interface IFileUploader
     {
         string Upload(IFormFile file, string path);
+        OperationResult DeleteFile(string path);
+        OperationResult DeleteFolder(string path);
     }
 }

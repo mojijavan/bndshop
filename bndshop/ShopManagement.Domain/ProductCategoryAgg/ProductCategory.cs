@@ -2,8 +2,7 @@
 using System.Collections.Generic;
 using _0_Framework.Domain;
 using ShopManagement.Domain.ProductAgg;
-using ShopManagement.Domain.ProductCategoryPropertyAgg;
-using ShopManagement.Domain.ProductPropertyAgg;
+
 
 namespace ShopManagement.Domain.ProductCategoryAgg
 {
@@ -21,13 +20,8 @@ namespace ShopManagement.Domain.ProductCategoryAgg
         public string Slug { get; private set; }
         public List<Product>Products { get; private set; }
         public long ParentId { get; private set; }
-        public List<ProductCategoryProperty> ProductCategoryProperties { get; set; }
 
-        public ProductCategory()
-        {
-            ProductCategoryProperties = new List<ProductCategoryProperty>();
-        }
-
+        public List<ProductCategory> ProductCategories { get; set; }
         public ProductCategory(string name, string description, string picture, string pictureAlt, string pictureTitle, string keywords, string metaDescription, string slug,int code,long parentId)
         {
             Name = name;

@@ -1,0 +1,36 @@
+﻿@page
+@model ServiceHost.Areas.Administration.Pages.Blog.Articles.DeleteModel
+@{
+    Layout = "Shared/_AdminLayout";
+    ViewData["title"] = "حذف مقاله";
+}
+<div class="header">
+    
+    <h4 class="modal-title">حذف</h4>
+</div>
+
+<form asp-page="./Delete" asp-page-handler="Delete"
+      method="post"
+      enctype="multipart/form-data">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label asp-for="command.Id" class="control-label">Id</label>
+                <input type="text" class="form-control" asp-for="command.Id">
+                <span asp-validation-for="command.Id" class="error"></span>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                <label asp-for="command.Title" class="control-label">نام</label>
+                <input type="text" class="form-control" asp-for="command.Title">
+                <span asp-validation-for="command.Title" class="error"></span>
+            </div>
+        </div>
+        <input type="hidden" class="form-control" asp-for="command.Picture" />
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default waves-effect">بستن</button>
+        <button type="submit" class="btn btn-info waves-effect waves-light">حذف</button>
+    </div>
+</form>

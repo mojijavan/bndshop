@@ -30,5 +30,33 @@ namespace ServiceHost
             file.CopyTo(output);
             return $"{path}/{fileName}";
         }
+        public OperationResult DeleteFile(string path)
+        {
+            throw new NotImplementedException();
+        }
+
+        public OperationResult DeleteFolder(string path)
+        {
+            OperationResult operation = new OperationResult();
+            try
+            {
+                if (string.IsNullOrWhiteSpace(path))
+                    return operation.Failed(ApplicationMessages.RecordNotFound);
+                var directoryPath = path.Replace("//", "/");
+                string[] subs = directoryPath.Split('/');
+                directoryPath = subs[0] + "/" + subs[1];
+                directoryPath = $"{_webHostEnvironment.WebRootPath}//ProductPictures//{directoryPath}";
+
+                if (!Directory.Exists(directoryPath))
+                    return operation.Failed(ApplicationMessages.RecordNotFound);
+                Directory.Delete(directoryPath, true);
+                return operation.Succedded();
+            }
+            catch (Exception e)
+            {
+                return operation.Failed("Error");
+            }
+        }
+
     }
 }

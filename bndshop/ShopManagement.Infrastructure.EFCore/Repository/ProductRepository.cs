@@ -67,6 +67,7 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
                     CategoryId = x.CategoryId,
                     CreationDate = x.CreationDate.ToString(),
                     Code = x.Code,
+                    Count = x.Count,
                     IsInStock = x.IsInStock,
                     Picture = x.Picture,
                     CustomerDiscountRate = x.CustomerDiscountRate,

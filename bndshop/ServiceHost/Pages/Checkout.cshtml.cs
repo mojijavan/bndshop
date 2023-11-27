@@ -53,6 +53,10 @@ namespace ServiceHost.Pages
 
         public IActionResult OnPostPay(int paymentMethod)
         {
+            if (!_authHelper.IsAuthenticated())
+                return RedirectToPage("./Account");
+            if (paymentMethod == 0)
+                return RedirectToPage("./Checkout");
             var cart = _cartService.Get();
             cart.SetPaymentMethod(paymentMethod);
 
@@ -71,10 +75,11 @@ namespace ServiceHost.Pages
                     $"https://{_zarinPalFactory.Prefix}.zarinpal.com/pg/StartPay/{paymentResponse.Authority}");
             }
 
+            var issueTrackingNo = orderId;
             var paymentResult = new PaymentResult();
-            return RedirectToPage("/PaymentResult",
-                paymentResult.Succeeded(
-                    "سفارش شما با موفقیت ثبت شد. پس از تماس کارشناسان ما و پرداخت وجه، سفارش ارسال خواهد شد.", null));
+            paymentResult = paymentResult.Succeeded("سفارش شما با موفقیت ثبت شد. پس از تماس کارشناسان ما و پرداخت وجه، سفارش ارسال خواهد شد", issueTrackingNo.ToString());
+            return RedirectToPage("/PaymentResult", paymentResult);
+            
         }
 
         public IActionResult OnGetCallBack([FromQuery] string authority, [FromQuery] string status,

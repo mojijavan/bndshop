@@ -182,6 +182,9 @@ namespace ShopManagement.Infrastructure.EFCore.Migrations
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
 
+                    b.Property<long>("ParentId")
+                        .HasColumnType("bigint");
+
                     b.Property<string>("Picture")
                         .HasMaxLength(1000)
                         .HasColumnType("nvarchar(1000)");
@@ -194,12 +197,17 @@ namespace ShopManagement.Infrastructure.EFCore.Migrations
                         .HasMaxLength(500)
                         .HasColumnType("nvarchar(500)");
 
+                    b.Property<long?>("ProductCategoryId")
+                        .HasColumnType("bigint");
+
                     b.Property<string>("Slug")
                         .IsRequired()
                         .HasMaxLength(300)
                         .HasColumnType("nvarchar(300)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("ProductCategoryId");
 
                     b.ToTable("ProductCategories");
                 });
@@ -349,6 +357,13 @@ namespace ShopManagement.Infrastructure.EFCore.Migrations
                     b.Navigation("Category");
                 });
 
+            modelBuilder.Entity("ShopManagement.Domain.ProductCategoryAgg.ProductCategory", b =>
+                {
+                    b.HasOne("ShopManagement.Domain.ProductCategoryAgg.ProductCategory", null)
+                        .WithMany("ProductCategories")
+                        .HasForeignKey("ProductCategoryId");
+                });
+
             modelBuilder.Entity("ShopManagement.Domain.ProductPictureAgg.ProductPicture", b =>
                 {
                     b.HasOne("ShopManagement.Domain.ProductAgg.Product", "Product")
@@ -367,6 +382,8 @@ namespace ShopManagement.Infrastructure.EFCore.Migrations
 
             modelBuilder.Entity("ShopManagement.Domain.ProductCategoryAgg.ProductCategory", b =>
                 {
+                    b.Navigation("ProductCategories");
+
                     b.Navigation("Products");
                 });
 #pragma warning restore 612, 618

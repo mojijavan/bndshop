@@ -77,6 +77,9 @@
                                             <a class="btn btn-warning pull-right m-rl-5" asp-page="./Edit" asp-route-id="@item.Id">
                                                 <i class="fa fa-edit"></i> ویرایش
                                             </a>
+                                            <a class="btn btn-warning pull-right m-rl-5" asp-page="./Delete" asp-route-id="@item.Id">
+                                                <i class="fa fa-remove"></i> حذف
+                                            </a>
                                         </td>
                                     </tr>
                                 }
@@ -95,7 +98,10 @@
 
     <script type="text/javascript">
         $(document).ready(function () {
-            $('#datatable').dataTable();
+
+            $('#datatable').dataTable({
+                order: [[0, 'desc']]
+            });
         });
     </script>
 }

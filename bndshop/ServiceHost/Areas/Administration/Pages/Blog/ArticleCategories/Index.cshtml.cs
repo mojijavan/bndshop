@@ -24,6 +24,7 @@ namespace ServiceHost.Areas.Administration.Pages.Blog.ArticleCategories
 
         public IActionResult OnGetCreate()
         {
+            
             return Partial("./Create", new CreateArticleCategory());
         }
 

@@ -9,7 +9,8 @@ namespace ServiceHost.Areas.Administration.Pages.Blog.Articles
 {
     public class EditModel : PageModel
     {
-        public EditArticle Command;
+        [BindProperty] 
+        public EditArticle Command { get; set; }
         public SelectList ArticleCategories;
 
         private readonly IArticleApplication _articleApplication;
@@ -27,9 +28,9 @@ namespace ServiceHost.Areas.Administration.Pages.Blog.Articles
             ArticleCategories = new SelectList(_articleCategoryApplication.GetArticleCategories(), "Id", "Name");
         }
 
-        public IActionResult OnPost(EditArticle command)
+        public IActionResult OnPost()
         {
-            var result = _articleApplication.Edit(command);
+            var result = _articleApplication.Edit(Command);
             return RedirectToPage("./Index");
         }
     }

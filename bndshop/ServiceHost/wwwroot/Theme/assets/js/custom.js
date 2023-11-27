@@ -67,7 +67,13 @@ function removeFromCart(id) {
     $.cookie(cookieName, JSON.stringify(products), { expires: 2, path: "/" });
     updateCart();
 }
-
+function ClearCart() {
+    
+    let products = $.cookie(cookieName);
+    products = [];
+    $.cookie(cookieName, JSON.stringify(products), { expires: 2, path: "/" });
+    updateCart();
+}
 function changeCartItemCount(id, totalId, count) {
     var products = $.cookie(cookieName);
     products = JSON.parse(products);

@@ -26,7 +26,7 @@ namespace _01_BndShopQuery.Query
         {
             var article = _context.Articles
                .Include(x => x.Category)
-               .Where(x => x.PublishDate <= DateTime.Now)
+               //.Where(x => x.PublishDate <= DateTime.Now)
                .Select(x => new ArticleQueryModel
                {
                    Id = x.Id,
@@ -88,7 +88,7 @@ namespace _01_BndShopQuery.Query
                     PictureTitle = x.PictureTitle,
                     PublishDate = x.PublishDate.ToFarsi(),
                     ShortDescription = x.ShortDescription,
-                }).ToList();
+                }).AsNoTracking().OrderByDescending(x => x.Id).Take(6).ToList(); ;
         }
     }
 }

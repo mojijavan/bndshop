@@ -41,6 +41,11 @@ namespace BlogManagement.Application
             return operation.Succedded();
         }
 
+        public ArticleViewModel GetArticleViewModelWith(long id)
+        {
+            return _articleRepository.GetViewModelWith(id);  
+        }
+
         public OperationResult Edit(EditArticle command)
         {
             var operation = new OperationResult();
@@ -73,6 +78,18 @@ namespace BlogManagement.Application
         public List<ArticleViewModel> Search(ArticleSearchModel searchModel)
         {
             return _articleRepository.Search(searchModel);
+        }
+
+        public OperationResult Delete(ArticleViewModel command)
+        {
+            var operation = new OperationResult();
+            operation.IsSuccedded = false;
+            if (!_articleRepository.Exists(x => x.Id == command.Id))
+                return operation.Failed(ApplicationMessages.RecordNotFound);
+            _articleRepository.Delete(command.Id);
+            operation = _fileUploader.DeleteFolder(command.Picture);
+            _articleRepository.SaveChanges();
+            return operation;
         }
     }
 }

@@ -112,8 +112,11 @@
     <script src="~/adminTheme/assets/datatables/dataTables.bootstrap.js"></script>
 
     <script type="text/javascript">
-        $(document).ready(function() {
-            $('#datatable').dataTable();
+        $(document).ready(function () {
+
+            $('#datatable').dataTable({
+                order: [[0, 'desc']]
+            });
         });
     </script>
 }

@@ -1,3 +1,4 @@
+using System;
 using BlogManagement.Application.Contracts.Article;
 using BlogManagement.Application.Contracts.ArticleCategory;
 using Microsoft.AspNetCore.Mvc;
@@ -22,6 +23,8 @@ namespace ServiceHost.Areas.Administration.Pages.Blog.Articles
 
         public void OnGet()
         {
+            Command = new CreateArticle();
+            
             ArticleCategories = new SelectList(_articleCategoryApplication.GetArticleCategories(), "Id", "Name");
         }
 

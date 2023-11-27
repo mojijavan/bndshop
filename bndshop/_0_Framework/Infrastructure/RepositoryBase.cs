@@ -40,5 +40,12 @@ namespace _0_Framework.Infrastructure
         {
             _context.SaveChanges();
         }
+
+        public bool Delete(TKey id)
+        {
+            var entity = Get(id);
+            _context.Entry(entity).State = EntityState.Deleted;
+            return true;
+        }
     }
 }

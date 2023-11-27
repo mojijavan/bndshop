@@ -8,7 +8,6 @@ C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AccountManagement.Applicati
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AccountManagement.Application\bin\Debug\net5.0\AccountManagement.Application.Contracts.pdb
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AccountManagement.Application\bin\Debug\net5.0\AccountManagement.Domain.pdb
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AccountManagement.Application\bin\Debug\net5.0\_0_Framework.pdb
-C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AccountManagement.Application\obj\Debug\net5.0\AccountManagement.Application.csproj.AssemblyReference.cache
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AccountManagement.Application\obj\Debug\net5.0\AccountManagement.Application.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AccountManagement.Application\obj\Debug\net5.0\AccountManagement.Application.AssemblyInfoInputs.cache
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AccountManagement.Application\obj\Debug\net5.0\AccountManagement.Application.AssemblyInfo.cs
@@ -17,3 +16,4 @@ C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AccountManagement.Applicati
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AccountManagement.Application\obj\Debug\net5.0\AccountManagement.Application.dll
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AccountManagement.Application\obj\Debug\net5.0\ref\AccountManagement.Application.dll
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AccountManagement.Application\obj\Debug\net5.0\AccountManagement.Application.pdb
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AccountManagement.Application\obj\Debug\net5.0\AccountManagement.Application.csproj.AssemblyReference.cache

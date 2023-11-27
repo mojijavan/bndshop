@@ -69,8 +69,7 @@ namespace ShopManagement.Application
             product.Edit(command.Name, command.Code, command.ShortDescription,
                 command.MetaDescription, picturePath
                 , command.PictureAlt, command.PictureTitle, slug, command.Keywords, command.MetaDescription,
-                command.CategoryId, command.CustomerDiscountRate, command.ColleagueDiscountRate
-                , command.CustomerUnitPrice, command.ColleagueUnitPrice, command.Count,command.UnitPrice);
+                command.CategoryId,command.Count,command.UnitPrice);
             _productRepository.SaveChanges();
             return operation.Succedded();
 

@@ -51,9 +51,13 @@
                                         </div>
 
                                         <div class="single-blog-post-media">
-                                            <div class="image">
-                                                <img src="~/ProductPictures/@Model.Article.Picture" class="img-fluid" alt="@Model.Article.PictureAlt" title="@Model.Article.Title">
-                                            </div>
+                                            @if (!string.IsNullOrWhiteSpace(Model.Article.Picture))
+                                            {
+                                                <div class="image">
+                                                    <img src="~/ProductPictures/@Model.Article.Picture" class="img-fluid" alt="@Model.Article.PictureAlt" title="@Model.Article.Title">
+                                                </div>
+                                            }
+                                           
                                         </div>
 
                                         <div class="post-content">
@@ -146,19 +150,19 @@
                                                         <div class="col-lg-4">
                                                             <div class="form-group">
                                                                 <label>نام <span class="required">*</span></label>
-                                                                <input type="text" name="name" placeholder="مثال: علی علوی">
+                                                                <input type="text" name="name" placeholder="مثال: مجتبی جهان پور">
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-4">
                                                             <div class="form-group">
                                                                 <label>ایمیل <span class="required">*</span></label>
-                                                                <input type="text" name="email" placeholder="مثال: contact@atriya.com">
+                                                                <input type="text" name="email" placeholder="مثال: contact@bndmobile.com">
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-4">
                                                             <div class="form-group">
                                                                 <label>وبسایت</label>
-                                                                <input type="text" name="website" placeholder="مثال: http://www.atriya.com">
+                                                                <input type="text" name="website" placeholder="مثال: http://www.bndmobile.ir">
                                                             </div>
                                                         </div>
                                                         <input type="hidden" name="ownerRecordId" value="@Model.Article.Id" />

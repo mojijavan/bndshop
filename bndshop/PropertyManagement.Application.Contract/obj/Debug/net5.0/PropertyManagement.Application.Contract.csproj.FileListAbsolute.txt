@@ -1,0 +1,11 @@
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\PropertyManagement.Application.Contract\bin\Debug\net5.0\PropertyManagement.Application.Contract.deps.json
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\PropertyManagement.Application.Contract\bin\Debug\net5.0\PropertyManagement.Application.Contract.dll
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\PropertyManagement.Application.Contract\bin\Debug\net5.0\ref\PropertyManagement.Application.Contract.dll
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\PropertyManagement.Application.Contract\bin\Debug\net5.0\PropertyManagement.Application.Contract.pdb
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\PropertyManagement.Application.Contract\obj\Debug\net5.0\PropertyManagement.Application.Contract.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\PropertyManagement.Application.Contract\obj\Debug\net5.0\PropertyManagement.Application.Contract.AssemblyInfoInputs.cache
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\PropertyManagement.Application.Contract\obj\Debug\net5.0\PropertyManagement.Application.Contract.AssemblyInfo.cs
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\PropertyManagement.Application.Contract\obj\Debug\net5.0\PropertyManagement.Application.Contract.csproj.CoreCompileInputs.cache
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\PropertyManagement.Application.Contract\obj\Debug\net5.0\PropertyManagement.Application.Contract.dll
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\PropertyManagement.Application.Contract\obj\Debug\net5.0\ref\PropertyManagement.Application.Contract.dll
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\PropertyManagement.Application.Contract\obj\Debug\net5.0\PropertyManagement.Application.Contract.pdb

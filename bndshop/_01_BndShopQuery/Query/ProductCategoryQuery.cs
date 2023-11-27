@@ -88,7 +88,6 @@ namespace _01_BndShopQuery.Query
         private static List<ProductQueryModel> MapProducts(List<Product> products,bool IsColleagueUser)
         {
             List<ProductQueryModel> productQueryModels = new List<ProductQueryModel>();
-            //ProductQueryModel productQueryModel = new ProductQueryModel();
             foreach (var product in products)
             {
                 productQueryModels.Add(new ProductQueryModel(product,IsColleagueUser));

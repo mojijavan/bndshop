@@ -34,9 +34,12 @@
                                     <ul class="sub-menu">
                                         @foreach (var category in Model.ArticleCategories)
                                         {
-                                            <li>
-                                                <a asp-page="./ArticleCategory" asp-route-id="@category.Slug">@category.Name</a>
-                                            </li>
+                                            //if (category.ShowOrder != 0)
+                                            //{
+                                                <li>
+                                                    <a asp-page="./ArticleCategory" asp-route-id="@category.Slug">@category.Name</a>
+                                                </li>
+                                           // }
                                         }
                                     </ul>
                                 </li>

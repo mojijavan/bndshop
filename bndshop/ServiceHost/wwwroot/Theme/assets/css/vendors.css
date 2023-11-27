@@ -6,6 +6,15 @@
  */
 
 :root {
+    --bg-primary-1: #0089ff;
+    --bg-primary-2: #007be6;
+    --text-color-base: #2e343b;
+    --text-color-gray: #7e7e7e;
+    --text-color-icon: #939393;
+    --shadow-gray: rgba(0,0,0,.05);
+    --shadow-primary: rgba(0,137,255,.32);
+    --shadow-nav: rgba(0,0,0,.08);
+    --swiper-pagination-color: var(--bg-primary-1);
     --blue: #007bff;
     --indigo: #6610f2;
     --purple: #6f42c1;
@@ -584,10 +593,18 @@ pre {
     margin-right: auto;
     margin-left: auto
 }
-
+@media (max-width: 576px) {
+   
+    .FlexBox > div {
+        flex: 98%;
+    }
+}
 @media (min-width:576px) {
     .container {
         max-width: 540px
+    }
+    .FlexBox > div {
+        flex: 48%;
     }
 }
 
@@ -595,11 +612,17 @@ pre {
     .container {
         max-width: 720px
     }
+    .FlexBox > div {
+        flex: 48%;
+    }
 }
 
 @media (min-width:992px) {
     .container {
         max-width: 960px
+    }
+    .FlexBox > div {
+        flex: 30%;
     }
 }
 
@@ -607,8 +630,38 @@ pre {
     .container {
         max-width: 1140px
     }
+    .FlexBox>div {
+        flex: 30%;
+    }
 }
-
+.FlexBox {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+    .FlexBox > div {
+        justify-content: space-between;
+       /* border: 1px solid #d1cfcf;*/
+        padding: 10px;
+        border-radius: 10px;
+        margin: 4px;
+    }
+        .FlexBox > div > a {
+            color: var(--text-color-base);
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 25px;
+            display: block;
+            margin-bottom: 32px;
+        }
+    .FlexBox li > a {
+        font-size: 14px;
+        line-height: 22px;
+        font-weight: 300;
+        display: block;
+        margin-bottom: 14px;
+    }
 .container-fluid {
     width: 100%;
     padding-right: 15px;

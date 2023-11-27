@@ -19,6 +19,7 @@ namespace ShopManagement.Application.Contracts.ProductCategory
         public int Code{ get; set; }
         public int LastProductCode { get; set; }
         public string PictureTitle { get;  set; }
+        public long ParentId { get; set; }
 
         [Required(ErrorMessage = ValidationMessages.IsRequired)]
         public string Keywords { get;  set; } 

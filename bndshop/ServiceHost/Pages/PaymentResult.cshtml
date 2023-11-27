@@ -41,6 +41,7 @@
                             </p>
                         }
                     </div>
+                   
                 }
                 else
                 {
@@ -54,3 +55,14 @@
         </div>
     </div>
 </div>
+@section Scripts {
+             @if (@Model.Result.IsSuccessful)
+             {
+                 <script type="text/javascript">
+                     $(document).ready(function () {
+                         ClearCart();
+                     });
+                 </script>
+             }          
+    
+}

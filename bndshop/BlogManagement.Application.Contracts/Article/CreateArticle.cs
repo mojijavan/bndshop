@@ -1,4 +1,5 @@
-﻿using _0_Framework.Application;
+﻿using System;
+using _0_Framework.Application;
 using Microsoft.AspNetCore.Http;
 using System.ComponentModel.DataAnnotations;
 
@@ -46,5 +47,10 @@ namespace BlogManagement.Application.Contracts.Article
 
         [Range(1, long.MaxValue, ErrorMessage = ValidationMessages.IsRequired)]
         public long CategoryId { get; set; }
+
+        public CreateArticle()
+        {
+            PublishDate = DateTime.Now.ToFarsi();
+        }
     }
 }

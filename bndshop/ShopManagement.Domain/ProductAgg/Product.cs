@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using _0_Framework.Domain;
 using ShopManagement.Domain.ProductCategoryAgg;
 using ShopManagement.Domain.ProductPictureAgg;
-using ShopManagement.Domain.ProductPropertyAgg;
+
 
 namespace ShopManagement.Domain.ProductAgg
 {
@@ -30,11 +30,11 @@ namespace ShopManagement.Domain.ProductAgg
         public long CategoryId { get; private set; }
         public ProductCategory Category { get; private set; }
         public List<ProductPicture> ProductPictures { get; set; }
-        public List<ProductProperty> ProductProperties { get; set; }
+        
         public Product()
         {
             ProductPictures = new List<ProductPicture>();
-            ProductProperties = new List<ProductProperty>();
+            
         }
 
         public Product(string name, int code, 
@@ -66,19 +66,14 @@ namespace ShopManagement.Domain.ProductAgg
 
         public void Edit(string name, int code,  string shortDescription,
             string description, string picture, string pictureAlt, string pictureTitle,
-            string slug, string keywords, string metaDescription, long categoryId,
-            int customerDiscountRate, int colleagueDiscountRate,
-            double customerUnitPrice, double colleagueUnitPrice,long count,double unitPrice)
+            string slug, string keywords, string metaDescription, long categoryId,long count,double unitPrice)
         {
             Name = name;
             Code = code;
-            UnitPrice = unitPrice;
-            CustomerDiscountRate = customerDiscountRate;
-            CustomerUnitPrice = customerUnitPrice;
-            ColleagueDiscountRate = colleagueDiscountRate;
-            ColleagueUnitPrice = colleagueUnitPrice;
-            Count = count;
-            
+            UpdatePrice(unitPrice);
+            //UpdateCustomerDiscountRate(CustomerDiscountRate);
+            //UpdateColleagueDiscountRate(ColleagueDiscountRate);
+            UpdateCount(count);
             ShortDescription = shortDescription;
             Description = description;
             if(!string.IsNullOrWhiteSpace(picture))
