@@ -24,7 +24,6 @@ namespace _0_Framework.Application
             var result = new AuthViewModel();
             if (!IsAuthenticated())
                 return result;
-
             var claims = _contextAccessor.HttpContext.User.Claims.ToList();
             result.Id = long.Parse(claims.FirstOrDefault(x => x.Type == "AccountId").Value);
             result.Username = claims.FirstOrDefault(x => x.Type == "Username").Value;
@@ -73,9 +72,24 @@ namespace _0_Framework.Application
         public bool IsColleagueUser()
         {
             if(IsAuthenticated())
-                if (CurrentAccountInfo().Role == "ColleagueUser") return true;
+                if (CurrentAccountInfo().Role == "همکار") return true;
             return false;
         }
+
+        public bool IsAdmin()
+        {
+            if (IsAuthenticated())
+                if (CurrentAccountInfo().Role == "مدیرسیستم") return true;
+            return false;
+        }
+
+        public bool IsContentUploader()
+        {
+            if (IsAuthenticated())
+                if (CurrentAccountInfo().Role == "	محتواگذار") return true;
+            return false;
+        }
+
         public void Signin(AuthViewModel account)
         {
             var permissions = JsonConvert.SerializeObject(account.Permissions);

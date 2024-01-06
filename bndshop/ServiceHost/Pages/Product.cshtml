@@ -61,13 +61,13 @@
                                                 ]'>
 
                                                 <div class="single-image">
-                                                    <img src="~/ProductPictures/@Model.Product.Picture" class="img-fluid"
-                                                         alt="@Model.Product.Picture">
+                                                    <img src="@Model.Product.Picture" class="img-fluid"
+                                                         alt="@Model.Product.PictureAlt">
                                                 </div>
                                                 @foreach (var picture in Model.Product.Pictures)
                                                 {
                                                     <div class="single-image">
-                                                        <img src="~/ProductPictures/@picture.Picture" class="img-fluid"
+                                                        <img src="@picture.Picture" class="img-fluid"
                                                              alt="@picture.PictureAlt" title="@picture.PictureTitle">
                                                     </div>
                                                 }
@@ -97,13 +97,13 @@
                                                     {"breakpoint":479, "settings": {"slidesToShow": 2, "arrows": false, "slidesToScroll": 1} }
                                                 ]'>
                                             <div class="single-image">
-                                                <img src="~/ProductPictures/@Model.Product.Picture" class="img-fluid"
+                                                <img src="@Model.Product.Picture" class="img-fluid"
                                                      alt="@Model.Product.Picture">
                                             </div>
                                             @foreach (var picture in Model.Product.Pictures)
                                             {
                                                 <div class="single-image">
-                                                    <img src="~/ProductPictures/@picture.Picture" class="img-fluid"
+                                                    <img src="@picture.Picture" class="img-fluid"
                                                          alt="@picture.PictureAlt" title="@picture.PictureTitle">
                                                 </div>
                                             }

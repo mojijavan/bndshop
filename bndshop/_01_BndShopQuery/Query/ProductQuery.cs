@@ -67,18 +67,18 @@ namespace _01_BndShopQuery.Query
             return productQueryModel;
         }
    
-        private static List<ProductPictureQueryModel> MapProductPictures(List<ProductPicture> pictures)
-        {
-            if (pictures == null) return new List<ProductPictureQueryModel>();
-            return pictures.Select(x => new ProductPictureQueryModel
-            {
-                IsRemoved = x.IsRemoved,
-                Picture = x.Picture,
-                PictureAlt = x.PictureAlt,
-                PictureTitle = x.PictureTitle,
-                ProductId = x.ProductId
-            }).Where(x => !x.IsRemoved).ToList();
-        }
+        //private static List<ProductPictureQueryModel> MapProductPictures(List<ProductPicture> pictures)
+        //{
+        //    if (pictures == null) return new List<ProductPictureQueryModel>();
+        //    return pictures.Select(x => new ProductPictureQueryModel
+        //    {
+        //        IsRemoved = x.IsRemoved,
+        //        Picture = x.Picture,
+        //        PictureAlt = x.PictureAlt,
+        //        PictureTitle = x.PictureTitle,
+        //        ProductId = x.ProductId
+        //    }).Where(x => !x.IsRemoved).ToList();
+        //}
         public SlickSliderModel SlickSlider(string id)
         {
             SlickSliderModel slickSliderModel = new SlickSliderModel();
@@ -174,7 +174,7 @@ namespace _01_BndShopQuery.Query
             List<ProductQueryModel> productQueryModels = new List<ProductQueryModel>();
             productQueryModels = MapProducts(query.ToList(), IsColleagueUser);
            
-            return productQueryModels.OrderByDescending(x => x.Id).ToList(); ;
+            return productQueryModels.OrderByDescending(x => x.Id).ToList();
         }
 
         public List<CartItem> CheckInventoryStatus(List<CartItem> cartItems)

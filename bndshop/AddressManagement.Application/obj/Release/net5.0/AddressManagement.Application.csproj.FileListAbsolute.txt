@@ -1,0 +1,17 @@
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AddressManagement.Application\bin\Release\net5.0\AddressManagement.Application.deps.json
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AddressManagement.Application\bin\Release\net5.0\AddressManagement.Application.dll
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AddressManagement.Application\bin\Release\net5.0\ref\AddressManagement.Application.dll
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AddressManagement.Application\bin\Release\net5.0\AddressManagement.Application.pdb
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AddressManagement.Application\bin\Release\net5.0\AddressManagement.Application.Contracts.dll
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AddressManagement.Application\bin\Release\net5.0\_0_Framework.dll
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AddressManagement.Application\bin\Release\net5.0\AddressManagement.Application.Contracts.pdb
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AddressManagement.Application\bin\Release\net5.0\_0_Framework.pdb
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AddressManagement.Application\obj\Release\net5.0\AddressManagement.Application.csproj.AssemblyReference.cache
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AddressManagement.Application\obj\Release\net5.0\AddressManagement.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AddressManagement.Application\obj\Release\net5.0\AddressManagement.Application.AssemblyInfoInputs.cache
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AddressManagement.Application\obj\Release\net5.0\AddressManagement.Application.AssemblyInfo.cs
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AddressManagement.Application\obj\Release\net5.0\AddressManagement.Application.csproj.CoreCompileInputs.cache
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AddressManagement.Application\obj\Release\net5.0\AddressManagement.Application.csproj.CopyComplete
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AddressManagement.Application\obj\Release\net5.0\AddressManagement.Application.dll
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AddressManagement.Application\obj\Release\net5.0\ref\AddressManagement.Application.dll
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AddressManagement.Application\obj\Release\net5.0\AddressManagement.Application.pdb

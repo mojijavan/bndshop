@@ -26,11 +26,6 @@ namespace ShopManagement.Infrastructure.EFCore
         {
             var assembly = typeof(ProductCategoryMapping).Assembly;
             modelBuilder.ApplyConfigurationsFromAssembly(assembly);
-            //modelBuilder.ApplyConfiguration(new ProductCategoryMapping());
-            //modelBuilder.ApplyConfiguration(new ProductPictureMapping());
-            //modelBuilder.ApplyConfiguration(new SlideMapping());
-            //modelBuilder.ApplyConfiguration(new ProductMapping());
-
             base.OnModelCreating(modelBuilder);
         }
     }

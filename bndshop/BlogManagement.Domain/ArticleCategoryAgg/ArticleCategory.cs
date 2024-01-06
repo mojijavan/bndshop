@@ -34,6 +34,17 @@ namespace BlogManagement.Domain.ArticleCategoryAgg
             CanonicalAddress = canonicalAddress;
         }
 
+        public void changeData(ArticleCategory article)
+        {
+            Name = article.Name.Replace("بندرموبایل", "بندرپلاس");
+            PictureAlt = article.PictureAlt.Replace("بندرموبایل", "بندرپلاس");
+            PictureTitle = article.PictureTitle.Replace("بندرموبایل", "بندرپلاس");
+            Description = article.Description.Replace("بندرموبایل", "بندرپلاس"); 
+            Slug = article.Slug.Replace("بندرموبایل", "بندرپلاس"); 
+            Keywords = article.Keywords.Replace("بندرموبایل", "بندرپلاس");
+            MetaDescription = article.MetaDescription.Replace("بندرموبایل", "بندرپلاس");
+        }
+
         public void Edit(string name, string picture, string pictureAlt, string pictureTitle, string description, int showOrder,
             string slug, string keywords, string metaDescription, string canonicalAddress)
         {

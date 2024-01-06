@@ -10,6 +10,8 @@ namespace ServiceHost.Areas.Administration.Pages.Shop.Products
 {
     public class IndexModel : PageModel
     {
+        [TempData]
+        public string Message { get; set; }
         private readonly IProductApplication _productApplication;
         private readonly IProductCategoryApplication _productCategoryApplication;
         public List<ProductViewModel> Product;
@@ -28,25 +30,25 @@ namespace ServiceHost.Areas.Administration.Pages.Shop.Products
             Product = _productApplication.Search(searchModel);
         }
 
-        public IActionResult OnGetCreate()
-        {
-            var command = new CreateProduct();
-            command.Categories = _productCategoryApplication.GetProductCategories();
-            return Partial("./Create", command);
-        }
+        //public IActionResult OnGetCreate()
+        //{
+        //    var command = new CreateProduct();
+        //    command.Categories = _productCategoryApplication.GetProductCategories();
+        //    return Partial("./Create", command);
+        //}
 
-        public JsonResult OnPostCreate(CreateProduct command)
-        {
-            var result = _productApplication.Create(command);
-            return new JsonResult(result);
-        }
+        //public JsonResult OnPostCreate(CreateProduct command)
+        //{
+        //    var result = _productApplication.Create(command);
+        //    return new JsonResult(result);
+        //}
 
-        public IActionResult OnGetEdit(long id)
-        {
-            var product = _productApplication.GetDetails(id);
-            product.Categories = _productCategoryApplication.GetProductCategories();
-            return Partial("./Edit", product);
-        }
+        //public IActionResult OnGetEdit(long id)
+        //{
+        //    var product = _productApplication.GetDetails(id);
+        //    product.Categories = _productCategoryApplication.GetProductCategories();
+        //    return Partial("./Edit", product);
+        //}
 
         public IActionResult OnGetIsInStock(int id)
         {
@@ -58,11 +60,29 @@ namespace ServiceHost.Areas.Administration.Pages.Shop.Products
             _productApplication.NotInStock(id);
             return RedirectToPage("./Index");
         }
-        public JsonResult OnPostEdit(EditProduct command)
+        //public JsonResult OnPostEdit(EditProduct command)
+        //{
+        //    var result=_productApplication.Edit(command);
+        //    return new JsonResult(result);
+        //}
+        public IActionResult OnGetRemove(long id)
         {
-            var result=_productApplication.Edit(command);
-            return new JsonResult(result);
+            var result = _productApplication.Remove(id);
+            if (result.IsSuccedded)
+                return RedirectToPage("./Index");
+
+            Message = result.Message;
+            return RedirectToPage("./Index");
         }
 
+        public IActionResult OnGetRestore(long id)
+        {
+            var result = _productApplication.Restore(id);
+            if (result.IsSuccedded)
+                return RedirectToPage("./Index");
+
+            Message = result.Message;
+            return RedirectToPage("./Index");
+        }
     }
 }

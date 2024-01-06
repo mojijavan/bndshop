@@ -34,6 +34,7 @@
       "ServiceHost/1.0.0": {
         "dependencies": {
           "AccountManagement.Configuration": "1.0.0",
+          "AddressManagement.Configuration": "1.0.0",
           "BlogManagement.Infrastructure.Configuration": "1.0.0",
           "CommentManagement.Infrastructure.Configuration": "1.0.0",
           "DiscountManagement.Configuration": "1.0.0",
@@ -2891,6 +2892,69 @@
         },
         "compile": {
           "AccountMangement.Infrastructure.EFCore.dll": {}
+        }
+      },
+      "AddressManagement.Application/1.0.0": {
+        "dependencies": {
+          "AddressManagement.Application.Contracts": "1.0.0",
+          "_0_Framework": "1.0.0"
+        },
+        "runtime": {
+          "AddressManagement.Application.dll": {}
+        },
+        "compile": {
+          "AddressManagement.Application.dll": {}
+        }
+      },
+      "AddressManagement.Application.Contracts/1.0.0": {
+        "dependencies": {
+          "_0_Framework": "1.0.0"
+        },
+        "runtime": {
+          "AddressManagement.Application.Contracts.dll": {}
+        },
+        "compile": {
+          "AddressManagement.Application.Contracts.dll": {}
+        }
+      },
+      "AddressManagement.Configuration/1.0.0": {
+        "dependencies": {
+          "AddressManagement.Application": "1.0.0",
+          "AddressManagement.Infrastructure.EFCore": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "5.0.17",
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.17",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0"
+        },
+        "runtime": {
+          "AddressManagement.Configuration.dll": {}
+        },
+        "compile": {
+          "AddressManagement.Configuration.dll": {}
+        }
+      },
+      "AddressManagement.Domain/1.0.0": {
+        "dependencies": {
+          "AddressManagement.Application.Contracts": "1.0.0",
+          "_0_Framework": "1.0.0"
+        },
+        "runtime": {
+          "AddressManagement.Domain.dll": {}
+        },
+        "compile": {
+          "AddressManagement.Domain.dll": {}
+        }
+      },
+      "AddressManagement.Infrastructure.EFCore/1.0.0": {
+        "dependencies": {
+          "AddressManagement.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "5.0.17",
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.17"
+        },
+        "runtime": {
+          "AddressManagement.Infrastructure.EFCore.dll": {}
+        },
+        "compile": {
+          "AddressManagement.Infrastructure.EFCore.dll": {}
         }
       },
       "BlogManagement.Application/1.0.0": {
@@ -6544,6 +6608,31 @@
       "sha512": ""
     },
     "AccountMangement.Infrastructure.EFCore/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AddressManagement.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AddressManagement.Application.Contracts/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AddressManagement.Configuration/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AddressManagement.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AddressManagement.Infrastructure.EFCore/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

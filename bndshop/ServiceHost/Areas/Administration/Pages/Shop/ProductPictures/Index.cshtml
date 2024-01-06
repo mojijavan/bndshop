@@ -65,7 +65,7 @@
                                     <tr>
                                         <td>@item.Id</td>
                                         <td>
-                                            <img src="~/ProductPictures/@item.Picture" style="width: 70px; height: 70px" />
+                                            <img src="@item.Picture" style="width: 70px; height: 70px" />
                                         </td>
                                         <td>@item.Product</td>
                                         <td class="text-center">
@@ -84,6 +84,7 @@
                                                href="#showmodal=@Url.Page("./Index", "Edit", new { id = item.Id})">
                                                 <i class="fa fa-edit"></i> ویرایش
                                             </a>
+                                            <a href="#showmodal=@Url.Page("./Index", "Delete", new {id = item.Id})" class="btn btn-warning pull-right m-rl-5"><i class="fa fa-remove"></i>حذف</a>
                                             @if (!item.IsRemoved)
                                             {
                                                 <a asp-page="./Index" asp-page-handler="Remove" asp-route-id="@item.Id"

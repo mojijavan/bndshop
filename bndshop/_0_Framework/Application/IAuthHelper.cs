@@ -13,5 +13,7 @@ namespace _0_Framework.Application
         long CurrentAccountId();
         string CurrentAccountMobile();
         public bool IsColleagueUser();
+        public bool IsAdmin();
+        public bool IsContentUploader();
     }
 }

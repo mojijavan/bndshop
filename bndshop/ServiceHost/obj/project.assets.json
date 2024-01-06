@@ -3692,6 +3692,79 @@
           "bin/placeholder/AccountMangement.Infrastructure.EFCore.dll": {}
         }
       },
+      "AddressManagement.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "AddressManagement.Application.Contracts": "1.0.0",
+          "_0_Framework": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/AddressManagement.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AddressManagement.Application.dll": {}
+        }
+      },
+      "AddressManagement.Application.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "_0_Framework": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/AddressManagement.Application.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AddressManagement.Application.Contracts.dll": {}
+        }
+      },
+      "AddressManagement.Configuration/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "AddressManagement.Application": "1.0.0",
+          "AddressManagement.Infrastructure.EFCore": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "5.0.17",
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.17",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0"
+        },
+        "compile": {
+          "bin/placeholder/AddressManagement.Configuration.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AddressManagement.Configuration.dll": {}
+        }
+      },
+      "AddressManagement.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "AddressManagement.Application.Contracts": "1.0.0",
+          "_0_Framework": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/AddressManagement.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AddressManagement.Domain.dll": {}
+        }
+      },
+      "AddressManagement.Infrastructure.EFCore/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "AddressManagement.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "5.0.17",
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.17"
+        },
+        "compile": {
+          "bin/placeholder/AddressManagement.Infrastructure.EFCore.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AddressManagement.Infrastructure.EFCore.dll": {}
+        }
+      },
       "BlogManagement.Application/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -11545,6 +11618,31 @@
       "path": "../AccountMangement.Infrastructure.EFCore/AccountMangement.Infrastructure.EFCore.csproj",
       "msbuildProject": "../AccountMangement.Infrastructure.EFCore/AccountMangement.Infrastructure.EFCore.csproj"
     },
+    "AddressManagement.Application/1.0.0": {
+      "type": "project",
+      "path": "../AddressManagement.Application/AddressManagement.Application.csproj",
+      "msbuildProject": "../AddressManagement.Application/AddressManagement.Application.csproj"
+    },
+    "AddressManagement.Application.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../AddressManagement.Application.Contracts/AddressManagement.Application.Contracts.csproj",
+      "msbuildProject": "../AddressManagement.Application.Contracts/AddressManagement.Application.Contracts.csproj"
+    },
+    "AddressManagement.Configuration/1.0.0": {
+      "type": "project",
+      "path": "../AddressManagement.Configuration/AddressManagement.Configuration.csproj",
+      "msbuildProject": "../AddressManagement.Configuration/AddressManagement.Configuration.csproj"
+    },
+    "AddressManagement.Domain/1.0.0": {
+      "type": "project",
+      "path": "../AddressManagement.Domain/AddressManagement.Domain.csproj",
+      "msbuildProject": "../AddressManagement.Domain/AddressManagement.Domain.csproj"
+    },
+    "AddressManagement.Infrastructure.EFCore/1.0.0": {
+      "type": "project",
+      "path": "../AddressManagement.Infrastructure.EFCore/AddressManagement.Infrastructure.EFCore.csproj",
+      "msbuildProject": "../AddressManagement.Infrastructure.EFCore/AddressManagement.Infrastructure.EFCore.csproj"
+    },
     "BlogManagement.Application/1.0.0": {
       "type": "project",
       "path": "../BlogManagement.Application/BlogManagement.Application.csproj",
@@ -11694,6 +11792,7 @@
   "projectFileDependencyGroups": {
     "net5.0": [
       "AccountManagement.Configuration >= 1.0.0",
+      "AddressManagement.Configuration >= 1.0.0",
       "BlogManagement.Infrastructure.Configuration >= 1.0.0",
       "CommentManagement.Infrastructure.Configuration >= 1.0.0",
       "DiscountManagement.Configuration >= 1.0.0",
@@ -11739,6 +11838,9 @@
           "projectReferences": {
             "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\AccountManagement.Configuration\\AccountManagement.Configuration.csproj": {
               "projectPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\AccountManagement.Configuration\\AccountManagement.Configuration.csproj"
+            },
+            "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Configuration\\AddressManagement.Configuration.csproj": {
+              "projectPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Configuration\\AddressManagement.Configuration.csproj"
             },
             "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\BlogManagement.Infrastructure.Configuration\\BlogManagement.Infrastructure.Configuration.csproj": {
               "projectPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\BlogManagement.Infrastructure.Configuration\\BlogManagement.Infrastructure.Configuration.csproj"

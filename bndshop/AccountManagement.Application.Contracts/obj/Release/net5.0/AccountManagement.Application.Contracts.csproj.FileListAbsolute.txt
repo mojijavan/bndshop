@@ -1,0 +1,15 @@
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AccountManagement.Application.Contracts\bin\Release\net5.0\AccountManagement.Application.Contracts.deps.json
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AccountManagement.Application.Contracts\bin\Release\net5.0\AccountManagement.Application.Contracts.dll
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AccountManagement.Application.Contracts\bin\Release\net5.0\ref\AccountManagement.Application.Contracts.dll
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AccountManagement.Application.Contracts\bin\Release\net5.0\AccountManagement.Application.Contracts.pdb
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AccountManagement.Application.Contracts\bin\Release\net5.0\_0_Framework.dll
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AccountManagement.Application.Contracts\bin\Release\net5.0\_0_Framework.pdb
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AccountManagement.Application.Contracts\obj\Release\net5.0\AccountManagement.Application.Contracts.csproj.AssemblyReference.cache
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AccountManagement.Application.Contracts\obj\Release\net5.0\AccountManagement.Application.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AccountManagement.Application.Contracts\obj\Release\net5.0\AccountManagement.Application.Contracts.AssemblyInfoInputs.cache
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AccountManagement.Application.Contracts\obj\Release\net5.0\AccountManagement.Application.Contracts.AssemblyInfo.cs
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AccountManagement.Application.Contracts\obj\Release\net5.0\AccountManagement.Application.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AccountManagement.Application.Contracts\obj\Release\net5.0\AccountManagement.Application.Contracts.csproj.CopyComplete
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AccountManagement.Application.Contracts\obj\Release\net5.0\AccountManagement.Application.Contracts.dll
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AccountManagement.Application.Contracts\obj\Release\net5.0\ref\AccountManagement.Application.Contracts.dll
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AccountManagement.Application.Contracts\obj\Release\net5.0\AccountManagement.Application.Contracts.pdb

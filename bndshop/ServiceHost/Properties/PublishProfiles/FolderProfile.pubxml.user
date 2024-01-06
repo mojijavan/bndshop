@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Users\pgsoc\Desktop\pub</_PublishTargetUrl>
+    <History>True|2024-01-01T08:38:50.0202974Z;True|2024-01-01T10:39:51.6874603+03:30;True|2023-12-31T15:06:17.6547567+03:30;True|2023-12-31T14:44:43.4403683+03:30;True|2023-12-31T12:00:55.1859257+03:30;True|2023-12-25T15:11:00.3811329+03:30;False|2023-12-25T15:06:52.2863436+03:30;True|2023-12-25T14:49:27.2493743+03:30;False|2023-12-25T14:48:03.0349362+03:30;True|2023-12-25T14:45:26.7789690+03:30;True|2023-12-25T12:08:22.1733022+03:30;True|2023-12-15T14:46:18.2206079+03:30;True|2023-12-15T14:28:18.3083136+03:30;True|2023-12-15T13:29:14.2166069+03:30;True|2023-11-27T14:31:56.6991252+03:30;</History>
+  </PropertyGroup>
+</Project>

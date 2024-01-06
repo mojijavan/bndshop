@@ -28,7 +28,8 @@ namespace BlogManagement.Application
 
             var slug = command.Slug.Slugify();
             var categorySlug = _articleCategoryRepository.GetSlugBy(command.CategoryId);
-            var path = $"{categorySlug}/{slug}";
+           // var path = $"{categorySlug}/{slug}";
+            var path = $"/BlogPictures//{categorySlug}//{slug}";
             var pictureName = _fileUploader.Upload(command.Picture, path);
             var publishDate = command.PublishDate.ToGeorgianDateTime();
 
@@ -56,9 +57,11 @@ namespace BlogManagement.Application
 
             if (_articleRepository.Exists(x => x.Title == command.Title && x.Id != command.Id))
                 return operation.Failed(ApplicationMessages.DuplicatedRecord);
-
             var slug = command.Slug.Slugify();
-            var path = $"{article.Category.Slug}/{slug}";
+            var categorySlug = _articleCategoryRepository.GetSlugBy(command.CategoryId);
+            // var slug = command.Slug.Slugify();
+            var path = $"/BlogPictures//{categorySlug}//{slug}";
+            //var path = $"{article.Category.Slug}/{slug}";
             var pictureName = _fileUploader.Upload(command.Picture, path);
             var publishDate = command.PublishDate.ToGeorgianDateTime();
 
@@ -69,6 +72,8 @@ namespace BlogManagement.Application
             _articleRepository.SaveChanges();
             return operation.Succedded();
         }
+
+       
 
         public EditArticle GetDetails(long id)
         {

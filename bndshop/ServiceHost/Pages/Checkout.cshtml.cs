@@ -19,6 +19,7 @@ namespace ServiceHost.Pages
         public Cart Cart;
         public const string CookieName = "cart-items";
         private readonly IAuthHelper _authHelper;
+
         private readonly ICartService _cartService;
         private readonly IProductQuery _productQuery;
         private readonly IZarinPalFactory _zarinPalFactory;
@@ -46,7 +47,6 @@ namespace ServiceHost.Pages
             var cartItems = serializer.Deserialize<List<CartItem>>(value);
             foreach (var item in cartItems)
                 item.CalculateTotalItemPrice();
-
             Cart = _cartCalculatorService.ComputeCart(cartItems);
             _cartService.Set(Cart);
         }
@@ -69,7 +69,7 @@ namespace ServiceHost.Pages
             {
                 var paymentResponse = _zarinPalFactory.CreatePaymentRequest(
                     cart.PayAmount.ToString(CultureInfo.InvariantCulture), "", "",
-                    "خرید از درگاه لوازم خانگی و دکوری", orderId);
+                    "خرید از درگاه بندرپلاس", orderId);
 
                 return Redirect(
                     $"https://{_zarinPalFactory.Prefix}.zarinpal.com/pg/StartPay/{paymentResponse.Authority}");

@@ -60,7 +60,11 @@ Date: Jun 2015
 }
 
 /******** 1. General ********/
-
+.ActiveLabel {
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid;
+}
 body {
     background: #f5f5f5;
     margin: 0;
@@ -140,7 +144,9 @@ a:focus {
     background-color: #f9f9f9;
     border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
-
+.panel .panel-body .dataTables_wrapper .col-sm-12 {
+    overflow-x: auto;
+}
 #wrapper {
     width: 100%;
     height: 100%;

@@ -19,7 +19,7 @@ namespace ServiceHost
         {
             if (file == null) return "";
 
-            var directoryPath = $"{_webHostEnvironment.WebRootPath}//ProductPictures//{path}";
+            var directoryPath = _webHostEnvironment.WebRootPath+path;
 
             if (!Directory.Exists(directoryPath))
                 Directory.CreateDirectory(directoryPath);
@@ -41,7 +41,7 @@ namespace ServiceHost
             try
             {
                 if (string.IsNullOrWhiteSpace(path))
-                    return operation.Failed(ApplicationMessages.RecordNotFound);
+                    return operation.Succedded();
                 var directoryPath = path.Replace("//", "/");
                 string[] subs = directoryPath.Split('/');
                 directoryPath = subs[0] + "/" + subs[1];

@@ -31,9 +31,28 @@
             </div>
             <div class="col-md-6">
                 <div class="form-group">
+                    <label asp-for="Priority" class="control-label">ترتیب</label>
+                    <input type="number" class="form-control" asp-for="Priority">
+                    <span asp-validation-for="Priority" class="error"></span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
                     <label asp-for="Slug" class="control-label">اسلاگ</label>
                     <input type="text" class="form-control" asp-for="Slug">
                     <span asp-validation-for="Slug" class="error"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label asp-for="ParentId" class="control-label">پدر دسته بندی</label>
+                    <select class="form-control" asp-for="ParentId"
+                            asp-items='new SelectList(Model.Categories, "Id", "Name")'>
+                        <option value="0">گروه محصول</option>
+                    </select>
+                    <span asp-validation-for="ParentId" class="error"></span>
                 </div>
             </div>
         </div>
@@ -88,6 +107,14 @@
                     <textarea class="form-control autogrow" asp-for="MetaDescription"
                               style="overflow: hidden; word-wrap: break-word; resize: horizontal; height: 104px;"></textarea>
                     <span asp-validation-for="MetaDescription" class="error"></span>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="form-group no-margin">
+                    <label asp-for="Label" class="control-label">لیبل</label>
+                    <textarea class="form-control autogrow" asp-for="Label"
+                              style="overflow: hidden; word-wrap: break-word; resize: horizontal; height: 104px;"></textarea>
+                    <span asp-validation-for="Label" class="error"></span>
                 </div>
             </div>
         </div>

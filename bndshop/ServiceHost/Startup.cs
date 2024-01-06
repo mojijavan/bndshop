@@ -7,6 +7,7 @@ using _0_Framework.Application.Sms;
 using _0_Framework.Application.ZarinPal;
 using _0_Framework.Infrastructure;
 using AccountManagement.Configuration;
+using AddressManagement.Configuration;
 using BlogManagement.Infrastructure.Configuration;
 using CommentManagement.Infrastructure.Configuration;
 using DiscountManagement.Configuration;
@@ -57,15 +58,18 @@ namespace ServiceHost
             services.AddTransient<ISmsService, SmsService>();
             services.AddTransient<IEmailService, EmailService>();
             //var connectionString = Configuration.GetConnectionString("BndShopDB1");
-            var connectionString = Configuration.GetConnectionString("LocalDB");
+            //var connectionString = Configuration.GetConnectionString("LocalDB");
+            
+            var connectionString = Configuration.GetConnectionString("RemoteBndMobileDB");
             ShopManagementBootstrapper.Configure(services, connectionString);
             DiscountManagementBootstrapper.Configure(services, connectionString);
             InventoryManagementBootstrapper.Configure(services, connectionString);
             BlogManagementBootstrapper.Configure(services, connectionString);
             CommentManagementBootstrapper.Configure(services, connectionString);
             AccountManagementBootstrapper.Configure(services, connectionString);
+            AddressManagementBootstrapper.Configure(services, connectionString);
 
-           
+
 
             services.Configure<CookiePolicyOptions>(options =>
             {
@@ -86,7 +90,7 @@ namespace ServiceHost
                     builder => builder.RequireRole(new List<string> { Roles.Administrator, Roles.ContentUploader }));
 
                 options.AddPolicy("Shop",
-                    builder => builder.RequireRole(new List<string> { Roles.Administrator }));
+                    builder => builder.RequireRole(new List<string> { Roles.Administrator, Roles.ContentUploader }));
 
                 options.AddPolicy("Discount",
                     builder => builder.RequireRole(new List<string> { Roles.Administrator }));
@@ -94,6 +98,7 @@ namespace ServiceHost
                 options.AddPolicy("Account",
                     builder => builder.RequireRole(new List<string> { Roles.Administrator }));
             });
+            //services.AddMvc(options => options.EnableEndpointRouting = false);
             services.AddCors(options => options.AddPolicy("MyPolicy", builder =>
                 builder
                     .WithOrigins("https://localhost:5002")
@@ -111,6 +116,7 @@ namespace ServiceHost
                 //.AddApplicationPart(typeof(ProductController).Assembly)
                 //.AddApplicationPart(typeof(InventoryController).Assembly)
                 .AddNewtonsoftJson();
+            //services.AddControllers().AddNewtonsoftJson();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -123,6 +129,7 @@ namespace ServiceHost
             else
             {
                 app.UseExceptionHandler("/Error");
+                
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
@@ -136,10 +143,17 @@ namespace ServiceHost
             app.UseCookiePolicy();
 
             app.UseRouting();
-
+           
             app.UseAuthorization();
 
             app.UseCors("MyPolicy");
+            //app.UseMvc(routes =>
+            //{
+            //    routes.MapRoute(
+            //        name:"ProductCategory",
+            //        template:"ProductCategory/{parentSlug}/{slug?}/{label?}"
+            //    );
+            //});
 
             app.UseEndpoints(endpoints =>
             {

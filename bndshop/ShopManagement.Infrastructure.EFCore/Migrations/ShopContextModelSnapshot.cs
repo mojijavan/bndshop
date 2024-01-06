@@ -100,10 +100,16 @@ namespace ShopManagement.Infrastructure.EFCore.Migrations
                     b.Property<bool>("IsInStock")
                         .HasColumnType("bit");
 
+                    b.Property<bool>("IsRemoved")
+                        .HasColumnType("bit");
+
                     b.Property<string>("Keywords")
                         .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
+
+                    b.Property<string>("Label")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("MetaDescription")
                         .IsRequired()
@@ -164,10 +170,16 @@ namespace ShopManagement.Infrastructure.EFCore.Migrations
                         .HasMaxLength(500)
                         .HasColumnType("nvarchar(500)");
 
+                    b.Property<bool>("IsRemoved")
+                        .HasColumnType("bit");
+
                     b.Property<string>("Keywords")
                         .IsRequired()
                         .HasMaxLength(80)
                         .HasColumnType("nvarchar(80)");
+
+                    b.Property<string>("Label")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("LastProductCode")
                         .HasColumnType("int");
@@ -196,6 +208,9 @@ namespace ShopManagement.Infrastructure.EFCore.Migrations
                     b.Property<string>("PictureTitle")
                         .HasMaxLength(500)
                         .HasColumnType("nvarchar(500)");
+
+                    b.Property<int>("Priority")
+                        .HasColumnType("int");
 
                     b.Property<long?>("ProductCategoryId")
                         .HasColumnType("bigint");

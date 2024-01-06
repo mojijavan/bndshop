@@ -262,7 +262,6 @@ C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\obj\Debug\net5.
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Shop\ProductPictures\Edit.cshtml.g.cs
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Shop\ProductPictures\Index.cshtml.g.cs
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Shop\Products\Create.cshtml.g.cs
-C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Shop\Products\Edit.cshtml.g.cs
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Shop\Products\Index.cshtml.g.cs
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Shop\Slides\Create.cshtml.g.cs
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Shop\Slides\Edit.cshtml.g.cs
@@ -301,3 +300,17 @@ C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\obj\Debug\net5.
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\obj\Debug\net5.0\ServiceHost.pdb
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\obj\Debug\net5.0\ServiceHost.genruntimeconfig.cache
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Blog\Articles\Delete.cshtml.g.cs
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Blog\ArticleCategories\Delete.cshtml.g.cs
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\bin\Debug\net5.0\AddressManagement.Application.Contracts.dll
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\bin\Debug\net5.0\AddressManagement.Application.dll
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\bin\Debug\net5.0\AddressManagement.Configuration.dll
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\bin\Debug\net5.0\AddressManagement.Domain.dll
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\bin\Debug\net5.0\AddressManagement.Infrastructure.EFCore.dll
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\bin\Debug\net5.0\AddressManagement.Configuration.pdb
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\bin\Debug\net5.0\AddressManagement.Application.pdb
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\bin\Debug\net5.0\AddressManagement.Application.Contracts.pdb
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\bin\Debug\net5.0\AddressManagement.Domain.pdb
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\bin\Debug\net5.0\AddressManagement.Infrastructure.EFCore.pdb
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\obj\Debug\net5.0\Razor\Pages\notfound.cshtml.g.cs
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Shop\Create1.cshtml.g.cs
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Shop\Products\Edit.cshtml.g.cs

@@ -44,7 +44,7 @@ namespace _01_BndShopQuery.Query
                    PublishDate = x.PublishDate.ToFarsi(),
                    ShortDescription = x.ShortDescription,
                }).FirstOrDefault(x => x.Slug == slug);
-
+            if (article == null) return article;
             if (!string.IsNullOrWhiteSpace(article.Keywords))
                 article.KeywordList = article.Keywords.Split(",").ToList();
 
@@ -76,6 +76,13 @@ namespace _01_BndShopQuery.Query
 
         public List<ArticleQueryModel> LatestArticles()
         {
+
+            //var articles = _context.Articles.ToList();
+            //foreach (var article in articles)
+            //{
+            //    article.changeData(article);
+            //    _context.SaveChanges();
+            //}
             return _context.Articles
                 .Include(x => x.Category)
                 .Where(x => x.PublishDate <= DateTime.Now)
@@ -83,12 +90,13 @@ namespace _01_BndShopQuery.Query
                 {
                     Title = x.Title,
                     Slug = x.Slug,
+                    Id=x.Id,
                     Picture = x.Picture,
                     PictureAlt = x.PictureAlt,
                     PictureTitle = x.PictureTitle,
                     PublishDate = x.PublishDate.ToFarsi(),
                     ShortDescription = x.ShortDescription,
-                }).AsNoTracking().OrderByDescending(x => x.Id).Take(6).ToList(); ;
+                }).AsNoTracking().OrderByDescending(x => x.Id).Take(6).ToList();
         }
     }
 }

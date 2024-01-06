@@ -34,7 +34,8 @@ namespace InventoryMangement.Infrastructure.EFCore.Repository
             {
                 Id = x.Id,
                 ProductId = x.ProductId,
-                UnitPrice = x.UnitPrice
+                UnitPrice = x.UnitPrice,
+                PurchasePrice = x.PurchasePrice
             }).FirstOrDefault(x => x.Id == id);
         }
 
@@ -69,6 +70,7 @@ namespace InventoryMangement.Infrastructure.EFCore.Repository
             {
                 Id = x.Id,
                 UnitPrice = x.UnitPrice,
+                PurchasePrice = x.PurchasePrice,
                 InStock = x.InStock,
                 ProductId = x.ProductId,
                 CurrentCount = x.CalculateCurrentCount(),

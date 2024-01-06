@@ -21,6 +21,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\AccountManagement.Configuration\AccountManagement.Configuration.csproj" />
+    <ProjectReference Include="..\AddressManagement.Configuration\AddressManagement.Configuration.csproj" />
     <ProjectReference Include="..\BlogManagement.Infrastructure.Configuration\BlogManagement.Infrastructure.Configuration.csproj" />
     <ProjectReference Include="..\CommentManagement.Infrastructure.Configuration\CommentManagement.Infrastructure.Configuration.csproj" />
     <ProjectReference Include="..\DiscountManagement.Configuration\DiscountManagement.Configuration.csproj" />
@@ -29,6 +30,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Areas\Customer\Pages\Address\" />
+    <Folder Include="wwwroot\BlogPictures\" />
     <Folder Include="wwwroot\ProductPictures\" />
   </ItemGroup>
 

@@ -1,0 +1,17 @@
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AddressManagement.Domain\bin\Release\net5.0\AddressManagement.Domain.deps.json
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AddressManagement.Domain\bin\Release\net5.0\AddressManagement.Domain.dll
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AddressManagement.Domain\bin\Release\net5.0\ref\AddressManagement.Domain.dll
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AddressManagement.Domain\bin\Release\net5.0\AddressManagement.Domain.pdb
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AddressManagement.Domain\bin\Release\net5.0\AddressManagement.Application.Contracts.dll
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AddressManagement.Domain\bin\Release\net5.0\_0_Framework.dll
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AddressManagement.Domain\bin\Release\net5.0\AddressManagement.Application.Contracts.pdb
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AddressManagement.Domain\bin\Release\net5.0\_0_Framework.pdb
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AddressManagement.Domain\obj\Release\net5.0\AddressManagement.Domain.csproj.AssemblyReference.cache
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AddressManagement.Domain\obj\Release\net5.0\AddressManagement.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AddressManagement.Domain\obj\Release\net5.0\AddressManagement.Domain.AssemblyInfoInputs.cache
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AddressManagement.Domain\obj\Release\net5.0\AddressManagement.Domain.AssemblyInfo.cs
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AddressManagement.Domain\obj\Release\net5.0\AddressManagement.Domain.csproj.CoreCompileInputs.cache
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AddressManagement.Domain\obj\Release\net5.0\AddressManagement.Domain.csproj.CopyComplete
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AddressManagement.Domain\obj\Release\net5.0\AddressManagement.Domain.dll
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AddressManagement.Domain\obj\Release\net5.0\ref\AddressManagement.Domain.dll
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AddressManagement.Domain\obj\Release\net5.0\AddressManagement.Domain.pdb

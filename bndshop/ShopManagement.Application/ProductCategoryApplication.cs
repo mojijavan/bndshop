@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using _0_Framework.Application;
 using ShopManagement.Application.Contracts.ProductCategory;
 using ShopManagement.Domain.ProductCategoryAgg;
+using ShopManagement.Domain.ProductPictureAgg;
 
 
 namespace ShopManagement.Application
@@ -24,9 +25,11 @@ namespace ShopManagement.Application
             if (_productCategoryRepository.Exists(x=>x.Name==command.Name))
                 return operation.Failed(ApplicationMessages.DuplicatedRecord);
             var slug = command.Slug.Slugify();
-            var FileName = _fileUploader.Upload(command.Picture, slug);
+            var path = $"/ProductPictures//{slug}";
+            var FileName = _fileUploader.Upload(command.Picture, path);
+            var code = GetCodeForCreate();
             var ProductCategory = new ProductCategory(command.Name, command.Description, FileName,
-                                        command.PictureAlt, command.PictureTitle, command.Keywords, command.MetaDescription, slug,command.Code,command.ParentId);
+                                        command.PictureAlt, command.PictureTitle, command.Keywords, command.MetaDescription, slug,code,command.ParentId,command.Priority,command.Label);
             _productCategoryRepository.Create(ProductCategory);
             _productCategoryRepository.SaveChanges();
             return operation.Succedded();
@@ -41,9 +44,10 @@ namespace ShopManagement.Application
             if (_productCategoryRepository.Exists(x=>x.Name==command.Name&&x.Id!=command.Id))
                 return operation.Failed(ApplicationMessages.DuplicatedRecord);
             var slug = command.Slug.Slugify();
-            var FileName = _fileUploader.Upload(command.Picture,slug);
+            var path = $"/ProductPictures//{slug}";
+            var FileName = _fileUploader.Upload(command.Picture,path);
             productCategory.Edit(command.Name, command.Description, FileName,
-                command.PictureAlt, command.PictureTitle, command.Keywords, command.MetaDescription, slug,command.Code,command.LastProductCode,command.ParentId);
+                command.PictureAlt, command.PictureTitle, command.Keywords, command.MetaDescription, slug,command.Code,command.LastProductCode,command.ParentId,command.Priority,command.Label);
             _productCategoryRepository.SaveChanges();
             return operation.Succedded();
         }
@@ -62,6 +66,39 @@ namespace ShopManagement.Application
         {
             return _productCategoryRepository.GetProductCategories();
         }
+
+        public OperationResult Remove(long id)
+        {
+            var operation = new OperationResult();
+            var productCategory = _productCategoryRepository.Get(id);
+            if (productCategory == null)
+                return operation.Failed(ApplicationMessages.RecordNotFound);
+            productCategory.Remove();
+            _productCategoryRepository.SaveChanges();
+            return operation.Succedded();
+        }
+
+        public OperationResult Restore(long id)
+        {
+            var operation = new OperationResult();
+            var productCategory = _productCategoryRepository.Get(id);
+            if (productCategory == null)
+                return operation.Failed(ApplicationMessages.RecordNotFound);
+            productCategory.Restore();
+            _productCategoryRepository.SaveChanges();
+            return operation.Succedded();
+        }
+
+        public string GetCategoryAndFatherLabel(long id)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public int GetCodeForCreate()
+        {
+            return _productCategoryRepository.GetNewProductCategoryCodeById();
+        }
+
         public OperationResult UpdateLastProductCode(long id, int lastProductCode)
         {
             var productCategory = _productCategoryRepository.Get(id);
@@ -72,6 +109,17 @@ namespace ShopManagement.Application
             productCategory.EditLastProductCode(lastProductCode);
             _productCategoryRepository.SaveChanges();
             return operation.Succedded();
+        }
+        public OperationResult Delete(ProductCategoryViewModel command)
+        {
+            var operation = new OperationResult();
+            operation.IsSuccedded = false;
+            if (!_productCategoryRepository.Exists(x => x.Id == command.Id))
+                return operation.Failed(ApplicationMessages.RecordNotFound);
+            _productCategoryRepository.Delete(command.Id);
+            operation = _fileUploader.DeleteFolder(command.Picture);
+            _productCategoryRepository.SaveChanges();
+            return operation;
         }
     }
 }

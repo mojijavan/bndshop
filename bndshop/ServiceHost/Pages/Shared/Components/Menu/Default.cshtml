@@ -9,7 +9,7 @@
                 <div class="header-wrapper d-none d-lg-flex">
                     <div class="logo">
                         <a asp-page="/Index">
-                            <img src="~/Theme/assets/img/logo.png" class="img-fluid" alt="">
+                            <img style="width: 96px;" src="~/Theme/assets/img/logo.png" class="img-fluid" alt="">
                         </a>
                     </div>
                     <div class="navigation-menu-wrapper">
@@ -24,7 +24,8 @@
                                         @foreach (var category in Model.ProductCategories)
                                         {
                                             <li>
-                                                <a asp-page="./ProductCategory" asp-route-id="@category.Slug">@category.Name</a>
+                                                @*<a asp-page="./ProductCategory" asp-route-parentSlug="@category.Slug">@category.Name</a>*@
+                                                <a href="/ProductCategory/@category.Slug">@category.Name</a>
                                             </li>
                                         }
                                     </ul>
@@ -36,31 +37,21 @@
                                         {
                                             //if (category.ShowOrder != 0)
                                             //{
-                                                <li>
-                                                    <a asp-page="./ArticleCategory" asp-route-id="@category.Slug">@category.Name</a>
-                                                </li>
-                                           // }
+                                            <li>
+                                                <a asp-page="./ArticleCategory" asp-route-id="@category.Slug">@category.Name</a>
+                                            </li>
+                                            // }
                                         }
                                     </ul>
                                 </li>
-                                <li>
-                                    <a href="contact.html">تماس با ما</a>
-                                </li>
-                                <li>
-                                    <a href="/Administration/Shop/Products/Index">مدیریت</a>
-                                </li>
-                                @if (AuthHelper.IsAuthenticated())
+                                @if (AuthHelper.IsAdmin()||AuthHelper.IsContentUploader())
                                 {
                                     <li>
-                                        <a asp-page="/Account" asp-page-handler="Logout">خروج</a>
+                                        <a href="/Administration/Shop/Products/Index">مدیریت</a>
                                     </li>
                                 }
-                                else
-                                {
-                                    <li>
-                                        <a asp-page="/Account">وورد / ثبت نام</a>
-                                    </li>
-                                }
+                                   
+
                             </ul>
                         </nav>
                     </div>
@@ -158,7 +149,7 @@
                         <div class="col-6 col-md-6">
                             <div class="header-logo">
                                 <a href="/index">
-                                    <img src="~/Theme/assets/img/logo.png" class="img-fluid" alt="">
+                                    <img style="width: 96px;" src="~/Theme/assets/img/logo.png" class="img-fluid" alt="">
                                 </a>
                             </div>
                         </div>
@@ -216,29 +207,38 @@
                     <li class="menu-item-has-children">
                         <a href="#">محصولات</a>
                         <ul class="sub-menu">
-                            <li>
-                                <a href="blog-left-sidebar.html">دکوری</a>
-                            </li>
-                            <li>
-                                <a href="blog-right-sidebar.html">نگه دارنده</a>
-                            </li>
+                            @foreach (var category in Model.ProductCategories)
+                            {
+                                <li>
+                                    <a href="/ProductCategory/@category.Slug">@category.Name</a>
+                                </li>
+                            }
                         </ul>
+
                     </li>
 
                     <li class="menu-item-has-children">
                         <a href="#">مقالات</a>
                         <ul class="sub-menu">
-                            <li>
-                                <a href="blog-left-sidebar.html">گروه مقاله1</a>
-                            </li>
-                            <li>
-                                <a href="blog-right-sidebar.html">گروه مقاله2</a>
-                            </li>
+                            @foreach (var category in Model.ArticleCategories)
+                            {
+                                //if (category.ShowOrder != 0)
+                                //{
+                                <li>
+                                    <a asp-page="./ArticleCategory" asp-route-id="@category.Slug">@category.Name</a>
+                                </li>
+                                // }
+                            }
                         </ul>
+
                     </li>
-                    <li class="">
-                        <a asp-page="/Contact">تماس با ما</a>
+                    <li>
+                        <a href="/Article/%D8%AA%D9%85%D8%A7%D8%B3-%D8%A8%D8%A7-%D8%A8%D9%86%D8%AF%D8%B1%D9%85%D9%88%D8%A8%D8%A7%DB%8C%D9%84">تماس با ما</a>
                     </li>
+                    <li>
+                        <a href="/Administration/Shop/Products/Index">مدیریت</a>
+                    </li>
+                  
                 </ul>
             </nav>
 
@@ -247,13 +247,23 @@
                     <ul>
                         <li class="menu-item-has-children">
                             <a href="#">پروفایل من </a>
-                            <ul class="sub-menu">
-                                <li>
-                                    <a asp-page="/Account">ثبت نام</a>
-                                </li>
-                                <li>
-                                    <a asp-page="/Account">ورود</a>
-                                </li>
+                            <ul>
+                                @if (AuthHelper.IsAuthenticated())
+                                {
+                                    <li>
+                                        <a asp-page="/Account" asp-page-handler="Logout">حساب کاربری</a>
+                                    </li>
+                                    <li>
+                                        <a asp-page="/Account" asp-page-handler="Logout">خروج</a>
+                                    </li>
+                                }
+                                else
+                                {
+                                    <li>
+                                        <a asp-page="/Account">وورد / ثبت نام</a>
+                                    </li>
+                                }
+                                                
                             </ul>
                         </li>
                     </ul>

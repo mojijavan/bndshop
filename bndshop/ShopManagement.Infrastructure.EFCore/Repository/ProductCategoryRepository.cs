@@ -27,7 +27,9 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
                 Id = x.Id,Description = x.Description,Keywords = x.Keywords,
                 MetaDescription = x.MetaDescription,Name = x.Name,/*Picture ="",*/
                 PictureAlt = x.PictureAlt,Slug = x.Slug,PictureTitle = x.PictureTitle
-                ,Code = x.Code,LastProductCode = x.LastProductCode
+                ,Code = x.Code,LastProductCode = x.LastProductCode,
+                ParentId = x.ParentId,
+                Label = x.Label
             }).FirstOrDefault();
             return x;
         }
@@ -40,10 +42,14 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
                 Code = x.Code,
                 CreationDate = x.CreationDate.ToString(),
                 Name = x.Name,
+                ParentId = x.ParentId,
+                Priority = x.Priority,
                 Picture = x.Picture
             });
             if (!string.IsNullOrWhiteSpace(searchModel.Name))
                 query = query.Where(x => x.Name.Contains(searchModel.Name));
+            if (searchModel.ParentId!=0)
+                query = query.Where(x => x.ParentId==searchModel.ParentId);
             return query.OrderByDescending(x => x.Id).ToList();
 
         }
@@ -52,7 +58,7 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
         {
             return _context.ProductCategories.Select(x=>new ProductCategoryViewModel
             {
-                Id=x.Id,Name = x.Name
+                Id=x.Id,Name = x.Name,ParentId = x.ParentId
             }).ToList();
         }
 
@@ -61,11 +67,27 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
             return _context.ProductCategories.FirstOrDefault(x => x.Id == id).Slug;
         }
 
-        public int GetNewProductCodeById(long id)
+        public int GetNewProductCategoryCodeById()
         {
-            return _context.ProductCategories.FirstOrDefault(x => x.Id == id).LastProductCode+1;
+            var MaxCode = _context.ProductCategories.Max(x => x.Code);
+            if (MaxCode != null)
+            {
+                if (MaxCode != 0)
+                    return MaxCode + 1;
+            }
+            return 100;
         }
 
-        
+        public string GetCategoryAndFatherLabel(long id)
+        {
+            var category = _context.ProductCategories.FirstOrDefault(x => x.Id==id);
+            return  category.Label +"،"+ _context.ProductCategories.FirstOrDefault(x => x.Id == category.ParentId).Label;
+        }
+
+        public int GetNewProductCodeById(long id)
+        {
+            return _context.ProductCategories.FirstOrDefault(x => x.Id == id).LastProductCode + 1;
+        }
+
     }
 }

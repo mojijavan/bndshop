@@ -10,7 +10,6 @@ C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Infrastructu
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Infrastructure.InventoryAcl\bin\Debug\net5.0\ShopManagement.Domain.pdb
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Infrastructure.InventoryAcl\bin\Debug\net5.0\_0_Framework.pdb
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Infrastructure.InventoryAcl\bin\Debug\net5.0\ShopManagement.Application.Contracts.pdb
-C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Infrastructure.InventoryAcl\obj\Debug\net5.0\ShopManagement.Infrastructure.InventoryAcl.csproj.AssemblyReference.cache
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Infrastructure.InventoryAcl\obj\Debug\net5.0\ShopManagement.Infrastructure.InventoryAcl.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Infrastructure.InventoryAcl\obj\Debug\net5.0\ShopManagement.Infrastructure.InventoryAcl.AssemblyInfoInputs.cache
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Infrastructure.InventoryAcl\obj\Debug\net5.0\ShopManagement.Infrastructure.InventoryAcl.AssemblyInfo.cs
@@ -19,3 +18,4 @@ C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Infrastructu
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Infrastructure.InventoryAcl\obj\Debug\net5.0\ShopManagement.Infrastructure.InventoryAcl.dll
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Infrastructure.InventoryAcl\obj\Debug\net5.0\ref\ShopManagement.Infrastructure.InventoryAcl.dll
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Infrastructure.InventoryAcl\obj\Debug\net5.0\ShopManagement.Infrastructure.InventoryAcl.pdb
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Infrastructure.InventoryAcl\obj\Debug\net5.0\ShopManagement.Infrastructure.InventoryAcl.csproj.AssemblyReference.cache

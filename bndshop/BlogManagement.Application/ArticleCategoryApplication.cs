@@ -54,6 +54,24 @@ namespace BlogManagement.Application
             return operation.Succedded();
         }
 
+        public OperationResult Delete(ArticleCategoryViewModel command)
+        {
+            var operation = new OperationResult();
+            operation.IsSuccedded = false;
+            if (!_articleCategoryRepository.Exists(x => x.Id == command.Id))
+                return operation.Failed(ApplicationMessages.RecordNotFound);
+            _articleCategoryRepository.Delete(command.Id);
+            operation = _fileUploader.DeleteFolder(command.Picture);
+            _articleCategoryRepository.SaveChanges();
+            return operation;
+        }
+
+        public ArticleCategoryViewModel GetArticleCategoryViewModelWith(long id)
+        {
+            return _articleCategoryRepository.GetViewModelWith(id);
+        }
+
+
         public List<ArticleCategoryViewModel> GetArticleCategories()
         {
             return _articleCategoryRepository.GetArticleCategories();

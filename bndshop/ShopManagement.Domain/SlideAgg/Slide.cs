@@ -33,7 +33,6 @@ namespace ShopManagement.Domain.SlideAgg
         {
             if (!string.IsNullOrWhiteSpace(picture))
                 Picture = picture;
-
             PictureAlt = pictureAlt;
             PictureTitle = pictureTitle;
             Heading = heading;

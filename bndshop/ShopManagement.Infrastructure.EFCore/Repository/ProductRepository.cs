@@ -25,6 +25,7 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
                 Name = x.Name,
                 Code = x.Code,
                 Slug = x.Slug,
+                Label=x.Label,
                 CategoryId = x.CategoryId,
                 Description = x.Description,
                 Keywords = x.Keywords,
@@ -68,6 +69,7 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
                     CreationDate = x.CreationDate.ToString(),
                     Code = x.Code,
                     Count = x.Count,
+                    
                     IsInStock = x.IsInStock,
                     Picture = x.Picture,
                     CustomerDiscountRate = x.CustomerDiscountRate,

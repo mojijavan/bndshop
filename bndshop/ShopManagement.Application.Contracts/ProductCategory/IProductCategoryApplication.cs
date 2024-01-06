@@ -13,6 +13,11 @@ namespace ShopManagement.Application.Contracts.ProductCategory
         EditProductCategory GetDetails(long id);
 
         List<ProductCategoryViewModel> GetProductCategories();
+        OperationResult Remove(long id);
+        OperationResult Restore(long id);
+        string GetCategoryAndFatherLabel(long id);
+        int GetCodeForCreate();
         OperationResult UpdateLastProductCode(long id, int lastProductCode);
+        public OperationResult Delete(ProductCategoryViewModel command);
     }
 }

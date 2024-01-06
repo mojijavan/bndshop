@@ -11,6 +11,7 @@ namespace ShopManagement.Domain.ProductAgg
     public class Product:EntityBase
     {
         public string Name { get; private set; }
+        public string Label { get; private set; }
         public int Code { get; private set; }
         public bool IsInStock { get; private set; }
         public int CustomerDiscountRate { get; private set; }
@@ -26,6 +27,7 @@ namespace ShopManagement.Domain.ProductAgg
         public string PictureTitle { get; private set; }
         public string Slug { get; private set; }
         public string Keywords { get; private set; }
+        public bool IsRemoved { get; private set; }
         public string MetaDescription { get; private set; }
         public long CategoryId { get; private set; }
         public ProductCategory Category { get; private set; }
@@ -37,10 +39,20 @@ namespace ShopManagement.Domain.ProductAgg
             
         }
 
+        public void Remove()
+        {
+            IsRemoved = true;
+        }
+
+        public void Restore()
+        {
+            IsRemoved = false;
+        }
+
         public Product(string name, int code, 
             string shortDescription, string description, string picture,
             string pictureAlt, string pictureTitle, string slug, string keywords,
-            string metaDescription, long categoryId,double unitPrice)
+            string metaDescription, long categoryId,double unitPrice,string label)
         {
             Name = name;
             Code = code;
@@ -62,11 +74,12 @@ namespace ShopManagement.Domain.ProductAgg
             Keywords = keywords;
             MetaDescription = metaDescription;
             CategoryId = categoryId;
+            Label = label;
         }
 
         public void Edit(string name, int code,  string shortDescription,
             string description, string picture, string pictureAlt, string pictureTitle,
-            string slug, string keywords, string metaDescription, long categoryId,long count,double unitPrice)
+            string slug, string keywords, string metaDescription, long categoryId,long count,double unitPrice,string label)
         {
             Name = name;
             Code = code;
@@ -84,6 +97,7 @@ namespace ShopManagement.Domain.ProductAgg
             Keywords = keywords;
             MetaDescription = metaDescription;
             CategoryId = categoryId;
+            Label = label;
         }
 
         public void InStock()

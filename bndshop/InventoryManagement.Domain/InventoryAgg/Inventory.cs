@@ -8,20 +8,23 @@ namespace InventoryManagement.Domain.InventoryAgg
     {
         public long ProductId { get; private set; }
         public double UnitPrice { get; private set; }
+        public double PurchasePrice { get; private set; }
         public bool InStock { get; private set; }
         public List<InventoryOperation> Operations { get; private set; }
 
-        public Inventory(long productId, double unitPrice)
+        public Inventory(long productId, double unitPrice,double purchasePrice)
         {
             ProductId = productId;
             UnitPrice = unitPrice;
+            PurchasePrice = purchasePrice;
             InStock = false;
         }
 
-        public void Edit(long productId, double unitPrice)
+        public void Edit(long productId, double unitPrice, double purchasePrice)
         {
             ProductId = productId;
             UnitPrice = unitPrice;
+            PurchasePrice = purchasePrice;
         }
 
         public long CalculateCurrentCount()

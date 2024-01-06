@@ -12,10 +12,11 @@ namespace ShopManagement.Application.Contracts.Product
     {
         [Required(ErrorMessage = ValidationMessages.IsRequired)]
         public string Name { get;  set; }
-        
+        public string Label { get; set; }
         [Required(ErrorMessage = ValidationMessages.IsRequired)]
         public int Code { get;  set; }
 
+        public string ParentLabel { get; set; }
         public int CustomerDiscountRate { get;  set; }
         public int ColleagueDiscountRate { get;  set; }
         public double CustomerUnitPrice { get;  set; }

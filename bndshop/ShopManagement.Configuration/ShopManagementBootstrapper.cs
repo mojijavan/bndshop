@@ -31,7 +31,6 @@ using ShopManagement.Infrastructure.InventoryAcl;
 namespace ShopManagement.Configuration
 {
     public class ShopManagementBootstrapper
-        /* : IDesignTimeDbContextFactory<ShopContext>*/
     {
         public static void Configure(IServiceCollection services, string connectionString)
         {
@@ -65,13 +64,6 @@ namespace ShopManagement.Configuration
             services.AddDbContext<ShopContext>(x => x.UseSqlServer(connectionString));
         }
 
-        //public ShopContext CreateDbContext(string[] args)
-        //{
-        //    var optionsBuilder = new DbContextOptionsBuilder<ShopContext>();
-
-        //    optionsBuilder.UseSqlServer("your connection string");
-
-        //    return new ShopContext(optionsBuilder.Options); 
-        //}
+   
     }
 }

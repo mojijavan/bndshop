@@ -24,11 +24,13 @@ namespace ServiceHost.Pages
             _articleCategoryQuery = articleCategoryQuery;
         }
 
-        public void OnGet(string id)
+        public IActionResult OnGet(string id)
         {
             Article = _articleQuery.GetArticleDetails(id);
+            if (Article == null)return  RedirectToPage("/notfound");
             LatestArticles = _articleQuery.LatestArticles();
             ArticleCategories = _articleCategoryQuery.GetArticleCategories();
+            return Page();
         }
 
         public IActionResult OnPost(AddComment command, string articleSlug)

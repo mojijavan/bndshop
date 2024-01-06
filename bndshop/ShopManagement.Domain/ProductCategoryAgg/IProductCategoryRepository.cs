@@ -15,5 +15,7 @@ namespace ShopManagement.Domain.ProductCategoryAgg
         List<ProductCategoryViewModel> GetProductCategories();
         string GetSlugById(long id);
         int GetNewProductCodeById(long id);
+        int GetNewProductCategoryCodeById();
+        string GetCategoryAndFatherLabel(long id);
     }
 }
