@@ -36,3 +36,5 @@ C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\DiscountManagement.Configur
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\DiscountManagement.Configuration\obj\Debug\net5.0\ref\DiscountManagement.Configuration.dll
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\DiscountManagement.Configuration\obj\Debug\net5.0\DiscountManagement.Configuration.pdb
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\DiscountManagement.Configuration\obj\Debug\net5.0\DiscountManagement.Configuration.genruntimeconfig.cache
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\DiscountManagement.Configuration\bin\Debug\net5.0\AddressManagement.Application.Contracts.dll
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\DiscountManagement.Configuration\bin\Debug\net5.0\AddressManagement.Application.Contracts.pdb

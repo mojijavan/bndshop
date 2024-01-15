@@ -15,3 +15,5 @@ C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Domain\obj\D
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Domain\obj\Debug\net5.0\ShopManagement.Domain.dll
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Domain\obj\Debug\net5.0\ref\ShopManagement.Domain.dll
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Domain\obj\Debug\net5.0\ShopManagement.Domain.pdb
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Domain\bin\Debug\net5.0\AddressManagement.Application.Contracts.dll
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ShopManagement.Domain\bin\Debug\net5.0\AddressManagement.Application.Contracts.pdb

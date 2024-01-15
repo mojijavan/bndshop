@@ -56,3 +56,7 @@ C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\InventoryManagement.Infrast
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\InventoryManagement.Infrastructure.Configuration\obj\Release\net5.0\ref\InventoryManagement.Infrastructure.Configuration.dll
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\InventoryManagement.Infrastructure.Configuration\obj\Release\net5.0\InventoryManagement.Infrastructure.Configuration.pdb
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\InventoryManagement.Infrastructure.Configuration\obj\Release\net5.0\InventoryManagement.Infrastructure.Configuration.genruntimeconfig.cache
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\InventoryManagement.Infrastructure.Configuration\bin\Release\net5.0\AddressManagement.Application.Contracts.dll
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\InventoryManagement.Infrastructure.Configuration\bin\Release\net5.0\ShopManagement.Infrastructure.AddressAcl.dll
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\InventoryManagement.Infrastructure.Configuration\bin\Release\net5.0\AddressManagement.Application.Contracts.pdb
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\InventoryManagement.Infrastructure.Configuration\bin\Release\net5.0\ShopManagement.Infrastructure.AddressAcl.pdb

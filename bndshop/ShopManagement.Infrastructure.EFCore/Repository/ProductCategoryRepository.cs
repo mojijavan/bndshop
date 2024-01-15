@@ -81,7 +81,14 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
         public string GetCategoryAndFatherLabel(long id)
         {
             var category = _context.ProductCategories.FirstOrDefault(x => x.Id==id);
-            return  category.Label +"،"+ _context.ProductCategories.FirstOrDefault(x => x.Id == category.ParentId).Label;
+            var father= _context.ProductCategories.FirstOrDefault(x => x.Id == category.ParentId);
+            ;
+            if (father != null)
+                return category.Label + "،" + father.Label;
+            else
+            {
+                return category.Label;
+            }
         }
 
         public int GetNewProductCodeById(long id)

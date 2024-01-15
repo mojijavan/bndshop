@@ -32,3 +32,5 @@ C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\InventoryMangement.Infrastr
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\InventoryMangement.Infrastructure.EFCore\obj\Debug\net5.0\ref\InventoryMangement.Infrastructure.EFCore.dll
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\InventoryMangement.Infrastructure.EFCore\obj\Debug\net5.0\InventoryMangement.Infrastructure.EFCore.pdb
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\InventoryMangement.Infrastructure.EFCore\obj\Debug\net5.0\InventoryMangement.Infrastructure.EFCore.genruntimeconfig.cache
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\InventoryMangement.Infrastructure.EFCore\bin\Debug\net5.0\AddressManagement.Application.Contracts.dll
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\InventoryMangement.Infrastructure.EFCore\bin\Debug\net5.0\AddressManagement.Application.Contracts.pdb

@@ -1890,6 +1890,14 @@
           "AccountManagement.Application.Contracts.dll": {}
         }
       },
+      "AddressManagement.Application.Contracts/1.0.0": {
+        "dependencies": {
+          "_0_Framework": "1.0.0"
+        },
+        "runtime": {
+          "AddressManagement.Application.Contracts.dll": {}
+        }
+      },
       "ShopManagement.Application.Contracts/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Http": "2.2.2",
@@ -1901,6 +1909,7 @@
       },
       "ShopManagement.Domain/1.0.0": {
         "dependencies": {
+          "AddressManagement.Application.Contracts": "1.0.0",
           "ShopManagement.Application.Contracts": "1.0.0"
         },
         "runtime": {
@@ -3187,6 +3196,11 @@
       "hashPath": "system.xml.xpath.xdocument.4.3.0.nupkg.sha512"
     },
     "AccountManagement.Application.Contracts/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AddressManagement.Application.Contracts/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -24,7 +24,6 @@ namespace ServiceHost.Areas.Administration.Pages.Blog.Articles
         public void OnGet()
         {
             Command = new CreateArticle();
-            
             ArticleCategories = new SelectList(_articleCategoryApplication.GetArticleCategories(), "Id", "Name");
         }
 

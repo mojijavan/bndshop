@@ -2681,6 +2681,19 @@
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
       },
+      "AddressManagement.Application.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "_0_Framework": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/AddressManagement.Application.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AddressManagement.Application.Contracts.dll": {}
+        }
+      },
       "InventoryManagement.Application.Contract/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -2713,6 +2726,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
+          "AddressManagement.Application.Contracts": "1.0.0",
           "ShopManagement.Application.Contracts": "1.0.0"
         },
         "compile": {
@@ -8346,6 +8360,11 @@
         "system.xml.xpath.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xdocument.nuspec"
       ]
+    },
+    "AddressManagement.Application.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../AddressManagement.Application.Contracts/AddressManagement.Application.Contracts.csproj",
+      "msbuildProject": "../AddressManagement.Application.Contracts/AddressManagement.Application.Contracts.csproj"
     },
     "InventoryManagement.Application.Contract/1.0.0": {
       "type": "project",

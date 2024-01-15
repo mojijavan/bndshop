@@ -28,9 +28,9 @@
                     </div>
                     <div class="form-group">
                         <label class="sr-only" asp-for="SearchModel.Code"></label>
-                        <input class="form-control" asp-for="SearchModel.Code" placeholder="کد" />
+                        <input class="form-control" asp-for="SearchModel.Code" value="0" placeholder="کد" />
                     </div>
-                    <div class="form-group">
+                      <div class="form-group">
                         <label class="sr-only" asp-for="SearchModel.CategoryId"></label>
                         <select class="form-control" asp-for="SearchModel.CategoryId" asp-items="Model.ProductCategories">
                             <option value="0"></option>

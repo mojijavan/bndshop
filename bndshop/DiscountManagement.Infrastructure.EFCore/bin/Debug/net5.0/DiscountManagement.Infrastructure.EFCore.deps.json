@@ -2397,6 +2397,14 @@
           "AccountMangement.Infrastructure.EFCore.dll": {}
         }
       },
+      "AddressManagement.Application.Contracts/1.0.0": {
+        "dependencies": {
+          "_0_Framework": "1.0.0"
+        },
+        "runtime": {
+          "AddressManagement.Application.Contracts.dll": {}
+        }
+      },
       "DiscountManagement.Application.Contract/1.0.0": {
         "dependencies": {
           "ShopManagement.Application.Contracts": "1.0.0",
@@ -2426,6 +2434,7 @@
       },
       "ShopManagement.Domain/1.0.0": {
         "dependencies": {
+          "AddressManagement.Application.Contracts": "1.0.0",
           "ShopManagement.Application.Contracts": "1.0.0"
         },
         "runtime": {
@@ -3964,6 +3973,11 @@
       "sha512": ""
     },
     "AccountMangement.Infrastructure.EFCore/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AddressManagement.Application.Contracts/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

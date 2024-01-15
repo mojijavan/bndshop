@@ -1,11 +1,12 @@
 ﻿
 
 using System.Collections.Generic;
+using _0_Framework.Domain;
 using AddressManagement.Application.Contracts.Address;
 
 namespace AddressManagement.Domain.AddressAgg
 {
-    public interface IAddressRepository
+    public interface IAddressRepository : IRepository<long, Address>
     {
         Address GetAddressWith(long id);
         List<AddressViewModel> GetAddressWithAccount(long id);

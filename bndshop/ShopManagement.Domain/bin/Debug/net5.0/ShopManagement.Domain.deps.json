@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v5.0": {
       "ShopManagement.Domain/1.0.0": {
         "dependencies": {
+          "AddressManagement.Application.Contracts": "1.0.0",
           "ShopManagement.Application.Contracts": "1.0.0"
         },
         "runtime": {
@@ -1881,6 +1882,14 @@
           "System.Xml.XPath": "4.3.0"
         }
       },
+      "AddressManagement.Application.Contracts/1.0.0": {
+        "dependencies": {
+          "_0_Framework": "1.0.0"
+        },
+        "runtime": {
+          "AddressManagement.Application.Contracts.dll": {}
+        }
+      },
       "ShopManagement.Application.Contracts/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Http": "2.2.2",
@@ -3168,6 +3177,11 @@
       "sha512": "sha512-jw9oHHEIVW53mHY9PgrQa98Xo2IZ0ZjrpdOTmtvk+Rvg4tq7dydmxdNqUvJ5YwjDqhn75mBXWttWjiKhWP53LQ==",
       "path": "system.xml.xpath.xdocument/4.3.0",
       "hashPath": "system.xml.xpath.xdocument.4.3.0.nupkg.sha512"
+    },
+    "AddressManagement.Application.Contracts/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "ShopManagement.Application.Contracts/1.0.0": {
       "type": "project",

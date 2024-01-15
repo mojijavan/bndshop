@@ -12,6 +12,7 @@ namespace AddressManagement.Domain.AddressAgg
         public long AccountId { get; private set; }
         public string Description { get; private set; }
         public string PostalCode { get; private set; }
+        public bool IsRemoved { get; private set; }
         public long ProvinceId { get; private set; }
         public long CityId { get; private set; }
         public City City { get; private set; }
@@ -23,6 +24,7 @@ namespace AddressManagement.Domain.AddressAgg
             Description = description;
             CreationDate=DateTime.Now;
             PostalCode = postalCode;
+            CreationDate = DateTime.Now;
             ProvinceId = provinceId;
             CityId = cityId;
         }

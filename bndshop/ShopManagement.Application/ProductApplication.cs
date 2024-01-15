@@ -64,8 +64,8 @@ namespace ShopManagement.Application
             var path = $"/ProductPictures//{product.Category.Slug}//{slug}";
             //var path = $"{product.Category.Slug}//{slug}";
             var picturePath = _fileUploader.Upload(command.Picture, path);
-            //var FileName = _fileUploader.Upload(command.Picture, slug);
-                product.Edit(command.Name, command.Code, command.ShortDescription,
+            //var FileName = _fileUploader.Upload(command.Picture, slug);              
+            product.Edit(command.Name, command.Code, command.ShortDescription,
                 command.MetaDescription, picturePath
                 , command.PictureAlt, command.PictureTitle, slug, command.Keywords, command.MetaDescription,
                 command.CategoryId,command.Count,command.UnitPrice,command.Label);
@@ -100,8 +100,6 @@ namespace ShopManagement.Application
             var product = _productRepository.Get(id);
             if (product == null)
                 return operation.Failed(ApplicationMessages.RecordNotFound);
-
-
             product.NotInStock();
             _productRepository.SaveChanges();
             return operation.Succedded();
@@ -145,8 +143,6 @@ namespace ShopManagement.Application
             var product = _productRepository.Get(id);
             if (product == null)
                 return operation.Failed(ApplicationMessages.RecordNotFound);
-
-
             product.UpdatePrice(unitPrice);
             _productRepository.SaveChanges();
             return operation.Succedded();
@@ -167,8 +163,6 @@ namespace ShopManagement.Application
             var product = _productRepository.Get(id);
             if (product == null)
                 return operation.Failed(ApplicationMessages.RecordNotFound);
-
-
             product.UpdateCount(count);
             _productRepository.SaveChanges();
             return operation.Succedded();

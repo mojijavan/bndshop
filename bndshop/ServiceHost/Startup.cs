@@ -61,13 +61,14 @@ namespace ServiceHost
             //var connectionString = Configuration.GetConnectionString("LocalDB");
             
             var connectionString = Configuration.GetConnectionString("RemoteBndMobileDB");
+            AddressManagementBootstrapper.Configure(services, connectionString);
             ShopManagementBootstrapper.Configure(services, connectionString);
             DiscountManagementBootstrapper.Configure(services, connectionString);
             InventoryManagementBootstrapper.Configure(services, connectionString);
             BlogManagementBootstrapper.Configure(services, connectionString);
             CommentManagementBootstrapper.Configure(services, connectionString);
             AccountManagementBootstrapper.Configure(services, connectionString);
-            AddressManagementBootstrapper.Configure(services, connectionString);
+            
 
 
 

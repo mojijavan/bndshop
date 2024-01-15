@@ -3283,6 +3283,7 @@
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
           "AddressManagement.Application.Contracts": "1.0.0",
+          "AddressManagement.Domain": "1.0.0",
           "_0_Framework": "1.0.0"
         },
         "compile": {

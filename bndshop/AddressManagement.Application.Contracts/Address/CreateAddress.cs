@@ -8,6 +8,7 @@ namespace AddressManagement.Application.Contracts.Address
         public string Description { get;  set; }
         public string PostalCode { get;  set; }
         public long ProvinceId { get;  set; }
+        public bool IsRemoved { get;  set; }
         public long CityId { get;  set; }
     }
 }

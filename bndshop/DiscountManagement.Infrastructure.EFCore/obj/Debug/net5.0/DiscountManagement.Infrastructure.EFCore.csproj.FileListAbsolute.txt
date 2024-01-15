@@ -32,3 +32,5 @@ C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\DiscountManagement.Infrastr
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\DiscountManagement.Infrastructure.EFCore\obj\Debug\net5.0\ref\DiscountManagement.Infrastructure.EFCore.dll
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\DiscountManagement.Infrastructure.EFCore\obj\Debug\net5.0\DiscountManagement.Infrastructure.EFCore.pdb
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\DiscountManagement.Infrastructure.EFCore\obj\Debug\net5.0\DiscountManagement.Infrastructure.EFCore.genruntimeconfig.cache
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\DiscountManagement.Infrastructure.EFCore\bin\Debug\net5.0\AddressManagement.Application.Contracts.dll
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\DiscountManagement.Infrastructure.EFCore\bin\Debug\net5.0\AddressManagement.Application.Contracts.pdb

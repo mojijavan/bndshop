@@ -50,7 +50,7 @@
                                     <tbody>
                                     @foreach (var item in Model.Cart.Items)
                                     {
-                                        <tr>
+                                        <tr class="carttabletr">
                                             <td class="pro-thumbnail">
                                                 <a>
                                                     <img src="@item.Picture" class="img-fluid"
@@ -61,21 +61,27 @@
                                                 <a>@item.Name</a>
                                             </td>
                                             <td class="pro-price">
+                                                <span class="mobileview">قیمت واحد : </span>
                                                 <span>@item.UnitPrice.ToMoney() تومان</span>
                                             </td>
                                             <td class="pro-price">
+                                                <span class="mobileview">تعداد : </span>
                                                 <span>@item.Count عدد</span>
                                             </td>
                                             <td class="pro-subtotal">
+                                                <span class="mobileview">مبلغ کل بدون تخفیف : </span>
                                                 <span>@item.TotalItemPrice.ToMoney() تومان</span>
                                             </td>
                                             <td class="pro-subtotal">
+                                                <span class="mobileview">درصد تخفیف : </span>
                                                 <span>@item.DiscountRate %</span>
                                             </td>
                                             <td class="pro-subtotal">
+                                                <span class="mobileview">مبلغ کل تخفیف : </span>
                                                 <span>@item.DiscountAmount.ToMoney() تومان</span>
                                             </td>
                                             <td class="pro-subtotal">
+                                                <span class="mobileview">مبلغ پساز تخفیف : </span>
                                                 <span>@item.ItemPayAmount.ToMoney() تومان</span>
                                             </td>
                                         </tr>

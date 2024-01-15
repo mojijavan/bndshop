@@ -329,10 +329,15 @@ C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\slides\2023-12-31-11-32-07-blutoo.jpg
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\slides\2023-12-31-11-37-26-blutoo.jpg
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\slides\2023-12-31-11-53-49-bluspeak.jpg
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\slides\2023-12-31-12-12-37-blutoo.jpg
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\slides\2023-12-31-12-12-46-bluspeak.jpg
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\slides\Thumbs.db
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\آداپتور-شارژر\آداپتور-اصلی-آیفون-سری-8\2023-12-31-10-16-00-49e41677-5e8a-4918-a94e-900fe81916f4.jpg
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\آداپتور-شارژر\آداپتور-اصلی-آیفون-سری-8\2023-12-31-15-13-37-49e41677-5e8a-4918-a94e-900fe81916f4.jpg
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\اسپیکر-بلوتوث\2023-12-31-11-53-20-bluspeak.jpg
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\اسپیکر-بلوتوث\2023-12-31-11-55-41-BndMobileCategory.jpg
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\اسپیکر-بلوتوث\2023-12-31-12-11-58-BndMobileCategory.jpg
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\اسپیکر-بلوتوث\Thumbs.db
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\اسپیکر\2023-10-26-10-00-18-speaker-types.jpg
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\اسپیکر\2023-10-26-10-06-55-speakers.jpg
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\اسپیکر\2023-10-26-10-34-18-speakers.jpg
@@ -342,6 +347,9 @@ C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\اسپیکر\اسپیکر-2\2023-10-26-12-13-39-4ae2ab20-1bdd-46f8-81bf-088c2db3bcdf.jpg
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\اسپیکر\اسپیکر-3\2023-10-26-12-14-16-b70e54e4-0b6e-4bca-860c-8e276650a01b.jpg
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\اسپیکر\اسپیکر\2023-10-26-11-40-17-ce8bba50-b811-4702-a613-da93d7fa8c24.jpg
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\شارژر-فندکی\شارژر-فندکی-سامسونگ-مدل-sx925u\2024-01-05-12-03-40-image_30791660660833.jpg
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\شارژر-فندکی\شارژر-فندکی-سامسونگ-مدل-sx925u\2024-01-05-12-04-10-image_307101660660831.jpg
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\شارژر-فندکی\شارژر-فندکی-سامسونگ-مدل-sx925u\2024-01-05-12-04-31-image_307141660660873.jpg
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\شارژر\2023-10-26-10-03-19-Capture.JPG
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\شارژر\2023-10-26-10-35-14-Capture.JPG
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\شارژر\2023-11-22-10-59-34-charger.jpg
@@ -353,11 +361,24 @@ C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\هندزفری\2023-10-26-10-34-47-handsfree.jpg
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\هندزفری\2023-11-22-10-50-46-Untitled-1.jpg
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\هندزفری\2023-12-31-11-48-07-hhhhhhhhhh.jpg
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\هندزفری\2024-01-06-09-13-53-2023-11-17-14-54-51-a698b7ef-7141-4aa3-b1aa-d8b9eab8d140.jpg
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\هندزفری\Thumbs.db
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\هندزفری\هندزفری-1\2023-11-17-14-50-57-2b975ed8-92c5-4ebe-bf06-3ed8f7648c29.jpg
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\هندزفری\هندزفری-1\Thumbs.db
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\هندزفری\هندزفری-2\2023-11-17-14-54-51-a698b7ef-7141-4aa3-b1aa-d8b9eab8d140.jpg
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\هندزفری\هندزفری-2\Thumbs.db
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\هندزفری\هندزفری-3\2023-11-17-14-59-45-200b539b-8917-4594-871f-e27a46a4a57c.jpg
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\هندزفری\هندزفری-3\Thumbs.db
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\پاور-بانک\2023-12-02-10-12-24-powerbank.jpg
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\کابل-aux\کابل-aux-نیتو-ntiu-nt-aux002-طول-1-متر\2024-01-05-12-22-43-Nitu-Audio-Cable-NT-AUX002-3.jpg
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\کابل-aux\کابل-صدا-1-8-متری-nitu-aux-مدل-001-مشکی-طلایی\2024-01-05-12-27-53-Screenshot 2024-01-05 005639.jpg
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\کابل-micro-usb\کابل-mikro-usb-biboshi\2024-01-05-12-39-02-LiHeL80Jp7-ZZpTY.jpg
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\کابل-micro-usb\کابل-شارژ-konfulon-مدل-s53\2024-01-05-12-35-31-646db02115840572f7bc69a7f296b9b2 (1).jpg
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\کابل-type-c\نعغنعغالا\2023-12-30-11-44-02-biboshi.JPG
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\کابل-type-c\کابل-تایپ-سی-بیبوشی-مدل-ca003a-طول-1-متر\2024-01-05-12-44-21-c34b2a578c6cec87a99fb3d7f2949a74d3011f14_1605436931.jpg
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\کابل-type-c\کابل-شارژر-تایپ-سی-مدل-ogm-ca-02\2024-01-05-12-16-01-00b8a57676bfdea033a36955face41a70dd0de1d_1593600989.jpg
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\کابل-type-c\کابل-شارژر-تایپ-سی-مدل-ogm-ca-03\2024-01-05-12-14-37-ebe70f.jpg
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\کابل-type-c\کابل-شارژر-سامسونگ-s10\2024-01-03-07-16-23-5a000893-053d-4f74-a55d-c2b8f19cc82d.jpg
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\Theme\assets\css\Custom.css
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\Theme\assets\css\style.css
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\Theme\assets\css\vendors.css
@@ -640,6 +661,7 @@ C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\ShopManagement.Configuration.dll
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\ShopManagement.Domain.dll
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\ShopManagement.Infrastructure.AccountAcl.dll
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\ShopManagement.Infrastructure.AddressAcl.dll
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\ShopManagement.Infrastructure.EFCore.dll
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\ShopManagement.Infrastructure.InventoryAcl.dll
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\_01_BndShopQuery.dll
@@ -679,6 +701,7 @@ C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\ShopManagement.Application.Contracts.pdb
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\ShopManagement.Domain.pdb
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\ShopManagement.Infrastructure.AccountAcl.pdb
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\ShopManagement.Infrastructure.AddressAcl.pdb
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\ShopManagement.Infrastructure.EFCore.pdb
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\ShopManagement.Infrastructure.InventoryAcl.pdb
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\_01_BndShopQuery.pdb

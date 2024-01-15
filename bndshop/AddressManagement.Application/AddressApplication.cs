@@ -2,54 +2,63 @@
 using System.Collections.Generic;
 using _0_Framework.Application;
 using AddressManagement.Application.Contracts.Address;
+using AddressManagement.Domain.AddressAgg;
 
 namespace AddressManagement.Application
 {
     public class AddressApplication:IAddressApplication
     {
+        private readonly IAddressRepository _addressRepository;
+
+        public AddressApplication(IAddressRepository addressRepository)
+        {
+            _addressRepository = addressRepository;
+        }
+
         public OperationResult Create(CreateAddress command)
         {
-            throw new System.NotImplementedException();
+            var operation = new OperationResult();
+            var address = new Address(command.AccountId,command.Description,command.PostalCode,command.ProvinceId,command.CityId);
+            _addressRepository.Create(address);
+            _addressRepository.SaveChanges();
+            return operation.Succedded();
         }
 
         public OperationResult Edit(EditAddress command)
         {
-            throw new System.NotImplementedException();
+            var operation = new OperationResult();
+            var address = _addressRepository.Get(command.Id);
+            if (address == null)
+                return operation.Failed(ApplicationMessages.RecordNotFound);
+            address.Edit(command.AccountId, command.Description, command.PostalCode, command.ProvinceId, command.CityId);
+            _addressRepository.SaveChanges();
+            return operation.Succedded();
         }
 
         public EditAddress GetDetails(long id)
         {
-            throw new System.NotImplementedException();
-        }
-
-        public OperationResult IsStock(long id)
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public OperationResult NotInStock(long id)
-        {
-            throw new System.NotImplementedException();
+           return  _addressRepository.GetDetails(id);
         }
 
         public List<AddressViewModel> Search(AddressSearchModel searchModel)
         {
-            throw new System.NotImplementedException();
+            return _addressRepository.Search(searchModel);
         }
 
-        public List<AddressViewModel> GetProducts()
+        public List<AddressViewModel> GetAddresses()
         {
-            throw new System.NotImplementedException();
+            return _addressRepository.GetAddress();
         }
 
-        public OperationResult UpdateCustomerDiscountRate(long id, int customerDiscountRate)
+        public OperationResult Delete(AddressViewModel command)
         {
-            throw new System.NotImplementedException();
-        }
-
-        public OperationResult UpdateColleagueDiscountRate(long id, int colleagueDiscountRate)
-        {
-            throw new System.NotImplementedException();
+            var operation = new OperationResult();
+            operation.IsSuccedded = false;
+            if (!_addressRepository.Exists(x => x.Id == command.Id))
+                return operation.Failed(ApplicationMessages.RecordNotFound);
+            _addressRepository.Delete(command.Id);
+            _addressRepository.SaveChanges();
+            return operation;
         }
     }
 }

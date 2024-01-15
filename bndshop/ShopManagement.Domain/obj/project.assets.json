@@ -2681,6 +2681,19 @@
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
       },
+      "AddressManagement.Application.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "_0_Framework": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/AddressManagement.Application.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AddressManagement.Application.Contracts.dll": {}
+        }
+      },
       "ShopManagement.Application.Contracts/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -8320,6 +8333,11 @@
         "system.xml.xpath.xdocument.nuspec"
       ]
     },
+    "AddressManagement.Application.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../AddressManagement.Application.Contracts/AddressManagement.Application.Contracts.csproj",
+      "msbuildProject": "../AddressManagement.Application.Contracts/AddressManagement.Application.Contracts.csproj"
+    },
     "ShopManagement.Application.Contracts/1.0.0": {
       "type": "project",
       "path": "../ShopManagement.Application.Contracts/ShopManagement.Application.Contracts.csproj",
@@ -8333,6 +8351,7 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "AddressManagement.Application.Contracts >= 1.0.0",
       "ShopManagement.Application.Contracts >= 1.0.0"
     ]
   },
@@ -8367,6 +8386,9 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
+            "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Application.Contracts\\AddressManagement.Application.Contracts.csproj": {
+              "projectPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Application.Contracts\\AddressManagement.Application.Contracts.csproj"
+            },
             "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj": {
               "projectPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj"
             }

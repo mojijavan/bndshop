@@ -56,3 +56,7 @@ C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\BlogManagement.Infrastructu
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\BlogManagement.Infrastructure.Configuration\obj\Debug\net5.0\ref\BlogManagement.Infrastructure.Configuration.dll
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\BlogManagement.Infrastructure.Configuration\obj\Debug\net5.0\BlogManagement.Infrastructure.Configuration.pdb
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\BlogManagement.Infrastructure.Configuration\obj\Debug\net5.0\BlogManagement.Infrastructure.Configuration.genruntimeconfig.cache
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\BlogManagement.Infrastructure.Configuration\bin\Debug\net5.0\AddressManagement.Application.Contracts.dll
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\BlogManagement.Infrastructure.Configuration\bin\Debug\net5.0\ShopManagement.Infrastructure.AddressAcl.dll
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\BlogManagement.Infrastructure.Configuration\bin\Debug\net5.0\AddressManagement.Application.Contracts.pdb
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\BlogManagement.Infrastructure.Configuration\bin\Debug\net5.0\ShopManagement.Infrastructure.AddressAcl.pdb

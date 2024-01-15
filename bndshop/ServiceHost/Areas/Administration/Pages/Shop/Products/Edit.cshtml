@@ -50,7 +50,7 @@
                         <div class="col-md-12">
                             <div class="form-group">
                                 <label asp-for="Command.UnitPrice" class="control-label">قیمت واحد</label>
-                                <input type="number" class="form-control"  onClick="this.select();" asp-for="Command.UnitPrice">
+                                <input type="number" class="form-control" onClick="this.select();" asp-for="Command.UnitPrice">
                                 @*<input type="text" class="form-control" asp-for="Picture">*@
                                 <span asp-validation-for="Command.UnitPrice" class="error"></span>
                             </div>
@@ -120,12 +120,12 @@
                         <div class="col-md-12">
                             <div class="form-group no-margin">
                                 <label asp-for="Command.Label" class="control-label">لیبل دسته بندی کالا</label>
-                                <div style="display: flex;">
+                                <div style="display: flex;flex-wrap: wrap">
                                     @{
                                         var labels = @Model.Command.ParentLabel.Split("،");
                                         foreach (var x in labels)
                                         {
-                                            <input type="button" class="ActiveLabel" value="@x"/>
+                                            <input type="button" class="ActiveLabel" value="@x" />
                                             @*<div class="ActiveLabel">@x</div>*@
                                             @*<input type="button" class="btn btn-default waves-effect m-b-5" value="@x" />*@
                                         }
@@ -145,6 +145,7 @@
                         </div>
                     </div>
                     <input type="hidden" asp-for="Command.Id" />
+                    <input type="hidden" asp-for="Command.Count" />
                     <button type="submit" class="btn btn-success waves-effect waves-light m-b-5">ویرایش</button>
                     <a asp-page="./Index" class="btn btn-dark waves-effect waves-light m-b-5">بازگشت</a>
                 </form>

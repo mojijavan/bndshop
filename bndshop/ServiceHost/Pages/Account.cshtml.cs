@@ -32,7 +32,11 @@ namespace ServiceHost.Pages
             {
                 var result = _accountApplication.Login(command);
                 if (result.IsSuccedded)
+                {
+                    
                     return RedirectToPage("/Index");
+                }
+                   
 
                 LoginMessage = result.Message;
                 return RedirectToPage("/Account");

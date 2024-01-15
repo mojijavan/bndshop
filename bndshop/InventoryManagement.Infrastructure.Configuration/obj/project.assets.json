@@ -3316,6 +3316,19 @@
           "bin/placeholder/AccountMangement.Infrastructure.EFCore.dll": {}
         }
       },
+      "AddressManagement.Application.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "_0_Framework": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/AddressManagement.Application.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AddressManagement.Application.Contracts.dll": {}
+        }
+      },
       "BlogManagement.Application.Contracts/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -3522,6 +3535,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
+          "AddressManagement.Application.Contracts": "1.0.0",
           "ShopManagement.Application.Contracts": "1.0.0"
         },
         "compile": {
@@ -3529,6 +3543,21 @@
         },
         "runtime": {
           "bin/placeholder/ShopManagement.Domain.dll": {}
+        }
+      },
+      "ShopManagement.Infrastructure.AddressAcl/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "AddressManagement.Application.Contracts": "1.0.0",
+          "ShopManagement.Domain": "1.0.0",
+          "_0_Framework": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ShopManagement.Infrastructure.AddressAcl.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ShopManagement.Infrastructure.AddressAcl.dll": {}
         }
       },
       "ShopManagement.Infrastructure.EFCore/1.0.0": {
@@ -3551,10 +3580,12 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
+          "AddressManagement.Application.Contracts": "1.0.0",
           "BlogManagement.Infrastructure.EFCore": "1.0.0",
           "CommnetManagement.Infrastructure.EFCore": "1.0.0",
           "DiscountManagement.Infrastructure.EFCore": "1.0.0",
           "InventoryMangement.Infrastructure.EFCore": "1.0.0",
+          "ShopManagement.Infrastructure.AddressAcl": "1.0.0",
           "ShopManagement.Infrastructure.EFCore": "1.0.0"
         },
         "compile": {
@@ -10321,6 +10352,11 @@
       "path": "../AccountMangement.Infrastructure.EFCore/AccountMangement.Infrastructure.EFCore.csproj",
       "msbuildProject": "../AccountMangement.Infrastructure.EFCore/AccountMangement.Infrastructure.EFCore.csproj"
     },
+    "AddressManagement.Application.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../AddressManagement.Application.Contracts/AddressManagement.Application.Contracts.csproj",
+      "msbuildProject": "../AddressManagement.Application.Contracts/AddressManagement.Application.Contracts.csproj"
+    },
     "BlogManagement.Application.Contracts/1.0.0": {
       "type": "project",
       "path": "../BlogManagement.Application.Contracts/BlogManagement.Application.Contracts.csproj",
@@ -10395,6 +10431,11 @@
       "type": "project",
       "path": "../ShopManagement.Domain/ShopManagement.Domain.csproj",
       "msbuildProject": "../ShopManagement.Domain/ShopManagement.Domain.csproj"
+    },
+    "ShopManagement.Infrastructure.AddressAcl/1.0.0": {
+      "type": "project",
+      "path": "../ShopManagement.Infrastructure.AddressAcl/ShopManagement.Infrastructure.AddressAcl.csproj",
+      "msbuildProject": "../ShopManagement.Infrastructure.AddressAcl/ShopManagement.Infrastructure.AddressAcl.csproj"
     },
     "ShopManagement.Infrastructure.EFCore/1.0.0": {
       "type": "project",

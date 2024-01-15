@@ -1,0 +1,53 @@
+﻿@using _0_Framework.Infrastructure
+@inject _0_Framework.Application.IAuthHelper AuthHelper;
+@{
+    var currentAccout = AuthHelper.CurrentAccountInfo();
+}
+<div class="left side-menu">
+    <div class="sidebar-inner slimscrollleft">
+        <div class="user-details">
+            <div class="pull-right">
+                <img src="~/AdminTheme/assets/images/users/avatar-1.jpg" alt="" class="thumb-md img-circle">
+            </div>
+            <div class="user-info">
+                <div class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">@currentAccout.Fullname <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="javascript:void(0)"><i class="md md-face-unlock"></i> Profile<div class="ripple-wrapper"></div></a></li>
+                        <li><a href="javascript:void(0)"><i class="md md-settings"></i> Settings</a></li>
+                        <li><a href="javascript:void(0)"><i class="md md-lock"></i> Lock screen</a></li>
+                        <li><a href="javascript:void(0)"><i class="md md-settings-power"></i> Logout</a></li>
+                    </ul>
+                </div>
+
+                <p class="text-muted m-0">@currentAccout.Role</p>
+            </div>
+        </div>
+        <!--- Divider -->
+        <div id="sidebar-menu">
+            <ul>
+                <li>
+                    <a asp-page="/Index" class="waves-effect"><i class="md md-home"></i><span> داشبورد </span></a>
+                </li>
+                <li>
+                    <a asp-page="/Comments/Index" class="waves-effect"><i class="md md-home"></i><span> اطلاعات کاربری </span></a>
+                </li>
+                <li>
+                    <a asp-page="/Inventory/Index" class="waves-effect"><i class="md md-home"></i><span> سفارش ها </span></a>
+                </li>
+                <li>
+                    <a asp-page="/Inventory/Index" class="waves-effect"><i class="md md-home"></i><span> آدرس ها </span></a>
+                </li>
+                <li>
+                    <a href="/Customer/Address/Index" class="waves-effect"><i class="md md-home"></i><span> شکایات</span></a>
+                </li>
+                <li>
+                    <a asp-page="/Account" asp-page-handler="Logout" class="waves-effect active"><i class="fa fa-sign-out"></i><span> خروج </span></a>
+                </li>
+               
+            </ul>
+            <div class="clearfix"></div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>

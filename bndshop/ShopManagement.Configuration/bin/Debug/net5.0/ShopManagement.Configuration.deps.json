@@ -2415,6 +2415,14 @@
           "AccountMangement.Infrastructure.EFCore.dll": {}
         }
       },
+      "AddressManagement.Application.Contracts/1.0.0": {
+        "dependencies": {
+          "_0_Framework": "1.0.0"
+        },
+        "runtime": {
+          "AddressManagement.Application.Contracts.dll": {}
+        }
+      },
       "BlogManagement.Application.Contracts/1.0.0": {
         "dependencies": {
           "_0_Framework": "1.0.0"
@@ -2551,6 +2559,7 @@
       },
       "ShopManagement.Domain/1.0.0": {
         "dependencies": {
+          "AddressManagement.Application.Contracts": "1.0.0",
           "ShopManagement.Application.Contracts": "1.0.0"
         },
         "runtime": {
@@ -2564,6 +2573,16 @@
         },
         "runtime": {
           "ShopManagement.Infrastructure.AccountAcl.dll": {}
+        }
+      },
+      "ShopManagement.Infrastructure.AddressAcl/1.0.0": {
+        "dependencies": {
+          "AddressManagement.Application.Contracts": "1.0.0",
+          "ShopManagement.Domain": "1.0.0",
+          "_0_Framework": "1.0.0"
+        },
+        "runtime": {
+          "ShopManagement.Infrastructure.AddressAcl.dll": {}
         }
       },
       "ShopManagement.Infrastructure.EFCore/1.0.0": {
@@ -2589,10 +2608,12 @@
       },
       "_01_BndShopQuery/1.0.0": {
         "dependencies": {
+          "AddressManagement.Application.Contracts": "1.0.0",
           "BlogManagement.Infrastructure.EFCore": "1.0.0",
           "CommnetManagement.Infrastructure.EFCore": "1.0.0",
           "DiscountManagement.Infrastructure.EFCore": "1.0.0",
           "InventoryMangement.Infrastructure.EFCore": "1.0.0",
+          "ShopManagement.Infrastructure.AddressAcl": "1.0.0",
           "ShopManagement.Infrastructure.EFCore": "1.0.0"
         },
         "runtime": {
@@ -4131,6 +4152,11 @@
       "serviceable": false,
       "sha512": ""
     },
+    "AddressManagement.Application.Contracts/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "BlogManagement.Application.Contracts/1.0.0": {
       "type": "project",
       "serviceable": false,
@@ -4207,6 +4233,11 @@
       "sha512": ""
     },
     "ShopManagement.Infrastructure.AccountAcl/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ShopManagement.Infrastructure.AddressAcl/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

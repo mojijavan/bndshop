@@ -15,3 +15,5 @@ C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AddressManagement.Applicati
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AddressManagement.Application\obj\Release\net5.0\AddressManagement.Application.dll
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AddressManagement.Application\obj\Release\net5.0\ref\AddressManagement.Application.dll
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AddressManagement.Application\obj\Release\net5.0\AddressManagement.Application.pdb
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AddressManagement.Application\bin\Release\net5.0\AddressManagement.Domain.dll
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AddressManagement.Application\bin\Release\net5.0\AddressManagement.Domain.pdb

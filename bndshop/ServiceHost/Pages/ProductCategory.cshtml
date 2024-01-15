@@ -50,7 +50,7 @@
                                     <div class="row shop-product-wrap grid three-column">
                                         @foreach (var product in Model.ProductCategory.Products)
                                         {
-                                            <div class="col-12 col-lg-4 col-md-4 col-sm-6">
+                                            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-4 col-xs-4 productCategory">
                                                 <div class="single-grid-product grid-view-product">
                                                     <div class="single-grid-product__image">
                                                         @if (product.HasDiscount)
@@ -69,37 +69,50 @@
                                                             <span class="category">
                                                                 <a asp-page="/ProductCategory" asp-route-id="@Model.ProductCategory.Slug">@Model.ProductCategory.Name</a>
                                                             </span>
-                                                            @*<span class="rating">
-                                <i class="ion-android-star active"></i>
-                                <i class="ion-android-star active"></i>
-                                <i class="ion-android-star active"></i>
-                                <i class="ion-android-star active"></i>
-                                <i class="ion-android-star-outline"></i>
-                            </span>*@
+
                                                         </div>
 
                                                         <h2 class="single-grid-product__title">
-                                                            <a asp-page="/Product" asp-route-id="@product.Slug">@product.Name</a>
+                                                            <a asp-page="/Product" asp-route-id="@product.Slug">
+                                                                <span>
+                                                                    @product.Name
+                                                                </span>
+                                                            </a>
                                                         </h2>
-                                                        <p class="single-grid-product__price">
-                                                            @if (product.HasDiscount)
+                                                        <div class="single-grid-product__price">
+
+
+                                                            @if (@product.IsInStock)
                                                             {
-                                                                <span class="discounted-price">@product.PriceWithDiscount تومان</span>
-                                                                <span class="main-price discounted">@product.UnitPrice تومان</span>
-                                                            }
-                                                            else
-                                                            {
-                                                                @if (@product.IsInStock)
+                                                                @if (product.HasDiscount)
                                                                 {
-                                                                    <span class="main-price">@product.UnitPrice تومان</span>
+                                                            <div class="pricebox">
+                                                                <div><span class="main-price discounted">@product.UnitPrice تومان</span></div>
+                                                                <div><span class="discounted-price">@product.PriceWithDiscount تومان</span></div>
+
+                                                            </div>
                                                                 }
                                                                 else
                                                                 {
-                                                                    <span class="main-price">عدم موجودی</span>
+                                                                    <div class="pricebox">
+                                                                        <div><span class="main-price discounted"></span></div>   
+                                                                        <div><span class="main-price">@product.UnitPrice تومان</span></div>
+                                                                    </div>
                                                                 }
-
+                                                                @*<span class="main-price">@product.UnitPrice تومان</span>*@
                                                             }
-                                                        </p>
+                                                            else
+                                                            {
+                                                                @if (product.HasDiscount)
+                                                                {
+                                                                    <div class="pricebox"><span class="main-price">عدم موجودی</span>
+                                                                    </div>
+                                                                }
+                                                                
+                                                            }
+
+
+                                                        </div>
 
                                                     </div>
                                                 </div>
@@ -111,7 +124,7 @@
                                             {
                                                 foreach (var product in productModel.Products)
                                                 {
-                                                    <div class="col-12 col-lg-4 col-md-4 col-sm-6">
+                                                    <div class="col-xl-3 col-lg-4 col-md-4 col-sm-4 col-xs-4 productCategory">
                                                         <div class="single-grid-product grid-view-product">
                                                             <div class="single-grid-product__image">
                                                                 @if (product.HasDiscount)
@@ -134,27 +147,42 @@
                                                                 </div>
 
                                                                 <h2 class="single-grid-product__title">
-                                                                    <a asp-page="/Product" asp-route-id="@product.Slug">@product.Name</a>
+                                                                    <a asp-page="/Product" asp-route-id="@product.Slug">
+                                                                        <span>
+                                                                            @product.Name
+                                                                        </span>
+                                                                        
+                                                                    </a>
                                                                 </h2>
-                                                                <p class="single-grid-product__price">
-                                                                    @if (product.HasDiscount)
+                                                                <div class="single-grid-product__price">
+
+                                                                    @if (@product.IsInStock)
                                                                     {
-                                                                        <span class="discounted-price">@product.PriceWithDiscount تومان</span>
-                                                                        <span class="main-price discounted">@product.UnitPrice تومان</span>
-                                                                    }
-                                                                    else
-                                                                    {
-                                                                        @if (@product.IsInStock)
+                                                                        @if (product.HasDiscount)
                                                                         {
-                                                                            <span class="main-price">@product.UnitPrice تومان</span>
+                                                                    <div class="pricebox">
+                                                                        <div><span class="main-price discounted">@product.UnitPrice تومان</span></div>
+                                                                        <div><span class="discounted-price">@product.PriceWithDiscount تومان</span></div>
+
+                                                                    </div>
                                                                         }
                                                                         else
                                                                         {
-                                                                            <span class="main-price">عدم موجودی</span>
+                                                                            <div class="pricebox">
+                                                                                <div><span class="main-price discounted"></span></div>
+                                                                                <div><span class="main-price">@product.UnitPrice تومان</span></div>
+                                                                            </div>
                                                                         }
-
                                                                     }
-                                                                </p>
+                                                                    else
+                                                                    {
+                                                                        <div class="pricebox"><span class="main-price">عدم موجودی</span>
+                                                                        </div>
+                                                                        
+                                                                    }
+
+
+                                                                </div>
 
                                                             </div>
                                                         </div>

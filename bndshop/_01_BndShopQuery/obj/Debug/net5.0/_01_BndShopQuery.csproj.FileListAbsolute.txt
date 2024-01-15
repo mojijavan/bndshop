@@ -49,3 +49,7 @@ C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\_01_BndShopQuery\obj\Debug\
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\_01_BndShopQuery\obj\Debug\net5.0\_01_BndShopQuery.dll
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\_01_BndShopQuery\obj\Debug\net5.0\ref\_01_BndShopQuery.dll
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\_01_BndShopQuery\obj\Debug\net5.0\_01_BndShopQuery.pdb
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\_01_BndShopQuery\bin\Debug\net5.0\AddressManagement.Application.Contracts.dll
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\_01_BndShopQuery\bin\Debug\net5.0\ShopManagement.Infrastructure.AddressAcl.dll
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\_01_BndShopQuery\bin\Debug\net5.0\AddressManagement.Application.Contracts.pdb
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\_01_BndShopQuery\bin\Debug\net5.0\ShopManagement.Infrastructure.AddressAcl.pdb

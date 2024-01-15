@@ -3697,6 +3697,7 @@
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
           "AddressManagement.Application.Contracts": "1.0.0",
+          "AddressManagement.Domain": "1.0.0",
           "_0_Framework": "1.0.0"
         },
         "compile": {
@@ -4130,6 +4131,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
+          "AddressManagement.Application.Contracts": "1.0.0",
           "ShopManagement.Application.Contracts": "1.0.0"
         },
         "compile": {
@@ -4151,6 +4153,21 @@
         },
         "runtime": {
           "bin/placeholder/ShopManagement.Infrastructure.AccountAcl.dll": {}
+        }
+      },
+      "ShopManagement.Infrastructure.AddressAcl/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "AddressManagement.Application.Contracts": "1.0.0",
+          "ShopManagement.Domain": "1.0.0",
+          "_0_Framework": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ShopManagement.Infrastructure.AddressAcl.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ShopManagement.Infrastructure.AddressAcl.dll": {}
         }
       },
       "ShopManagement.Infrastructure.EFCore/1.0.0": {
@@ -4188,10 +4205,12 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
+          "AddressManagement.Application.Contracts": "1.0.0",
           "BlogManagement.Infrastructure.EFCore": "1.0.0",
           "CommnetManagement.Infrastructure.EFCore": "1.0.0",
           "DiscountManagement.Infrastructure.EFCore": "1.0.0",
           "InventoryMangement.Infrastructure.EFCore": "1.0.0",
+          "ShopManagement.Infrastructure.AddressAcl": "1.0.0",
           "ShopManagement.Infrastructure.EFCore": "1.0.0"
         },
         "compile": {
@@ -11767,6 +11786,11 @@
       "type": "project",
       "path": "../ShopManagement.Infrastructure.AccountAcl/ShopManagement.Infrastructure.AccountAcl.csproj",
       "msbuildProject": "../ShopManagement.Infrastructure.AccountAcl/ShopManagement.Infrastructure.AccountAcl.csproj"
+    },
+    "ShopManagement.Infrastructure.AddressAcl/1.0.0": {
+      "type": "project",
+      "path": "../ShopManagement.Infrastructure.AddressAcl/ShopManagement.Infrastructure.AddressAcl.csproj",
+      "msbuildProject": "../ShopManagement.Infrastructure.AddressAcl/ShopManagement.Infrastructure.AddressAcl.csproj"
     },
     "ShopManagement.Infrastructure.EFCore/1.0.0": {
       "type": "project",

@@ -10,12 +10,9 @@ namespace AddressManagement.Application.Contracts.Address
         OperationResult Create(CreateAddress command);
         OperationResult Edit(EditAddress command);
         EditAddress GetDetails(long id);
-        OperationResult IsStock(long id);
-        OperationResult NotInStock(long id);
         List<AddressViewModel> Search(AddressSearchModel searchModel);
-        List<AddressViewModel> GetProducts();
+        List<AddressViewModel> GetAddresses();
+        OperationResult Delete(AddressViewModel command);
 
-        OperationResult UpdateCustomerDiscountRate(long id, int customerDiscountRate);
-        OperationResult UpdateColleagueDiscountRate(long id, int colleagueDiscountRate);
     }
 }

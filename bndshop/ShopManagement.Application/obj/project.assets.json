@@ -3293,6 +3293,19 @@
           "bin/placeholder/AccountMangement.Infrastructure.EFCore.dll": {}
         }
       },
+      "AddressManagement.Application.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "_0_Framework": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/AddressManagement.Application.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AddressManagement.Application.Contracts.dll": {}
+        }
+      },
       "DiscountManagement.Application.Contract/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -3400,6 +3413,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
+          "AddressManagement.Application.Contracts": "1.0.0",
           "ShopManagement.Application.Contracts": "1.0.0"
         },
         "compile": {
@@ -10152,6 +10166,11 @@
       "type": "project",
       "path": "../AccountMangement.Infrastructure.EFCore/AccountMangement.Infrastructure.EFCore.csproj",
       "msbuildProject": "../AccountMangement.Infrastructure.EFCore/AccountMangement.Infrastructure.EFCore.csproj"
+    },
+    "AddressManagement.Application.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../AddressManagement.Application.Contracts/AddressManagement.Application.Contracts.csproj",
+      "msbuildProject": "../AddressManagement.Application.Contracts/AddressManagement.Application.Contracts.csproj"
     },
     "DiscountManagement.Application.Contract/1.0.0": {
       "type": "project",

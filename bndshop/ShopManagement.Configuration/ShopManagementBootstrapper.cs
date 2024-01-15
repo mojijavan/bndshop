@@ -1,6 +1,7 @@
 ﻿
 using _0_Framework.Infrastructure;
 using _01_BndShopQuery.Contracts;
+using _01_BndShopQuery.Contracts.Address;
 using _01_BndShopQuery.Contracts.Product;
 using _01_BndShopQuery.Contracts.ProductCategory;
 using _01_BndShopQuery.Contracts.Slide;
@@ -23,6 +24,7 @@ using ShopManagement.Domain.ProductPictureAgg;
 using ShopManagement.Domain.Services;
 using ShopManagement.Domain.SlideAgg;
 using ShopManagement.Infrastructure.AccountAcl;
+using ShopManagement.Infrastructure.AddressAcl;
 using ShopManagement.Infrastructure.EFCore;
 using ShopManagement.Infrastructure.EFCore.Repository;
 using ShopManagement.Infrastructure.InventoryAcl;
@@ -34,6 +36,9 @@ namespace ShopManagement.Configuration
     {
         public static void Configure(IServiceCollection services, string connectionString)
         {
+            services.AddTransient<IShopInventoryAcl, ShopInventoryAcl>();
+            services.AddTransient<IShopAccountAcl, ShopAccountAcl>();
+
             services.AddTransient<IProductCategoryApplication, ProductCategoryApplication>();
             services.AddTransient<IProductCategoryRepository, ProductCategoryRepository>();
 
@@ -48,12 +53,14 @@ namespace ShopManagement.Configuration
 
             services.AddTransient<IOrderRepository, OrderRepository>();
             services.AddTransient<IOrderApplication, OrderApplication>();
+            services.AddTransient<IShopAddressAcl, ShopAddressAcl>();
+
+            services.AddTransient<IAddressQuery, AddressQuery>();
 
             services.AddSingleton<ICartService, CartService>();
 
-            services.AddTransient<IShopInventoryAcl, ShopInventoryAcl>();
-            services.AddTransient<IShopAccountAcl, ShopAccountAcl>();
-
+          
+            
             services.AddTransient<ISlideQuery, SlideQuery>();
             services.AddTransient<IProductCategoryQuery, ProductCategoryQuery>();
             services.AddTransient<IProductQuery, ProductQuery>();

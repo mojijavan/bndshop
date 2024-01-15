@@ -9,6 +9,7 @@
       "AddressManagement.Application/1.0.0": {
         "dependencies": {
           "AddressManagement.Application.Contracts": "1.0.0",
+          "AddressManagement.Domain": "1.0.0",
           "_0_Framework": "1.0.0"
         },
         "runtime": {
@@ -1890,6 +1891,15 @@
           "AddressManagement.Application.Contracts.dll": {}
         }
       },
+      "AddressManagement.Domain/1.0.0": {
+        "dependencies": {
+          "AddressManagement.Application.Contracts": "1.0.0",
+          "_0_Framework": "1.0.0"
+        },
+        "runtime": {
+          "AddressManagement.Domain.dll": {}
+        }
+      },
       "_0_Framework/1.0.0": {
         "dependencies": {
           "MailKit": "4.2.0",
@@ -3170,6 +3180,11 @@
       "hashPath": "system.xml.xpath.xdocument.4.3.0.nupkg.sha512"
     },
     "AddressManagement.Application.Contracts/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AddressManagement.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

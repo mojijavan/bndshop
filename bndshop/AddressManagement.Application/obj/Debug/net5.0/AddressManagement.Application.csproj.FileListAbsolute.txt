@@ -15,3 +15,5 @@ C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AddressManagement.Applicati
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AddressManagement.Application\obj\Debug\net5.0\AddressManagement.Application.csproj.CopyComplete
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AddressManagement.Application\bin\Debug\net5.0\_0_Framework.dll
 C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AddressManagement.Application\bin\Debug\net5.0\_0_Framework.pdb
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AddressManagement.Application\bin\Debug\net5.0\AddressManagement.Domain.dll
+C:\Users\pgsoc\Desktop\Projects\bndshop\Code\bndshop\AddressManagement.Application\bin\Debug\net5.0\AddressManagement.Domain.pdb

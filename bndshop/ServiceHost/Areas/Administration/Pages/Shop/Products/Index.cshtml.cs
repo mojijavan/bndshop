@@ -29,7 +29,12 @@ namespace ServiceHost.Areas.Administration.Pages.Shop.Products
                 new SelectList(_productCategoryApplication.GetProductCategories(), "Id", "Name");
             Product = _productApplication.Search(searchModel);
         }
-
+        public void OnPost(ProductSearchModel searchModel)
+        {
+            ProductCategories =
+                new SelectList(_productCategoryApplication.GetProductCategories(), "Id", "Name");
+            Product = _productApplication.Search(searchModel);
+        }
         //public IActionResult OnGetCreate()
         //{
         //    var command = new CreateProduct();
