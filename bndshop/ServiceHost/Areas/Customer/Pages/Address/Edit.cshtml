@@ -1,9 +1,63 @@
 ﻿@page
+@using Microsoft.EntityFrameworkCore
 @model ServiceHost.Areas.Customer.Pages.Address.EditModel
 @{
     Layout = "Shared/_Layout";
     ViewData["title"] = "ویرایش آدرس";
 }
+
 <div class="row">
-    <div>Edit</div>
+    <div class="col-md-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">ویرایش آدرس</h3>
+            </div>
+            <div class="panel-body">
+                <form method="post" enctype="multipart/form-data">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label asp-for="Command.ProvinceId">نام استان</label>
+                                <select class="form-control" asp-for="Command.ProvinceId" asp-items="Model.Provinces">
+                                    @*<option value="0">گروه مقاله ...</option>*@
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label asp-for="Command.CityId">نام شهر</label>
+                                <select class="form-control" asp-for="Command.CityId" asp-items="Model.Cities">
+                                    @*<option value="0">گروه مقاله ...</option>*@
+                                </select>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label asp-for="Command.PostalCode" class="control-label">کد پستی</label>
+                                <input type="text" class="form-control" asp-for="Command.PostalCode">
+                                <span asp-validation-for="Command.PostalCode" class="error"></span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group no-margin">
+                                <label asp-for="Command.Description" class="control-label">توضیحات</label>
+                                <textarea class="form-control" id="BodyContent" asp-for="Command.Description"></textarea>
+                                <span asp-validation-for="Command.Description" class="error"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <input type="hidden" asp-for="Command.Id"  />
+                    <button type="submit" class="btn btn-success waves-effect waves-light m-b-5">ویرایش</button>
+                    <a asp-page="./Index" class="btn btn-dark waves-effect waves-light m-b-5">بازگشت</a>
+                </form>
+            </div>
+        </div>
+    </div>
 </div>

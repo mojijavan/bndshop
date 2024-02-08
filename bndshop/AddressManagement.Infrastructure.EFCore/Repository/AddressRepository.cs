@@ -45,7 +45,7 @@ namespace AddressManagement.Infrastructure.EFCore.Repository
         {
             return _context.Addresses.Select(x => new EditAddress()
             {
-                AccountId = x.Id,CityId=x.CityId,Description=x.Description,
+                AccountId = x.AccountId,CityId=x.CityId,Description=x.Description,
                 ProvinceId = x.ProvinceId,PostalCode = x.PostalCode,Id=x.Id,
             }).FirstOrDefault(x => x.Id == id);
         }

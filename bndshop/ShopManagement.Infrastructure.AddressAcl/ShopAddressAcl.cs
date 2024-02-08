@@ -11,6 +11,7 @@ namespace ShopManagement.Infrastructure.AddressAcl
     {
         private readonly IAuthHelper _authHelper;
         private readonly IAddressApplication _addressApplication;
+        
 
         public ShopAddressAcl(IAuthHelper authHelper, IAddressApplication addressApplication)
         {
@@ -21,6 +22,8 @@ namespace ShopManagement.Infrastructure.AddressAcl
         public EditAddress GetAddressAcl(long id)
         {
             EditAddress editAddress = _addressApplication.GetDetails(id);
+            var id1 = _authHelper.CurrentAccountId();
+            
             if (editAddress.AccountId == _authHelper.CurrentAccountId())
                 return editAddress;
             return new EditAddress();
@@ -29,7 +32,9 @@ namespace ShopManagement.Infrastructure.AddressAcl
         {
             searchModel.AccountId = _authHelper.CurrentAccountId();
             if(searchModel.AccountId!=0)
-            return _addressApplication.Search(searchModel);
+             return _addressApplication.Search(searchModel);
+            return new List<AddressViewModel>();
+        
         }
 
         public OperationResult CreateAcl(CreateAddress command)

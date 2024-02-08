@@ -23,28 +23,28 @@ namespace ServiceHost.Areas.Customer.Pages.Orders
             _accountApplication = accountApplication;
         }
 
-        public void OnGet(OrderSearchModel searchModel)
-        {
-            Accounts = new SelectList(_accountApplication.GetAccounts(), "Id", "Fullname");
-            Orders = _orderApplication.Search(searchModel);
-        }
+        //public void OnGet(OrderSearchModel searchModel)
+        //{
+        //    Accounts = new SelectList(_accountApplication.GetAccounts(), "Id", "Fullname");
+        //    Orders = _orderApplication.Search(searchModel);
+        //}
 
-        public IActionResult OnGetConfirm(long id)
-        {
-            _orderApplication.PaymentSucceeded(id, 0);
-            return RedirectToPage("./Index");
-        }
+        //public IActionResult OnGetConfirm(long id)
+        //{
+        //    _orderApplication.PaymentSucceeded(id, 0);
+        //    return RedirectToPage("./Index");
+        //}
 
-        public IActionResult OnGetCancel(long id)
-        {
-            _orderApplication.Cancel(id);
-            return RedirectToPage("./Index");
-        }
+        //public IActionResult OnGetCancel(long id)
+        //{
+        //    _orderApplication.Cancel(id);
+        //    return RedirectToPage("./Index");
+        //}
 
-        public IActionResult OnGetItems(long id)
-        {
-            var items = _orderApplication.GetItems(id);
-            return Partial("Items", items);
-        }
+        //public IActionResult OnGetItems(long id)
+        //{
+        //    var items = _orderApplication.GetItems(id);
+        //    return Partial("Items", items);
+        //}
     }
 }
