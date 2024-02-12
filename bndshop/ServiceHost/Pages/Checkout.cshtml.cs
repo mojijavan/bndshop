@@ -4,7 +4,9 @@ using System.Linq;
 using _0_Framework.Application;
 using _0_Framework.Application.ZarinPal;
 using _01_BndShopQuery.Contracts;
+using _01_BndShopQuery.Contracts.Address;
 using _01_BndShopQuery.Contracts.Product;
+using AddressManagement.Application.Contracts.Address;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -25,11 +27,13 @@ namespace ServiceHost.Pages
         private readonly IZarinPalFactory _zarinPalFactory;
         private readonly IOrderApplication _orderApplication;
         private readonly ICartCalculatorService _cartCalculatorService;
+        public List<AddressViewModel> Address;
+        private readonly IAddressQuery _addressQuery;
 
         public CheckoutModel(ICartCalculatorService cartCalculatorService, ICartService cartService,
             IProductQuery productQuery, IOrderApplication orderApplication, 
             IZarinPalFactory zarinPalFactory,
-            IAuthHelper authHelper)
+            IAuthHelper authHelper, IAddressQuery addressQuery)
         {
             Cart = new Cart();
             _cartCalculatorService = cartCalculatorService;
@@ -38,6 +42,7 @@ namespace ServiceHost.Pages
             _orderApplication = orderApplication;
             _zarinPalFactory = zarinPalFactory;
             _authHelper = authHelper;
+            _addressQuery = addressQuery;
         }
 
         public void OnGet()
@@ -49,6 +54,7 @@ namespace ServiceHost.Pages
                 item.CalculateTotalItemPrice();
             Cart = _cartCalculatorService.ComputeCart(cartItems);
             _cartService.Set(Cart);
+            Address = _addressQuery.GetAddresses(searchModel);
         }
 
         public IActionResult OnPostPay(int paymentMethod)
