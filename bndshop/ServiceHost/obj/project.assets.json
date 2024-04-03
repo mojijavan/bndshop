@@ -3620,20 +3620,6 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "AccountManagement.Application/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
-        "dependencies": {
-          "AccountManagement.Application.Contracts": "1.0.0",
-          "AccountManagement.Domain": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/AccountManagement.Application.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/AccountManagement.Application.dll": {}
-        }
-      },
       "AccountManagement.Application.Contracts/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -3651,8 +3637,6 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
-          "AccountManagement.Application": "1.0.0",
-          "AccountManagement.Application.Contracts": "1.0.0",
           "AccountMangement.Infrastructure.EFCore": "1.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.17",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.17"
@@ -3664,24 +3648,10 @@
           "bin/placeholder/AccountManagement.Configuration.dll": {}
         }
       },
-      "AccountManagement.Domain/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
-        "dependencies": {
-          "AccountManagement.Application.Contracts": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/AccountManagement.Domain.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/AccountManagement.Domain.dll": {}
-        }
-      },
       "AccountMangement.Infrastructure.EFCore/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
-          "AccountManagement.Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.17",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.17"
         },
@@ -11612,11 +11582,6 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
-    "AccountManagement.Application/1.0.0": {
-      "type": "project",
-      "path": "../AccountManagement.Application/AccountManagement.Application.csproj",
-      "msbuildProject": "../AccountManagement.Application/AccountManagement.Application.csproj"
-    },
     "AccountManagement.Application.Contracts/1.0.0": {
       "type": "project",
       "path": "../AccountManagement.Application.Contracts/AccountManagement.Application.Contracts.csproj",
@@ -11626,11 +11591,6 @@
       "type": "project",
       "path": "../AccountManagement.Configuration/AccountManagement.Configuration.csproj",
       "msbuildProject": "../AccountManagement.Configuration/AccountManagement.Configuration.csproj"
-    },
-    "AccountManagement.Domain/1.0.0": {
-      "type": "project",
-      "path": "../AccountManagement.Domain/AccountManagement.Domain.csproj",
-      "msbuildProject": "../AccountManagement.Domain/AccountManagement.Domain.csproj"
     },
     "AccountMangement.Infrastructure.EFCore/1.0.0": {
       "type": "project",
