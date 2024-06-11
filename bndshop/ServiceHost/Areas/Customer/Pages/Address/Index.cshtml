@@ -14,7 +14,7 @@
                         <h2 class="breadcrumb-content__title">لیست آدرس ها</h2>
                         <ul class="breadcrumb-content__page-map">
                             <li>
-                                <a asp-page="./Index">حساب کاربری</a>
+                                <a href="/customer/orders/index">حساب کاربری</a>
                             </li>
                             <li class="active">آدرس ها</li>
                         </ul>
@@ -26,7 +26,7 @@
 </div>
 <div class="row">
     <div>
-        <a href="./Create">آدرس جدید</a>
+        <a href="/customer/address/Create">آدرس جدید</a>
     </div>
 </div>
 <div class="page-content-area">
@@ -71,7 +71,7 @@
                                                 </td>
                                                 
                                                 <td class="pro-subtotal">
-                                                    <a class="btn btn-warning pull-right m-rl-5" asp-page="./Edit" asp-route-id="@item.Id">
+                                                    <a class="btn btn-warning pull-right m-rl-5" href="/customer/address/Edit?id=@item.Id">
                                                         <i class="fa fa-edit"></i> ویرایش
                                                     </a>   
                                                     @if (item.IsRemoved)

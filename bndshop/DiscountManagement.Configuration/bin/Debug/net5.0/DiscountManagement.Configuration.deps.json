@@ -2383,7 +2383,8 @@
       },
       "AccountManagement.Domain/1.0.0": {
         "dependencies": {
-          "AccountManagement.Application.Contracts": "1.0.0"
+          "AccountManagement.Application.Contracts": "1.0.0",
+          "_0_Framework": "1.0.0"
         },
         "runtime": {
           "AccountManagement.Domain.dll": {}
@@ -2391,6 +2392,7 @@
       },
       "AccountMangement.Infrastructure.EFCore/1.0.0": {
         "dependencies": {
+          "AccountManagement.Application.Contracts": "1.0.0",
           "AccountManagement.Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.17",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.17"

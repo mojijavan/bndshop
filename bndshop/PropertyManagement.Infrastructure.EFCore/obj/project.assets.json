@@ -8,23 +8,23 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\pgsoc\\.nuget\\packages\\": {},
+    "C:\\Users\\user\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\PropertyManagement.Infrastructure.EFCore\\PropertyManagement.Infrastructure.EFCore.csproj",
+      "projectUniqueName": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\PropertyManagement.Infrastructure.EFCore\\PropertyManagement.Infrastructure.EFCore.csproj",
       "projectName": "PropertyManagement.Infrastructure.EFCore",
-      "projectPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\PropertyManagement.Infrastructure.EFCore\\PropertyManagement.Infrastructure.EFCore.csproj",
-      "packagesPath": "C:\\Users\\pgsoc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\PropertyManagement.Infrastructure.EFCore\\obj\\",
+      "projectPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\PropertyManagement.Infrastructure.EFCore\\PropertyManagement.Infrastructure.EFCore.csproj",
+      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+      "outputPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\PropertyManagement.Infrastructure.EFCore\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\pgsoc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

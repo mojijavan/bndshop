@@ -43,7 +43,8 @@ namespace AddressManagement.Infrastructure.EFCore.Repository
 
         public EditAddress GetDetails(long id)
         {
-            return _context.Addresses.Select(x => new EditAddress()
+            return _context.Addresses.Include(x => x.Province)
+                .Include(x => x.City).Select(x => new EditAddress()
             {
                 AccountId = x.AccountId,CityId=x.CityId,Description=x.Description,
                 ProvinceId = x.ProvinceId,PostalCode = x.PostalCode,Id=x.Id,

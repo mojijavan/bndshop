@@ -60,7 +60,7 @@ namespace ServiceHost
             //var connectionString = Configuration.GetConnectionString("BndShopDB1");
             //var connectionString = Configuration.GetConnectionString("LocalDB");
             
-            var connectionString = Configuration.GetConnectionString("RemoteBndMobileDB");
+            var connectionString = Configuration.GetConnectionString("RemoteShopDB");
             AddressManagementBootstrapper.Configure(services, connectionString);
             ShopManagementBootstrapper.Configure(services, connectionString);
             DiscountManagementBootstrapper.Configure(services, connectionString);
@@ -89,6 +89,8 @@ namespace ServiceHost
             {
                 options.AddPolicy("AdminArea",
                     builder => builder.RequireRole(new List<string> { Roles.Administrator, Roles.ContentUploader }));
+                options.AddPolicy("CustomerPolicy",
+                   builder => builder.RequireRole(new List<string> { Roles.Administrator, Roles.ContentUploader,Roles.SystemUser,Roles.ColleagueUser }));
 
                 options.AddPolicy("Shop",
                     builder => builder.RequireRole(new List<string> { Roles.Administrator, Roles.ContentUploader }));
@@ -113,6 +115,8 @@ namespace ServiceHost
                     options.Conventions.AuthorizeAreaFolder("Administration", "/Shop", "Shop");
                     options.Conventions.AuthorizeAreaFolder("Administration", "/Discounts", "Discount");
                     options.Conventions.AuthorizeAreaFolder("Administration", "/Accounts", "Account");
+                    options.Conventions.AuthorizeAreaFolder("Customer", "/", "CustomerPolicy");
+                    //Customer
                 })
                 //.AddApplicationPart(typeof(ProductController).Assembly)
                 //.AddApplicationPart(typeof(InventoryController).Assembly)

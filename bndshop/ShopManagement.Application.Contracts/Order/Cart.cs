@@ -6,6 +6,7 @@ namespace ShopManagement.Application.Contracts.Order
     {
         public double TotalAmount { get; set; }
         public double DiscountAmount { get; set; }
+        public long AddresstId { get; set; }
         public double PayAmount { get; set; }
         public double DeliveryAmount { get; set; }
         public int PaymentMethod { get; set; }

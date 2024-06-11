@@ -4161,6 +4161,7 @@ select {
     line-height: 30px;
     margin-top: 35px;
     margin-bottom: 0;
+    direction:rtl;
     padding-top: 35px;
     padding-bottom: 35px;
     color: #707070;
@@ -4926,9 +4927,11 @@ select {
     .cart-summary .cart-summary-wrap {
         margin-bottom: 20px;
         padding: 45px 50px;
-        background-color: #f2f2f2;
+        /*background-color: #f2f2f2;*/
     }
-
+    .checkout .d-flex{
+        padding:2px;
+    }
         .cart-summary .cart-summary-wrap h4 {
             font-size: 20px;
             font-weight: 700;
@@ -5238,7 +5241,7 @@ select {
 
 .checkout-payment-method {
     padding: 45px;
-    background-color: #f2f2f2;
+    /*background-color: #f2f2f2;*/
 }
 
 /*-- Single Payment Method --*/

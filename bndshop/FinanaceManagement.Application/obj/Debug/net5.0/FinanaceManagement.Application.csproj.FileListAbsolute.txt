@@ -1,0 +1,17 @@
+D:\jahanpoor\Projects\bndshop\Code\bndshop\FinanaceManagement.Application\bin\Debug\net5.0\FinanaceManagement.Application.deps.json
+D:\jahanpoor\Projects\bndshop\Code\bndshop\FinanaceManagement.Application\bin\Debug\net5.0\FinanaceManagement.Application.dll
+D:\jahanpoor\Projects\bndshop\Code\bndshop\FinanaceManagement.Application\bin\Debug\net5.0\ref\FinanaceManagement.Application.dll
+D:\jahanpoor\Projects\bndshop\Code\bndshop\FinanaceManagement.Application\bin\Debug\net5.0\FinanaceManagement.Application.pdb
+D:\jahanpoor\Projects\bndshop\Code\bndshop\FinanaceManagement.Application\bin\Debug\net5.0\FinanaceManagement.Application.Contracts.dll
+D:\jahanpoor\Projects\bndshop\Code\bndshop\FinanaceManagement.Application\bin\Debug\net5.0\_0_Framework.dll
+D:\jahanpoor\Projects\bndshop\Code\bndshop\FinanaceManagement.Application\bin\Debug\net5.0\FinanaceManagement.Application.Contracts.pdb
+D:\jahanpoor\Projects\bndshop\Code\bndshop\FinanaceManagement.Application\bin\Debug\net5.0\_0_Framework.pdb
+D:\jahanpoor\Projects\bndshop\Code\bndshop\FinanaceManagement.Application\obj\Debug\net5.0\FinanaceManagement.Application.csproj.AssemblyReference.cache
+D:\jahanpoor\Projects\bndshop\Code\bndshop\FinanaceManagement.Application\obj\Debug\net5.0\FinanaceManagement.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\jahanpoor\Projects\bndshop\Code\bndshop\FinanaceManagement.Application\obj\Debug\net5.0\FinanaceManagement.Application.AssemblyInfoInputs.cache
+D:\jahanpoor\Projects\bndshop\Code\bndshop\FinanaceManagement.Application\obj\Debug\net5.0\FinanaceManagement.Application.AssemblyInfo.cs
+D:\jahanpoor\Projects\bndshop\Code\bndshop\FinanaceManagement.Application\obj\Debug\net5.0\FinanaceManagement.Application.csproj.CoreCompileInputs.cache
+D:\jahanpoor\Projects\bndshop\Code\bndshop\FinanaceManagement.Application\obj\Debug\net5.0\FinanaceManagement.Application.csproj.CopyComplete
+D:\jahanpoor\Projects\bndshop\Code\bndshop\FinanaceManagement.Application\obj\Debug\net5.0\FinanaceManagement.Application.dll
+D:\jahanpoor\Projects\bndshop\Code\bndshop\FinanaceManagement.Application\obj\Debug\net5.0\ref\FinanaceManagement.Application.dll
+D:\jahanpoor\Projects\bndshop\Code\bndshop\FinanaceManagement.Application\obj\Debug\net5.0\FinanaceManagement.Application.pdb

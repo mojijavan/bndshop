@@ -41,6 +41,7 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
             {
                 Id = x.Id,
                 Count = x.Count,
+               
                 DiscountRate = x.DiscountRate,
                 OrderId = x.OrderId,
                 ProductId = x.ProductId,
@@ -64,6 +65,7 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
                 AccountId = x.AccountId,
                 DiscountAmount = x.DiscountAmount,
                 IsCanceled = x.IsCanceled,
+                AddresstId=x.AddressId,
                 IsPaid = x.IsPaid,
                 IssueTrackingNo = x.IssueTrackingNo,
                 PayAmount = x.PayAmount,

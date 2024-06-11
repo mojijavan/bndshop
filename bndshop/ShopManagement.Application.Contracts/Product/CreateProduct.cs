@@ -13,6 +13,8 @@ namespace ShopManagement.Application.Contracts.Product
         [Required(ErrorMessage = ValidationMessages.IsRequired)]
         public string Name { get;  set; }
         public string Label { get; set; }
+        public string Specifications { get; set; }
+       
         [Required(ErrorMessage = ValidationMessages.IsRequired)]
         public int Code { get;  set; }
 

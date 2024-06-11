@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\_0_Framework\\_0_Framework.csproj": {}
+    "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\_0_Framework\\_0_Framework.csproj": {}
   },
   "projects": {
-    "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\_0_Framework\\_0_Framework.csproj": {
+    "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\_0_Framework\\_0_Framework.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\_0_Framework\\_0_Framework.csproj",
+        "projectUniqueName": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\_0_Framework\\_0_Framework.csproj",
         "projectName": "_0_Framework",
-        "projectPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\_0_Framework\\_0_Framework.csproj",
-        "packagesPath": "C:\\Users\\pgsoc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\_0_Framework\\obj\\",
+        "projectPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\_0_Framework\\_0_Framework.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\_0_Framework\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\pgsoc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

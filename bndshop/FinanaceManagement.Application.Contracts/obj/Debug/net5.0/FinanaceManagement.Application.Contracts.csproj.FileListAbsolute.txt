@@ -1,0 +1,15 @@
+D:\jahanpoor\Projects\bndshop\Code\bndshop\FinanaceManagement.Application.Contracts\bin\Debug\net5.0\FinanaceManagement.Application.Contracts.deps.json
+D:\jahanpoor\Projects\bndshop\Code\bndshop\FinanaceManagement.Application.Contracts\bin\Debug\net5.0\FinanaceManagement.Application.Contracts.dll
+D:\jahanpoor\Projects\bndshop\Code\bndshop\FinanaceManagement.Application.Contracts\bin\Debug\net5.0\ref\FinanaceManagement.Application.Contracts.dll
+D:\jahanpoor\Projects\bndshop\Code\bndshop\FinanaceManagement.Application.Contracts\bin\Debug\net5.0\FinanaceManagement.Application.Contracts.pdb
+D:\jahanpoor\Projects\bndshop\Code\bndshop\FinanaceManagement.Application.Contracts\bin\Debug\net5.0\_0_Framework.dll
+D:\jahanpoor\Projects\bndshop\Code\bndshop\FinanaceManagement.Application.Contracts\bin\Debug\net5.0\_0_Framework.pdb
+D:\jahanpoor\Projects\bndshop\Code\bndshop\FinanaceManagement.Application.Contracts\obj\Debug\net5.0\FinanaceManagement.Application.Contracts.csproj.AssemblyReference.cache
+D:\jahanpoor\Projects\bndshop\Code\bndshop\FinanaceManagement.Application.Contracts\obj\Debug\net5.0\FinanaceManagement.Application.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+D:\jahanpoor\Projects\bndshop\Code\bndshop\FinanaceManagement.Application.Contracts\obj\Debug\net5.0\FinanaceManagement.Application.Contracts.AssemblyInfoInputs.cache
+D:\jahanpoor\Projects\bndshop\Code\bndshop\FinanaceManagement.Application.Contracts\obj\Debug\net5.0\FinanaceManagement.Application.Contracts.AssemblyInfo.cs
+D:\jahanpoor\Projects\bndshop\Code\bndshop\FinanaceManagement.Application.Contracts\obj\Debug\net5.0\FinanaceManagement.Application.Contracts.csproj.CoreCompileInputs.cache
+D:\jahanpoor\Projects\bndshop\Code\bndshop\FinanaceManagement.Application.Contracts\obj\Debug\net5.0\FinanaceManagement.Application.Contracts.csproj.CopyComplete
+D:\jahanpoor\Projects\bndshop\Code\bndshop\FinanaceManagement.Application.Contracts\obj\Debug\net5.0\FinanaceManagement.Application.Contracts.dll
+D:\jahanpoor\Projects\bndshop\Code\bndshop\FinanaceManagement.Application.Contracts\obj\Debug\net5.0\ref\FinanaceManagement.Application.Contracts.dll
+D:\jahanpoor\Projects\bndshop\Code\bndshop\FinanaceManagement.Application.Contracts\obj\Debug\net5.0\FinanaceManagement.Application.Contracts.pdb

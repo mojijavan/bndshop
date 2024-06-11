@@ -42,7 +42,7 @@ namespace _01_BndShopQuery.Query
             var product = _context.Products
                 .Include(x => x.Category)
                 .Include(x => x.ProductPictures)
-                
+
                 .Select(x=>x).AsNoTracking().FirstOrDefault(x => x.Slug == slug);
             
             bool IsColleagueUser = false;

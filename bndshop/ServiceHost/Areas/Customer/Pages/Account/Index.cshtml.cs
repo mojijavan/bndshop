@@ -1,3 +1,4 @@
+using _0_Framework.Application;
 using AccountManagement.Application.Contracts.Account;
 using AccountManagement.Application.Contracts.Role;
 using Microsoft.AspNetCore.Mvc;
@@ -15,16 +16,21 @@ namespace ServiceHost.Areas.Customer.Pages.Account
 
         private readonly IRoleApplication _roleApplication;
         private readonly IAccountApplication _accountApplication;
-
-        public IndexModel(IAccountApplication accountApplication, IRoleApplication roleApplication)
+        private readonly IAuthHelper _authHelper;
+        public AccountViewModel Command;
+        public IndexModel(IAccountApplication accountApplication, IRoleApplication roleApplication,IAuthHelper authHelper)
         {
+            _authHelper = authHelper;
             _roleApplication = roleApplication;
             _accountApplication = accountApplication;
         }
 
         public void OnGet()
         {
-            
+            if (_authHelper.IsAuthenticated())
+            {
+                Command = _accountApplication.GetAccountBy(_authHelper.CurrentAccountId());
+            }
         }
         //public IActionResult OnGetEdit(long id)
         //{

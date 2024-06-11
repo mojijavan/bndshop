@@ -96,7 +96,7 @@
                                                 @if (AuthHelper.IsAuthenticated())
                                                 {
                                                 <li>
-                                                    <a asp-page="/Account" asp-page-handler="Logout">حساب کاربری</a>
+                                                    <a href="/Customer/Orders/Index">حساب کاربری</a>
                                                 </li>
                                                     <li>
                                                         <a asp-page="/Account" asp-page-handler="Logout">خروج</a>
@@ -235,10 +235,13 @@
                     <li>
                         <a href="/Article/%D8%AA%D9%85%D8%A7%D8%B3-%D8%A8%D8%A7-%D8%A8%D9%86%D8%AF%D8%B1%D9%85%D9%88%D8%A8%D8%A7%DB%8C%D9%84">تماس با ما</a>
                     </li>
-                    <li>
-                        <a href="/Administration/Shop/Products/Index">مدیریت</a>
-                    </li>
-                  
+                    @if (AuthHelper.IsAdmin() || AuthHelper.IsContentUploader())
+                    {
+                        <li>
+                            <a href="/Administration/Shop/Products/Index">مدیریت</a>
+                        </li>
+                    }
+
                 </ul>
             </nav>
 
@@ -251,7 +254,7 @@
                                 @if (AuthHelper.IsAuthenticated())
                                 {
                                     <li>
-                                        <a asp-page="/Account" asp-page-handler="Logout">حساب کاربری</a>
+                                        <a href="/Customer/orders/index">حساب کاربری</a>
                                     </li>
                                     <li>
                                         <a asp-page="/Account" asp-page-handler="Logout">خروج</a>

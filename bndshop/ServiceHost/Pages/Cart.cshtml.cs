@@ -17,9 +17,11 @@ namespace ServiceHost.Pages
         public List<CartItem> CartItems;
         public const string CookieName = "cart-items";
         private readonly IProductQuery _productQuery;
+        private readonly IAuthHelper _authHelper;
 
-        public CartModel(IProductQuery productQuery)
+        public CartModel(IProductQuery productQuery,IAuthHelper authHelper)
         {
+            _authHelper = authHelper;
             CartItems = new List<CartItem>();
             _productQuery = productQuery;
         }
@@ -28,11 +30,15 @@ namespace ServiceHost.Pages
         {
             var serializer = new JavaScriptSerializer();
             var value = Request.Cookies[CookieName];
-            var cartItems = serializer.Deserialize<List<CartItem>>(value);
-            foreach (var item in cartItems)
-                item.CalculateTotalItemPrice();
+            if (value != null)
+            {
+                var cartItems = serializer.Deserialize<List<CartItem>>(value);
+                foreach (var item in cartItems)
+                    item.CalculateTotalItemPrice();
 
-            CartItems = _productQuery.CheckInventoryStatus(cartItems);
+                CartItems = _productQuery.CheckInventoryStatus(cartItems);
+            }
+            
         }
 
         public IActionResult OnGetRemoveFromCart(long id)
@@ -44,12 +50,14 @@ namespace ServiceHost.Pages
             var itemToRemove = cartItems.FirstOrDefault(x => x.Id == id);
             cartItems.Remove(itemToRemove);
             var options = new CookieOptions {Expires = DateTime.Now.AddDays(2)};
+            options.IsEssential = true;
             Response.Cookies.Append(CookieName, serializer.Serialize(cartItems), options);
             return RedirectToPage("/Cart");
         }
 
         public IActionResult OnGetGoToCheckOut()
         {
+            if (!_authHelper.IsAuthenticated()) return RedirectToPage("/Account");
             var serializer = new JavaScriptSerializer();
             var value = Request.Cookies[CookieName];
             var cartItems = serializer.Deserialize<List<CartItem>>(value);

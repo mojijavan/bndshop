@@ -28,6 +28,7 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
                 MetaDescription = x.MetaDescription,Name = x.Name,/*Picture ="",*/
                 PictureAlt = x.PictureAlt,Slug = x.Slug,PictureTitle = x.PictureTitle
                 ,Code = x.Code,LastProductCode = x.LastProductCode,
+                Specifications=x.Specifications,
                 ParentId = x.ParentId,
                 Label = x.Label
             }).FirstOrDefault();

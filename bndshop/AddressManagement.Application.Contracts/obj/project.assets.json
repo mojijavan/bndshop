@@ -8318,23 +8318,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\pgsoc\\.nuget\\packages\\": {},
+    "C:\\Users\\user\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Application.Contracts\\AddressManagement.Application.Contracts.csproj",
+      "projectUniqueName": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Application.Contracts\\AddressManagement.Application.Contracts.csproj",
       "projectName": "AddressManagement.Application.Contracts",
-      "projectPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Application.Contracts\\AddressManagement.Application.Contracts.csproj",
-      "packagesPath": "C:\\Users\\pgsoc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Application.Contracts\\obj\\",
+      "projectPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Application.Contracts\\AddressManagement.Application.Contracts.csproj",
+      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+      "outputPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Application.Contracts\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\pgsoc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8348,8 +8348,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\_0_Framework\\_0_Framework.csproj": {
-              "projectPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\_0_Framework\\_0_Framework.csproj"
+            "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\_0_Framework\\_0_Framework.csproj": {
+              "projectPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\_0_Framework\\_0_Framework.csproj"
             }
           }
         }

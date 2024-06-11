@@ -1,23 +1,148 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\DiscountManagement.Configuration\\DiscountManagement.Configuration.csproj": {}
+    "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\DiscountManagement.Configuration\\DiscountManagement.Configuration.csproj": {}
   },
   "projects": {
-    "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\AccountMangement.Infrastructure.EFCore\\AccountMangement.Infrastructure.EFCore.csproj": {
+    "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\AccountManagement.Application.Contracts\\AccountManagement.Application.Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\AccountMangement.Infrastructure.EFCore\\AccountMangement.Infrastructure.EFCore.csproj",
+        "projectUniqueName": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\AccountManagement.Application.Contracts\\AccountManagement.Application.Contracts.csproj",
+        "projectName": "AccountManagement.Application.Contracts",
+        "projectPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\AccountManagement.Application.Contracts\\AccountManagement.Application.Contracts.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\AccountManagement.Application.Contracts\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\_0_Framework\\_0_Framework.csproj": {
+                "projectPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\_0_Framework\\_0_Framework.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\AccountManagement.Domain\\AccountManagement.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\AccountManagement.Domain\\AccountManagement.Domain.csproj",
+        "projectName": "AccountManagement.Domain",
+        "projectPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\AccountManagement.Domain\\AccountManagement.Domain.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\AccountManagement.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\AccountManagement.Application.Contracts\\AccountManagement.Application.Contracts.csproj": {
+                "projectPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\AccountManagement.Application.Contracts\\AccountManagement.Application.Contracts.csproj"
+              },
+              "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\_0_Framework\\_0_Framework.csproj": {
+                "projectPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\_0_Framework\\_0_Framework.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\AccountMangement.Infrastructure.EFCore\\AccountMangement.Infrastructure.EFCore.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\AccountMangement.Infrastructure.EFCore\\AccountMangement.Infrastructure.EFCore.csproj",
         "projectName": "AccountMangement.Infrastructure.EFCore",
-        "projectPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\AccountMangement.Infrastructure.EFCore\\AccountMangement.Infrastructure.EFCore.csproj",
-        "packagesPath": "C:\\Users\\pgsoc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\AccountMangement.Infrastructure.EFCore\\obj\\",
+        "projectPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\AccountMangement.Infrastructure.EFCore\\AccountMangement.Infrastructure.EFCore.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\AccountMangement.Infrastructure.EFCore\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\pgsoc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -30,7 +155,14 @@
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\AccountManagement.Application.Contracts\\AccountManagement.Application.Contracts.csproj": {
+                "projectPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\AccountManagement.Application.Contracts\\AccountManagement.Application.Contracts.csproj"
+              },
+              "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\AccountManagement.Domain\\AccountManagement.Domain.csproj": {
+                "projectPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\AccountManagement.Domain\\AccountManagement.Domain.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -77,20 +209,20 @@
         }
       }
     },
-    "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Application.Contracts\\AddressManagement.Application.Contracts.csproj": {
+    "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Application.Contracts\\AddressManagement.Application.Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Application.Contracts\\AddressManagement.Application.Contracts.csproj",
+        "projectUniqueName": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Application.Contracts\\AddressManagement.Application.Contracts.csproj",
         "projectName": "AddressManagement.Application.Contracts",
-        "projectPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Application.Contracts\\AddressManagement.Application.Contracts.csproj",
-        "packagesPath": "C:\\Users\\pgsoc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Application.Contracts\\obj\\",
+        "projectPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Application.Contracts\\AddressManagement.Application.Contracts.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Application.Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\pgsoc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -104,8 +236,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\_0_Framework\\_0_Framework.csproj": {
-                "projectPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\_0_Framework\\_0_Framework.csproj"
+              "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\_0_Framework\\_0_Framework.csproj": {
+                "projectPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\_0_Framework\\_0_Framework.csproj"
               }
             }
           }
@@ -138,20 +270,20 @@
         }
       }
     },
-    "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\DiscountManagement.Application.Contract\\DiscountManagement.Application.Contract.csproj": {
+    "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\DiscountManagement.Application.Contract\\DiscountManagement.Application.Contract.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\DiscountManagement.Application.Contract\\DiscountManagement.Application.Contract.csproj",
+        "projectUniqueName": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\DiscountManagement.Application.Contract\\DiscountManagement.Application.Contract.csproj",
         "projectName": "DiscountManagement.Application.Contract",
-        "projectPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\DiscountManagement.Application.Contract\\DiscountManagement.Application.Contract.csproj",
-        "packagesPath": "C:\\Users\\pgsoc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\DiscountManagement.Application.Contract\\obj\\",
+        "projectPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\DiscountManagement.Application.Contract\\DiscountManagement.Application.Contract.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\DiscountManagement.Application.Contract\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\pgsoc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -165,11 +297,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj": {
-                "projectPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj"
+              "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj": {
+                "projectPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj"
               },
-              "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\_0_Framework\\_0_Framework.csproj": {
-                "projectPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\_0_Framework\\_0_Framework.csproj"
+              "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\_0_Framework\\_0_Framework.csproj": {
+                "projectPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\_0_Framework\\_0_Framework.csproj"
               }
             }
           }
@@ -202,20 +334,20 @@
         }
       }
     },
-    "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\DiscountManagement.Application\\DiscountManagement.Application.csproj": {
+    "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\DiscountManagement.Application\\DiscountManagement.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\DiscountManagement.Application\\DiscountManagement.Application.csproj",
+        "projectUniqueName": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\DiscountManagement.Application\\DiscountManagement.Application.csproj",
         "projectName": "DiscountManagement.Application",
-        "projectPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\DiscountManagement.Application\\DiscountManagement.Application.csproj",
-        "packagesPath": "C:\\Users\\pgsoc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\DiscountManagement.Application\\obj\\",
+        "projectPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\DiscountManagement.Application\\DiscountManagement.Application.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\DiscountManagement.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\pgsoc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -229,11 +361,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\DiscountManagement.Application.Contract\\DiscountManagement.Application.Contract.csproj": {
-                "projectPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\DiscountManagement.Application.Contract\\DiscountManagement.Application.Contract.csproj"
+              "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\DiscountManagement.Application.Contract\\DiscountManagement.Application.Contract.csproj": {
+                "projectPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\DiscountManagement.Application.Contract\\DiscountManagement.Application.Contract.csproj"
               },
-              "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\DiscountManagement.Domain\\DiscountManagement.Domain.csproj": {
-                "projectPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\DiscountManagement.Domain\\DiscountManagement.Domain.csproj"
+              "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\DiscountManagement.Domain\\DiscountManagement.Domain.csproj": {
+                "projectPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\DiscountManagement.Domain\\DiscountManagement.Domain.csproj"
               }
             }
           }
@@ -266,20 +398,20 @@
         }
       }
     },
-    "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\DiscountManagement.Configuration\\DiscountManagement.Configuration.csproj": {
+    "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\DiscountManagement.Configuration\\DiscountManagement.Configuration.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\DiscountManagement.Configuration\\DiscountManagement.Configuration.csproj",
+        "projectUniqueName": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\DiscountManagement.Configuration\\DiscountManagement.Configuration.csproj",
         "projectName": "DiscountManagement.Configuration",
-        "projectPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\DiscountManagement.Configuration\\DiscountManagement.Configuration.csproj",
-        "packagesPath": "C:\\Users\\pgsoc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\DiscountManagement.Configuration\\obj\\",
+        "projectPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\DiscountManagement.Configuration\\DiscountManagement.Configuration.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\DiscountManagement.Configuration\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\pgsoc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -293,17 +425,17 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\DiscountManagement.Application.Contract\\DiscountManagement.Application.Contract.csproj": {
-                "projectPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\DiscountManagement.Application.Contract\\DiscountManagement.Application.Contract.csproj"
+              "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\DiscountManagement.Application.Contract\\DiscountManagement.Application.Contract.csproj": {
+                "projectPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\DiscountManagement.Application.Contract\\DiscountManagement.Application.Contract.csproj"
               },
-              "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\DiscountManagement.Application\\DiscountManagement.Application.csproj": {
-                "projectPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\DiscountManagement.Application\\DiscountManagement.Application.csproj"
+              "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\DiscountManagement.Application\\DiscountManagement.Application.csproj": {
+                "projectPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\DiscountManagement.Application\\DiscountManagement.Application.csproj"
               },
-              "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\DiscountManagement.Domain\\DiscountManagement.Domain.csproj": {
-                "projectPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\DiscountManagement.Domain\\DiscountManagement.Domain.csproj"
+              "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\DiscountManagement.Domain\\DiscountManagement.Domain.csproj": {
+                "projectPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\DiscountManagement.Domain\\DiscountManagement.Domain.csproj"
               },
-              "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj": {
-                "projectPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj"
+              "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj": {
+                "projectPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj"
               }
             }
           }
@@ -352,20 +484,20 @@
         }
       }
     },
-    "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\DiscountManagement.Domain\\DiscountManagement.Domain.csproj": {
+    "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\DiscountManagement.Domain\\DiscountManagement.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\DiscountManagement.Domain\\DiscountManagement.Domain.csproj",
+        "projectUniqueName": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\DiscountManagement.Domain\\DiscountManagement.Domain.csproj",
         "projectName": "DiscountManagement.Domain",
-        "projectPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\DiscountManagement.Domain\\DiscountManagement.Domain.csproj",
-        "packagesPath": "C:\\Users\\pgsoc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\DiscountManagement.Domain\\obj\\",
+        "projectPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\DiscountManagement.Domain\\DiscountManagement.Domain.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\DiscountManagement.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\pgsoc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -379,11 +511,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\DiscountManagement.Application.Contract\\DiscountManagement.Application.Contract.csproj": {
-                "projectPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\DiscountManagement.Application.Contract\\DiscountManagement.Application.Contract.csproj"
+              "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\DiscountManagement.Application.Contract\\DiscountManagement.Application.Contract.csproj": {
+                "projectPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\DiscountManagement.Application.Contract\\DiscountManagement.Application.Contract.csproj"
               },
-              "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\_0_Framework\\_0_Framework.csproj": {
-                "projectPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\_0_Framework\\_0_Framework.csproj"
+              "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\_0_Framework\\_0_Framework.csproj": {
+                "projectPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\_0_Framework\\_0_Framework.csproj"
               }
             }
           }
@@ -416,20 +548,20 @@
         }
       }
     },
-    "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj": {
+    "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj",
+        "projectUniqueName": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj",
         "projectName": "DiscountManagement.Infrastructure.EFCore",
-        "projectPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj",
-        "packagesPath": "C:\\Users\\pgsoc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\DiscountManagement.Infrastructure.EFCore\\obj\\",
+        "projectPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\DiscountManagement.Infrastructure.EFCore\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\pgsoc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -443,11 +575,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\DiscountManagement.Domain\\DiscountManagement.Domain.csproj": {
-                "projectPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\DiscountManagement.Domain\\DiscountManagement.Domain.csproj"
+              "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\DiscountManagement.Domain\\DiscountManagement.Domain.csproj": {
+                "projectPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\DiscountManagement.Domain\\DiscountManagement.Domain.csproj"
               },
-              "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj": {
-                "projectPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj"
+              "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj": {
+                "projectPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj"
               }
             }
           }
@@ -496,20 +628,20 @@
         }
       }
     },
-    "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj": {
+    "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj",
+        "projectUniqueName": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj",
         "projectName": "ShopManagement.Application.Contracts",
-        "projectPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj",
-        "packagesPath": "C:\\Users\\pgsoc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\ShopManagement.Application.Contracts\\obj\\",
+        "projectPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\ShopManagement.Application.Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\pgsoc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -523,8 +655,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\_0_Framework\\_0_Framework.csproj": {
-                "projectPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\_0_Framework\\_0_Framework.csproj"
+              "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\_0_Framework\\_0_Framework.csproj": {
+                "projectPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\_0_Framework\\_0_Framework.csproj"
               }
             }
           }
@@ -563,20 +695,20 @@
         }
       }
     },
-    "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\ShopManagement.Domain\\ShopManagement.Domain.csproj": {
+    "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\ShopManagement.Domain\\ShopManagement.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\ShopManagement.Domain\\ShopManagement.Domain.csproj",
+        "projectUniqueName": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\ShopManagement.Domain\\ShopManagement.Domain.csproj",
         "projectName": "ShopManagement.Domain",
-        "projectPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\ShopManagement.Domain\\ShopManagement.Domain.csproj",
-        "packagesPath": "C:\\Users\\pgsoc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\ShopManagement.Domain\\obj\\",
+        "projectPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\ShopManagement.Domain\\ShopManagement.Domain.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\ShopManagement.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\pgsoc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -590,11 +722,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Application.Contracts\\AddressManagement.Application.Contracts.csproj": {
-                "projectPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Application.Contracts\\AddressManagement.Application.Contracts.csproj"
+              "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Application.Contracts\\AddressManagement.Application.Contracts.csproj": {
+                "projectPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Application.Contracts\\AddressManagement.Application.Contracts.csproj"
               },
-              "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj": {
-                "projectPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj"
+              "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj": {
+                "projectPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj"
               }
             }
           }
@@ -627,20 +759,20 @@
         }
       }
     },
-    "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj": {
+    "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj",
+        "projectUniqueName": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj",
         "projectName": "ShopManagement.Infrastructure.EFCore",
-        "projectPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj",
-        "packagesPath": "C:\\Users\\pgsoc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\ShopManagement.Infrastructure.EFCore\\obj\\",
+        "projectPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\ShopManagement.Infrastructure.EFCore\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\pgsoc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -654,11 +786,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\AccountMangement.Infrastructure.EFCore\\AccountMangement.Infrastructure.EFCore.csproj": {
-                "projectPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\AccountMangement.Infrastructure.EFCore\\AccountMangement.Infrastructure.EFCore.csproj"
+              "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\AccountMangement.Infrastructure.EFCore\\AccountMangement.Infrastructure.EFCore.csproj": {
+                "projectPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\AccountMangement.Infrastructure.EFCore\\AccountMangement.Infrastructure.EFCore.csproj"
               },
-              "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\ShopManagement.Domain\\ShopManagement.Domain.csproj": {
-                "projectPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\ShopManagement.Domain\\ShopManagement.Domain.csproj"
+              "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\ShopManagement.Domain\\ShopManagement.Domain.csproj": {
+                "projectPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\ShopManagement.Domain\\ShopManagement.Domain.csproj"
               }
             }
           }
@@ -707,20 +839,20 @@
         }
       }
     },
-    "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\_0_Framework\\_0_Framework.csproj": {
+    "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\_0_Framework\\_0_Framework.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\_0_Framework\\_0_Framework.csproj",
+        "projectUniqueName": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\_0_Framework\\_0_Framework.csproj",
         "projectName": "_0_Framework",
-        "projectPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\_0_Framework\\_0_Framework.csproj",
-        "packagesPath": "C:\\Users\\pgsoc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\_0_Framework\\obj\\",
+        "projectPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\_0_Framework\\_0_Framework.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\_0_Framework\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\pgsoc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

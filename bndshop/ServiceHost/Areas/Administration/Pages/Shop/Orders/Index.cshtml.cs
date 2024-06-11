@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using AccountManagement.Application.Contracts.Account;
+using AddressManagement.Application.Contracts.Address;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -16,11 +17,13 @@ namespace ServiceHost.Areas.Administration.Pages.Shop.Orders
 
         private readonly IOrderApplication _orderApplication;
         private readonly IAccountApplication _accountApplication;
+        private readonly IAddressApplication _addressApplication;
 
-        public IndexModel(IOrderApplication orderApplication, IAccountApplication accountApplication)
+        public IndexModel(IOrderApplication orderApplication, IAccountApplication accountApplication,IAddressApplication addressApplication)
         {
             _orderApplication = orderApplication;
             _accountApplication = accountApplication;
+            _addressApplication = addressApplication;
         }
 
         public void OnGet(OrderSearchModel searchModel)
@@ -45,6 +48,11 @@ namespace ServiceHost.Areas.Administration.Pages.Shop.Orders
         {
             var items = _orderApplication.GetItems(id);
             return Partial("Items", items);
+        }
+        public IActionResult OnGetAddress(long id)
+        {
+            var items = _addressApplication.GetDetails(id);
+            return Partial("Address", items);
         }
     }
 }

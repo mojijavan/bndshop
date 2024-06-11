@@ -12,6 +12,7 @@ namespace ShopManagement.Domain.ProductAgg
     {
         public string Name { get; private set; }
         public string Label { get; private set; }
+        public string Specifications { get; private set; }
         public int Code { get; private set; }
         public bool IsInStock { get; private set; }
         public int CustomerDiscountRate { get; private set; }
@@ -52,7 +53,7 @@ namespace ShopManagement.Domain.ProductAgg
         public Product(string name, int code, 
             string shortDescription, string description, string picture,
             string pictureAlt, string pictureTitle, string slug, string keywords,
-            string metaDescription, long categoryId,double unitPrice,string label)
+            string metaDescription, long categoryId,double unitPrice,string label, string specifications)
         {
             Name = name;
             Code = code;
@@ -70,6 +71,7 @@ namespace ShopManagement.Domain.ProductAgg
             UnitPrice = unitPrice;
             CreationDate=DateTime.Now;
             PictureTitle = pictureTitle;
+            Specifications = specifications;
             Slug = slug;
             Keywords = keywords;
             MetaDescription = metaDescription;
@@ -79,7 +81,7 @@ namespace ShopManagement.Domain.ProductAgg
 
         public void Edit(string name, int code,  string shortDescription,
             string description, string picture, string pictureAlt, string pictureTitle,
-            string slug, string keywords, string metaDescription, long categoryId,long count,double unitPrice,string label)
+            string slug, string keywords, string metaDescription, long categoryId,long count,double unitPrice,string label, string specifications)
         {
             Name = name;
             Code = code;
@@ -93,6 +95,7 @@ namespace ShopManagement.Domain.ProductAgg
                 Picture = picture;
             PictureAlt = pictureAlt;
             PictureTitle = pictureTitle;
+            Specifications = specifications;
             Slug = slug;
             Keywords = keywords;
             MetaDescription = metaDescription;

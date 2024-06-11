@@ -1,4 +1,5 @@
 
+using _0_Framework.Application;
 using _01_BndShopQuery.Contracts.Address;
 using AddressManagement.Application.Contracts.Address;
 using AddressManagement.Application.Contracts.City;
@@ -15,14 +16,16 @@ namespace ServiceHost.Areas.Customer.Pages.Address
         private readonly IAddressQuery _addressQuery;
         private readonly IProvinceApplication _provinceApplication;
         private readonly ICityApplication _cityApplication;
+        private readonly IAuthHelper _authHelper;
         public SelectList Provinces;
         public SelectList Cities;
-        public CreateModel(IAddressQuery addressQuery, IProvinceApplication provinceApplication, ICityApplication cityApplication)
+        public CreateModel(IAddressQuery addressQuery, IProvinceApplication provinceApplication, ICityApplication cityApplication, IAuthHelper authHelper)
         {
           
             _addressQuery = addressQuery;
             _provinceApplication = provinceApplication;
             _cityApplication = cityApplication;
+            _authHelper = authHelper;
         }
 
         public void OnGet()
@@ -33,8 +36,15 @@ namespace ServiceHost.Areas.Customer.Pages.Address
         }
         public IActionResult OnPost(CreateAddress command)
         {
-            var result = _addressQuery.Create(command);
-            return RedirectToPage("./Index");
+            if (_authHelper.IsAuthenticated())
+            {
+                command.AccountId = _authHelper.CurrentAccountId();
+                var result = _addressQuery.Create(command);
+                return RedirectToPage("./Index");
+            }
+            return RedirectToPage("./account");
+
+
         }
         public JsonResult OnGetCities(long id)
         {

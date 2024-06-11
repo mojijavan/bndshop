@@ -1,5 +1,7 @@
 using System.Collections.Generic;
+using _0_Framework.Application;
 using AccountManagement.Application.Contracts.Account;
+using AddressManagement.Application.Contracts.Address;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -11,18 +13,29 @@ namespace ServiceHost.Areas.Customer.Pages.Orders
     public class IndexModel : PageModel
     {
         public OrderSearchModel SearchModel;
-        public SelectList Accounts;
+        
         public List<OrderViewModel> Orders;
 
         private readonly IOrderApplication _orderApplication;
         private readonly IAccountApplication _accountApplication;
-
-        public IndexModel(IOrderApplication orderApplication, IAccountApplication accountApplication)
+        private readonly IAuthHelper _authHelper;
+        private readonly IAddressApplication _addressApplication;
+        public IndexModel(IOrderApplication orderApplication, IAccountApplication accountApplication,IAuthHelper authHelper,IAddressApplication addressApplication)
         {
             _orderApplication = orderApplication;
+            _addressApplication = addressApplication;
             _accountApplication = accountApplication;
+            _authHelper = authHelper;
         }
-
+        public void OnGet()
+        {
+            OrderSearchModel orderSearchModel = new OrderSearchModel();
+            if (_authHelper.IsAuthenticated())
+            {
+                orderSearchModel.AccountId = _authHelper.CurrentAccountId();
+               Orders= _orderApplication.Search(orderSearchModel);
+            }                  
+        }
         //public void OnGet(OrderSearchModel searchModel)
         //{
         //    Accounts = new SelectList(_accountApplication.GetAccounts(), "Id", "Fullname");
@@ -41,10 +54,15 @@ namespace ServiceHost.Areas.Customer.Pages.Orders
         //    return RedirectToPage("./Index");
         //}
 
-        //public IActionResult OnGetItems(long id)
-        //{
-        //    var items = _orderApplication.GetItems(id);
-        //    return Partial("Items", items);
-        //}
+        public IActionResult OnGetItems(long id)
+        {
+            var items = _orderApplication.GetItems(id);
+            return Partial("Items", items);
+        }
+        public IActionResult OnGetAddress(long id)
+        {
+            var items = _addressApplication.GetDetails(id);
+            return Partial("Address", items);
+        }
     }
 }

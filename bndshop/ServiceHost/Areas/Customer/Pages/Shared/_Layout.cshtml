@@ -18,6 +18,7 @@
     <link href="~/AdminTheme/assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
     <link href="~/AdminTheme/assets/ionicon/css/ionicons.min.css" rel="stylesheet" />
     <link href="~/AdminTheme/assets/css/material-design-iconic-font.min.css" rel="stylesheet">
+    <link href="~/AdminTheme/assets/responsive-table/rwd-table.min.css" rel="stylesheet">
 
     <!-- animate css -->
     <link href="~/AdminTheme/assets/css/animate.css" rel="stylesheet" />
@@ -44,13 +45,13 @@
 <body class="fixed-left">
 
     <!-- Begin page -->
-    <div id="wrapper">
+    <div id="wrapper" class="enlarged forced">
 
         <div class="topbar">
             <!-- LOGO -->
             <div class="topbar-left">
                 <div class="text-center">
-                    <a href="/index" class="logo"><i class="md md-terrain"></i> <span> BndWeb </span></a>
+                    <a href="/index" class="logo"><i class="md md-terrain"></i> <span> bndplus </span></a>
                 </div>
             </div>
             <!-- Button mobile view to collapse sidebar menu -->
@@ -117,7 +118,7 @@
     <script src="~/AdminTheme/assets/fastclick/fastclick.js"></script>
     <script src="~/AdminTheme/assets/jquery-slimscroll/jquery.slimscroll.js"></script>
     <script src="~/AdminTheme/assets/jquery-blockui/jquery.blockUI.js"></script>
-
+    <script src="~/AdminTheme/assets/responsive-table/rwd-table.min.js"></script>
     <!-- sweet alerts -->
     <script src="~/AdminTheme/assets/sweet-alert/sweet-alert.min.js"></script>
     <script src="~/AdminTheme/assets/sweet-alert/sweet-alert.init.js"></script>
@@ -131,7 +132,6 @@
     <script src="~/AdminTheme/assets/flot-chart/jquery.flot.selection.js"></script>
     <script src="~/AdminTheme/assets/flot-chart/jquery.flot.stack.js"></script>
     <script src="~/AdminTheme/assets/flot-chart/jquery.flot.crosshair.js"></script>-->
-
     <!-- Counter-up -->
     <script src="~/AdminTheme/assets/counterup/waypoints.min.js" type="text/javascript"></script>
     <script src="~/AdminTheme/assets/counterup/jquery.counterup.min.js" type="text/javascript"></script>
@@ -155,31 +155,31 @@
     <script src="~/AdminTheme/assets/js/site.js"></script>
 
     @*<script src="~/AdminTheme/assets/js/persian-date.min.js"></script>
-    <script src="~/AdminTheme/assets/js/persianDatepicker.min.js"></script>*@
+        <script src="~/AdminTheme/assets/js/persianDatepicker.min.js"></script>*@
 
     @RenderSection("Scripts", false)
 
     @*<script>
-        $('.persianDateInput').persianDatepicker({
-            format: 'YYYY/MM/DD',
-            autoClose: true,
-            initialValueType: "persian"
-        });
-        $(document).ready(function () {
-            //console.log(window.location.pathname);
-            var elements = window.location.pathname.split('/');
-            //console.log(elements[2]);
-            document.getElementById(elements[2]).style.display = 'block';
-            document.getElementById(elements[3]).classList.add('active');
-            $(".ActiveLabel").click(function () {
-                //console.log($(this).val());
-                if (!$(".label").val().includes($(this).val())) {
-                    $(".label").val($(".label").val() + "،" + $(this).val());
-                }
-
+            $('.persianDateInput').persianDatepicker({
+                format: 'YYYY/MM/DD',
+                autoClose: true,
+                initialValueType: "persian"
             });
-        });
-    </script>*@
+            $(document).ready(function () {
+                //console.log(window.location.pathname);
+                var elements = window.location.pathname.split('/');
+                //console.log(elements[2]);
+                document.getElementById(elements[2]).style.display = 'block';
+                document.getElementById(elements[3]).classList.add('active');
+                $(".ActiveLabel").click(function () {
+                    //console.log($(this).val());
+                    if (!$(".label").val().includes($(this).val())) {
+                        $(".label").val($(".label").val() + "،" + $(this).val());
+                    }
+
+                });
+            });
+        </script>*@
 
     @*<script src="https://cdn.tiny.cloud/1/03bywyfc22f080o11wndvso5su892zkphj49li728tkw9f3f/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
         <script>

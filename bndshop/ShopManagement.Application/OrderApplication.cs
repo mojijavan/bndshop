@@ -32,7 +32,7 @@ namespace ShopManagement.Application
         {
             var currentAccountId = _authHelper.CurrentAccountId();
             var order = new Order(currentAccountId, cart.PaymentMethod, cart.TotalAmount, cart.DiscountAmount,
-                cart.PayAmount);
+                cart.PayAmount,cart.AddresstId);
 
             foreach (var cartItem in cart.Items)
             {
@@ -68,10 +68,10 @@ namespace ShopManagement.Application
 
             _orderRepository.SaveChanges();
 
-            var (name, mobile) = _shopAccountAcl.GetAccountBy(order.AccountId);
+            //var (name, mobile) = _shopAccountAcl.GetAccountBy(order.AccountId);
 
-            _smsService.Send(mobile,
-                $"{name} گرامی سفارش شما با شماره پیگیری {issueTrackingNo} با موفقیت پرداخت شد و ارسال خواهد شد.");
+            //_smsService.Send(mobile,
+            //    $"{name} گرامی سفارش شما با شماره پیگیری {issueTrackingNo} با موفقیت پرداخت شد و ارسال خواهد شد.");
             return issueTrackingNo;
         }
 

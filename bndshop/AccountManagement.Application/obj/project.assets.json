@@ -2697,6 +2697,10 @@
       "AccountManagement.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "AccountManagement.Application.Contracts": "1.0.0",
+          "_0_Framework": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/AccountManagement.Domain.dll": {}
         },
@@ -8352,23 +8356,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\pgsoc\\.nuget\\packages\\": {},
+    "C:\\Users\\user\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\AccountManagement.Application\\AccountManagement.Application.csproj",
+      "projectUniqueName": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\AccountManagement.Application\\AccountManagement.Application.csproj",
       "projectName": "AccountManagement.Application",
-      "projectPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\AccountManagement.Application\\AccountManagement.Application.csproj",
-      "packagesPath": "C:\\Users\\pgsoc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\AccountManagement.Application\\obj\\",
+      "projectPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\AccountManagement.Application\\AccountManagement.Application.csproj",
+      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+      "outputPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\AccountManagement.Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\pgsoc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8382,11 +8386,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\AccountManagement.Application.Contracts\\AccountManagement.Application.Contracts.csproj": {
-              "projectPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\AccountManagement.Application.Contracts\\AccountManagement.Application.Contracts.csproj"
+            "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\AccountManagement.Application.Contracts\\AccountManagement.Application.Contracts.csproj": {
+              "projectPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\AccountManagement.Application.Contracts\\AccountManagement.Application.Contracts.csproj"
             },
-            "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\AccountManagement.Domain\\AccountManagement.Domain.csproj": {
-              "projectPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\AccountManagement.Domain\\AccountManagement.Domain.csproj"
+            "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\AccountManagement.Domain\\AccountManagement.Domain.csproj": {
+              "projectPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\AccountManagement.Domain\\AccountManagement.Domain.csproj"
             }
           }
         }

@@ -12,6 +12,7 @@ namespace ShopManagement.Application.Contracts.ProductCategory
         [Required(ErrorMessage = ValidationMessages.IsRequired)]
         public string Name { get; set; }
         public string Label { get; set; }
+        public string Specifications { get; set; }
         public string Description { get;  set; }
         [FileExtentionLimitation(new string[]{ ".jpeg", ".jpg" ,".png"},ErrorMessage = ValidationMessages.InvalidFileFormat)]
         //[Required(ErrorMessage = ValidationMessages.IsRequired)]

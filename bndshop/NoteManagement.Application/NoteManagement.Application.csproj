@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NoteManagement.Application.Contracts\NoteManagement.Application.Contracts.csproj" />
+    <ProjectReference Include="..\NoteManagement.Domain\NoteManagement.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

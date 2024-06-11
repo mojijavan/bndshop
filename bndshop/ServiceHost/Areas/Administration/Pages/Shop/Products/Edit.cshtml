@@ -119,6 +119,14 @@
                         </div>
                         <div class="col-md-12">
                             <div class="form-group no-margin">
+                                <label asp-for="Command.Specifications" class="control-label">ویژگی ها</label>
+                                <textarea class="form-control autogrow" asp-for="Command.Specifications"
+                                          style="overflow: hidden; word-wrap: break-word; resize: horizontal; height: 104px;"></textarea>
+                                <span asp-validation-for="Command.Specifications" class="error"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group no-margin">
                                 <label asp-for="Command.Label" class="control-label">لیبل دسته بندی کالا</label>
                                 <div style="display: flex;flex-wrap: wrap">
                                     @{

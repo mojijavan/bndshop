@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Configuration\\AddressManagement.Configuration.csproj": {}
+    "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Configuration\\AddressManagement.Configuration.csproj": {}
   },
   "projects": {
-    "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Application.Contracts\\AddressManagement.Application.Contracts.csproj": {
+    "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Application.Contracts\\AddressManagement.Application.Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Application.Contracts\\AddressManagement.Application.Contracts.csproj",
+        "projectUniqueName": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Application.Contracts\\AddressManagement.Application.Contracts.csproj",
         "projectName": "AddressManagement.Application.Contracts",
-        "projectPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Application.Contracts\\AddressManagement.Application.Contracts.csproj",
-        "packagesPath": "C:\\Users\\pgsoc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Application.Contracts\\obj\\",
+        "projectPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Application.Contracts\\AddressManagement.Application.Contracts.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Application.Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\pgsoc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -31,8 +31,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\_0_Framework\\_0_Framework.csproj": {
-                "projectPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\_0_Framework\\_0_Framework.csproj"
+              "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\_0_Framework\\_0_Framework.csproj": {
+                "projectPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\_0_Framework\\_0_Framework.csproj"
               }
             }
           }
@@ -65,20 +65,20 @@
         }
       }
     },
-    "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Application\\AddressManagement.Application.csproj": {
+    "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Application\\AddressManagement.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Application\\AddressManagement.Application.csproj",
+        "projectUniqueName": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Application\\AddressManagement.Application.csproj",
         "projectName": "AddressManagement.Application",
-        "projectPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Application\\AddressManagement.Application.csproj",
-        "packagesPath": "C:\\Users\\pgsoc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Application\\obj\\",
+        "projectPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Application\\AddressManagement.Application.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\pgsoc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -92,14 +92,14 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Application.Contracts\\AddressManagement.Application.Contracts.csproj": {
-                "projectPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Application.Contracts\\AddressManagement.Application.Contracts.csproj"
+              "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Application.Contracts\\AddressManagement.Application.Contracts.csproj": {
+                "projectPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Application.Contracts\\AddressManagement.Application.Contracts.csproj"
               },
-              "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Domain\\AddressManagement.Domain.csproj": {
-                "projectPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Domain\\AddressManagement.Domain.csproj"
+              "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Domain\\AddressManagement.Domain.csproj": {
+                "projectPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Domain\\AddressManagement.Domain.csproj"
               },
-              "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\_0_Framework\\_0_Framework.csproj": {
-                "projectPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\_0_Framework\\_0_Framework.csproj"
+              "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\_0_Framework\\_0_Framework.csproj": {
+                "projectPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\_0_Framework\\_0_Framework.csproj"
               }
             }
           }
@@ -132,20 +132,20 @@
         }
       }
     },
-    "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Configuration\\AddressManagement.Configuration.csproj": {
+    "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Configuration\\AddressManagement.Configuration.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Configuration\\AddressManagement.Configuration.csproj",
+        "projectUniqueName": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Configuration\\AddressManagement.Configuration.csproj",
         "projectName": "AddressManagement.Configuration",
-        "projectPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Configuration\\AddressManagement.Configuration.csproj",
-        "packagesPath": "C:\\Users\\pgsoc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Configuration\\obj\\",
+        "projectPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Configuration\\AddressManagement.Configuration.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Configuration\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\pgsoc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -159,11 +159,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Application\\AddressManagement.Application.csproj": {
-                "projectPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Application\\AddressManagement.Application.csproj"
+              "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Application\\AddressManagement.Application.csproj": {
+                "projectPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Application\\AddressManagement.Application.csproj"
               },
-              "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Infrastructure.EFCore\\AddressManagement.Infrastructure.EFCore.csproj": {
-                "projectPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Infrastructure.EFCore\\AddressManagement.Infrastructure.EFCore.csproj"
+              "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Infrastructure.EFCore\\AddressManagement.Infrastructure.EFCore.csproj": {
+                "projectPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Infrastructure.EFCore\\AddressManagement.Infrastructure.EFCore.csproj"
               }
             }
           }
@@ -216,20 +216,20 @@
         }
       }
     },
-    "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Domain\\AddressManagement.Domain.csproj": {
+    "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Domain\\AddressManagement.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Domain\\AddressManagement.Domain.csproj",
+        "projectUniqueName": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Domain\\AddressManagement.Domain.csproj",
         "projectName": "AddressManagement.Domain",
-        "projectPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Domain\\AddressManagement.Domain.csproj",
-        "packagesPath": "C:\\Users\\pgsoc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Domain\\obj\\",
+        "projectPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Domain\\AddressManagement.Domain.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\pgsoc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -243,11 +243,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Application.Contracts\\AddressManagement.Application.Contracts.csproj": {
-                "projectPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Application.Contracts\\AddressManagement.Application.Contracts.csproj"
+              "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Application.Contracts\\AddressManagement.Application.Contracts.csproj": {
+                "projectPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Application.Contracts\\AddressManagement.Application.Contracts.csproj"
               },
-              "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\_0_Framework\\_0_Framework.csproj": {
-                "projectPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\_0_Framework\\_0_Framework.csproj"
+              "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\_0_Framework\\_0_Framework.csproj": {
+                "projectPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\_0_Framework\\_0_Framework.csproj"
               }
             }
           }
@@ -280,20 +280,20 @@
         }
       }
     },
-    "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Infrastructure.EFCore\\AddressManagement.Infrastructure.EFCore.csproj": {
+    "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Infrastructure.EFCore\\AddressManagement.Infrastructure.EFCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Infrastructure.EFCore\\AddressManagement.Infrastructure.EFCore.csproj",
+        "projectUniqueName": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Infrastructure.EFCore\\AddressManagement.Infrastructure.EFCore.csproj",
         "projectName": "AddressManagement.Infrastructure.EFCore",
-        "projectPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Infrastructure.EFCore\\AddressManagement.Infrastructure.EFCore.csproj",
-        "packagesPath": "C:\\Users\\pgsoc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Infrastructure.EFCore\\obj\\",
+        "projectPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Infrastructure.EFCore\\AddressManagement.Infrastructure.EFCore.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Infrastructure.EFCore\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\pgsoc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -307,8 +307,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Domain\\AddressManagement.Domain.csproj": {
-                "projectPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Domain\\AddressManagement.Domain.csproj"
+              "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Domain\\AddressManagement.Domain.csproj": {
+                "projectPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Domain\\AddressManagement.Domain.csproj"
               }
             }
           }
@@ -357,20 +357,20 @@
         }
       }
     },
-    "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\_0_Framework\\_0_Framework.csproj": {
+    "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\_0_Framework\\_0_Framework.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\_0_Framework\\_0_Framework.csproj",
+        "projectUniqueName": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\_0_Framework\\_0_Framework.csproj",
         "projectName": "_0_Framework",
-        "projectPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\_0_Framework\\_0_Framework.csproj",
-        "packagesPath": "C:\\Users\\pgsoc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\_0_Framework\\obj\\",
+        "projectPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\_0_Framework\\_0_Framework.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\_0_Framework\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\pgsoc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

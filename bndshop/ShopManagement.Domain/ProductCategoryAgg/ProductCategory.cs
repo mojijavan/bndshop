@@ -23,8 +23,9 @@ namespace ShopManagement.Domain.ProductCategoryAgg
         public bool IsRemoved { get; private set; }
         public long ParentId { get; private set; }
         public string Label { get; private set; }
+        public string Specifications { get; private set; }
         public List<ProductCategory> ProductCategories { get; set; }
-        public ProductCategory(string name, string description, string picture, string pictureAlt, string pictureTitle, string keywords, string metaDescription, string slug,int code,long parentId,int priority,string label)
+        public ProductCategory(string name, string description, string picture, string pictureAlt, string pictureTitle, string keywords, string metaDescription, string slug,int code,long parentId,int priority,string label,string specifications)
         {
             Name = name;
             Priority = priority;
@@ -32,6 +33,7 @@ namespace ShopManagement.Domain.ProductCategoryAgg
             Picture = picture;
             PictureAlt = pictureAlt;
             PictureTitle = pictureTitle;
+            Specifications = specifications;
             Keywords = keywords;
             MetaDescription = metaDescription;
             Slug = slug;
@@ -39,11 +41,12 @@ namespace ShopManagement.Domain.ProductCategoryAgg
             ParentId = 0;
             LastProductCode = (code * 10000);
             Label = label;
+            Specifications = specifications;
             if (label == null) Label = "";
             
             ParentId = parentId;
         }
-        public void Edit(string name, string description, string picture, string pictureAlt, string pictureTitle, string keywords, string metaDescription, string slug,int code,int lastProductCode,long parentId,int priority,string label)
+        public void Edit(string name, string description, string picture, string pictureAlt, string pictureTitle, string keywords, string metaDescription, string slug,int code,int lastProductCode,long parentId,int priority,string label, string specifications)
         {
             Name = name;
             Description = description;
@@ -57,6 +60,7 @@ namespace ShopManagement.Domain.ProductCategoryAgg
             Slug = slug;
             Code = code;
             Label = label;
+            Specifications = specifications;
             if (label == null) Label = "";
             ParentId = parentId;
             LastProductCode = lastProductCode;

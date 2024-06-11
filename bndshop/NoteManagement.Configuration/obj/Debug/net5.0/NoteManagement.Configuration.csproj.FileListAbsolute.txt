@@ -1,0 +1,12 @@
+D:\jahanpoor\Projects\bndshop\Code\bndshop\NoteManagement.Configuration\bin\Debug\net5.0\NoteManagement.Configuration.deps.json
+D:\jahanpoor\Projects\bndshop\Code\bndshop\NoteManagement.Configuration\bin\Debug\net5.0\NoteManagement.Configuration.dll
+D:\jahanpoor\Projects\bndshop\Code\bndshop\NoteManagement.Configuration\bin\Debug\net5.0\ref\NoteManagement.Configuration.dll
+D:\jahanpoor\Projects\bndshop\Code\bndshop\NoteManagement.Configuration\bin\Debug\net5.0\NoteManagement.Configuration.pdb
+D:\jahanpoor\Projects\bndshop\Code\bndshop\NoteManagement.Configuration\obj\Debug\net5.0\NoteManagement.Configuration.csproj.AssemblyReference.cache
+D:\jahanpoor\Projects\bndshop\Code\bndshop\NoteManagement.Configuration\obj\Debug\net5.0\NoteManagement.Configuration.GeneratedMSBuildEditorConfig.editorconfig
+D:\jahanpoor\Projects\bndshop\Code\bndshop\NoteManagement.Configuration\obj\Debug\net5.0\NoteManagement.Configuration.AssemblyInfoInputs.cache
+D:\jahanpoor\Projects\bndshop\Code\bndshop\NoteManagement.Configuration\obj\Debug\net5.0\NoteManagement.Configuration.AssemblyInfo.cs
+D:\jahanpoor\Projects\bndshop\Code\bndshop\NoteManagement.Configuration\obj\Debug\net5.0\NoteManagement.Configuration.csproj.CoreCompileInputs.cache
+D:\jahanpoor\Projects\bndshop\Code\bndshop\NoteManagement.Configuration\obj\Debug\net5.0\NoteManagement.Configuration.dll
+D:\jahanpoor\Projects\bndshop\Code\bndshop\NoteManagement.Configuration\obj\Debug\net5.0\ref\NoteManagement.Configuration.dll
+D:\jahanpoor\Projects\bndshop\Code\bndshop\NoteManagement.Configuration\obj\Debug\net5.0\NoteManagement.Configuration.pdb

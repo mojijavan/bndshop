@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\PropertyManagement.Infrastructure.Configuration\\PropertyManagement.Infrastructure.Configuration.csproj": {}
+    "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\PropertyManagement.Infrastructure.Configuration\\PropertyManagement.Infrastructure.Configuration.csproj": {}
   },
   "projects": {
-    "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\PropertyManagement.Infrastructure.Configuration\\PropertyManagement.Infrastructure.Configuration.csproj": {
+    "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\PropertyManagement.Infrastructure.Configuration\\PropertyManagement.Infrastructure.Configuration.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\PropertyManagement.Infrastructure.Configuration\\PropertyManagement.Infrastructure.Configuration.csproj",
+        "projectUniqueName": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\PropertyManagement.Infrastructure.Configuration\\PropertyManagement.Infrastructure.Configuration.csproj",
         "projectName": "PropertyManagement.Infrastructure.Configuration",
-        "projectPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\PropertyManagement.Infrastructure.Configuration\\PropertyManagement.Infrastructure.Configuration.csproj",
-        "packagesPath": "C:\\Users\\pgsoc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\PropertyManagement.Infrastructure.Configuration\\obj\\",
+        "projectPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\PropertyManagement.Infrastructure.Configuration\\PropertyManagement.Infrastructure.Configuration.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\PropertyManagement.Infrastructure.Configuration\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\pgsoc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

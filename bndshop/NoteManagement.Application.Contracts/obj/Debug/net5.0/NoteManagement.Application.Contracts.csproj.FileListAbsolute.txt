@@ -1,0 +1,15 @@
+D:\jahanpoor\Projects\bndshop\Code\bndshop\NoteManagement.Application.Contracts\bin\Debug\net5.0\NoteManagement.Application.Contracts.deps.json
+D:\jahanpoor\Projects\bndshop\Code\bndshop\NoteManagement.Application.Contracts\bin\Debug\net5.0\NoteManagement.Application.Contracts.dll
+D:\jahanpoor\Projects\bndshop\Code\bndshop\NoteManagement.Application.Contracts\bin\Debug\net5.0\ref\NoteManagement.Application.Contracts.dll
+D:\jahanpoor\Projects\bndshop\Code\bndshop\NoteManagement.Application.Contracts\bin\Debug\net5.0\NoteManagement.Application.Contracts.pdb
+D:\jahanpoor\Projects\bndshop\Code\bndshop\NoteManagement.Application.Contracts\bin\Debug\net5.0\_0_Framework.dll
+D:\jahanpoor\Projects\bndshop\Code\bndshop\NoteManagement.Application.Contracts\bin\Debug\net5.0\_0_Framework.pdb
+D:\jahanpoor\Projects\bndshop\Code\bndshop\NoteManagement.Application.Contracts\obj\Debug\net5.0\NoteManagement.Application.Contracts.csproj.AssemblyReference.cache
+D:\jahanpoor\Projects\bndshop\Code\bndshop\NoteManagement.Application.Contracts\obj\Debug\net5.0\NoteManagement.Application.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+D:\jahanpoor\Projects\bndshop\Code\bndshop\NoteManagement.Application.Contracts\obj\Debug\net5.0\NoteManagement.Application.Contracts.AssemblyInfoInputs.cache
+D:\jahanpoor\Projects\bndshop\Code\bndshop\NoteManagement.Application.Contracts\obj\Debug\net5.0\NoteManagement.Application.Contracts.AssemblyInfo.cs
+D:\jahanpoor\Projects\bndshop\Code\bndshop\NoteManagement.Application.Contracts\obj\Debug\net5.0\NoteManagement.Application.Contracts.csproj.CoreCompileInputs.cache
+D:\jahanpoor\Projects\bndshop\Code\bndshop\NoteManagement.Application.Contracts\obj\Debug\net5.0\NoteManagement.Application.Contracts.csproj.CopyComplete
+D:\jahanpoor\Projects\bndshop\Code\bndshop\NoteManagement.Application.Contracts\obj\Debug\net5.0\NoteManagement.Application.Contracts.dll
+D:\jahanpoor\Projects\bndshop\Code\bndshop\NoteManagement.Application.Contracts\obj\Debug\net5.0\ref\NoteManagement.Application.Contracts.dll
+D:\jahanpoor\Projects\bndshop\Code\bndshop\NoteManagement.Application.Contracts\obj\Debug\net5.0\NoteManagement.Application.Contracts.pdb

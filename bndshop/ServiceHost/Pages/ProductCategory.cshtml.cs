@@ -20,6 +20,7 @@ namespace ServiceHost.Pages
 
         public void OnGet(string parentSlug, string slug, string label)
         {
+            //if(parentSlug!= ""enamad.png")
             ProductCategoryTopRefrence = _productCategoryQuery.GetTopList(parentSlug, slug, label);
             if (slug == null && label == null)
             {

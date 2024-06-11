@@ -26,21 +26,17 @@
         <!--- Divider -->
         <div id="sidebar-menu">
             <ul>
+              
                 <li>
-                    <a asp-page="/Index" class="waves-effect"><i class="md md-home"></i><span> داشبورد </span></a>
+                    <a asp-page="/Account/Index" class="waves-effect"><i class="md md-home"></i><span> اطلاعات کاربری </span></a>
                 </li>
                 <li>
-                    <a asp-page="/Comments/Index" class="waves-effect"><i class="md md-home"></i><span> اطلاعات کاربری </span></a>
+                    <a asp-page="/Orders/Index" class="waves-effect"><i class="md md-person"></i><span> سفارش ها </span></a>
                 </li>
                 <li>
-                    <a asp-page="/Inventory/Index" class="waves-effect"><i class="md md-home"></i><span> سفارش ها </span></a>
+                    <a asp-page="/Address/Index" class="waves-effect"><i class="md md-event-note"></i><span> آدرس ها </span></a>
                 </li>
-                <li>
-                    <a asp-page="/Inventory/Index" class="waves-effect"><i class="md md-home"></i><span> آدرس ها </span></a>
-                </li>
-                <li>
-                    <a href="/Customer/Address/Index" class="waves-effect"><i class="md md-home"></i><span> شکایات</span></a>
-                </li>
+               
                 <li>
                     <a asp-page="/Account" asp-page-handler="Logout" class="waves-effect active"><i class="fa fa-sign-out"></i><span> خروج </span></a>
                 </li>

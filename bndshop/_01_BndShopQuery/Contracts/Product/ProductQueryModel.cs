@@ -19,40 +19,45 @@ namespace _01_BndShopQuery.Contracts.Product
 
         public ProductQueryModel(ShopManagement.Domain.ProductAgg.Product product,bool IsColleagueUser)
         {
-            //ProductQueryModel productQueryModel = new ProductQueryModel();
-            Id = product.Id;
-            Category = product.Category.Name;
-            Name = product.Name;
-            Picture = product.Picture;
-            PictureAlt = product.PictureAlt;
-            PictureTitle = product.PictureTitle;
-            Slug = product.Slug;
-            CategorySlug = product.Category.Slug;
-            Code = product.Code;
-            Description = product.Description;
-            Keywords = product.Keywords;
-            IsInStock = product.IsInStock;
-            MetaDescription = product.MetaDescription;
-            ShortDescription = product.ShortDescription;
-            Pictures = MapProductPictures(product.ProductPictures);
-            UnitPrice = product.UnitPrice.ToMoney();
-            
-            if (IsColleagueUser)
+            if (product != null)
             {
-                if (product.UnitPrice > product.ColleagueUnitPrice)
-                    HasDiscount = true;
-                PriceWithDiscount = product.ColleagueUnitPrice.ToMoney();
-                DoublePriceWithDiscount = product.ColleagueUnitPrice;
-                DiscountRate = product.ColleagueDiscountRate;
+                //ProductQueryModel productQueryModel = new ProductQueryModel();
+                Id = product.Id;
+                Category = product.Category.Name;
+                Name = product.Name;
+                Picture = product.Picture;
+                PictureAlt = product.PictureAlt;
+                PictureTitle = product.PictureTitle;
+                Slug = product.Slug;
+                CategorySlug = product.Category.Slug;
+                Code = product.Code;
+                Specifications = product.Specifications;
+                Description = product.Description;
+                Keywords = product.Keywords;
+                IsInStock = product.IsInStock;
+                MetaDescription = product.MetaDescription;
+                ShortDescription = product.ShortDescription;
+                Pictures = MapProductPictures(product.ProductPictures);
+                UnitPrice = product.UnitPrice.ToMoney();
+
+                if (IsColleagueUser)
+                {
+                    if (product.UnitPrice > product.ColleagueUnitPrice)
+                        HasDiscount = true;
+                    PriceWithDiscount = product.ColleagueUnitPrice.ToMoney();
+                    DoublePriceWithDiscount = product.ColleagueUnitPrice;
+                    DiscountRate = product.ColleagueDiscountRate;
+                }
+                else
+                {
+                    if (product.UnitPrice > product.CustomerUnitPrice)
+                        HasDiscount = true;
+                    PriceWithDiscount = product.CustomerUnitPrice.ToMoney();
+                    DoublePriceWithDiscount = product.CustomerUnitPrice;
+                    DiscountRate = product.CustomerDiscountRate;
+                }
             }
-            else
-            {
-                if (product.UnitPrice > product.CustomerUnitPrice)
-                    HasDiscount = true;
-                PriceWithDiscount = product.CustomerUnitPrice.ToMoney();
-                DoublePriceWithDiscount = product.CustomerUnitPrice;
-                DiscountRate = product.CustomerDiscountRate;
-            }
+           
 
             //return productQueryModel;
         }
@@ -89,6 +94,7 @@ namespace _01_BndShopQuery.Contracts.Product
         public string Slug { get; set; }
         public string Description { get; set; }
         public string Keywords { get; set; }
+        public string Specifications { get; set; }
         public string MetaDescription { get; set; }
         public bool IsInStock { get; set; }
         public List<CommentQueryModel> Comments { get; set; }

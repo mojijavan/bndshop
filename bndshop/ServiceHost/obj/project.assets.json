@@ -3620,6 +3620,20 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "AccountManagement.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "AccountManagement.Application.Contracts": "1.0.0",
+          "AccountManagement.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/AccountManagement.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AccountManagement.Application.dll": {}
+        }
+      },
       "AccountManagement.Application.Contracts/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -3637,6 +3651,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
+          "AccountManagement.Application": "1.0.0",
           "AccountMangement.Infrastructure.EFCore": "1.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.17",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.17"
@@ -3648,10 +3663,26 @@
           "bin/placeholder/AccountManagement.Configuration.dll": {}
         }
       },
+      "AccountManagement.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "AccountManagement.Application.Contracts": "1.0.0",
+          "_0_Framework": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/AccountManagement.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AccountManagement.Domain.dll": {}
+        }
+      },
       "AccountMangement.Infrastructure.EFCore/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
+          "AccountManagement.Application.Contracts": "1.0.0",
+          "AccountManagement.Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.17",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.17"
         },
@@ -11582,6 +11613,11 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
+    "AccountManagement.Application/1.0.0": {
+      "type": "project",
+      "path": "../AccountManagement.Application/AccountManagement.Application.csproj",
+      "msbuildProject": "../AccountManagement.Application/AccountManagement.Application.csproj"
+    },
     "AccountManagement.Application.Contracts/1.0.0": {
       "type": "project",
       "path": "../AccountManagement.Application.Contracts/AccountManagement.Application.Contracts.csproj",
@@ -11591,6 +11627,11 @@
       "type": "project",
       "path": "../AccountManagement.Configuration/AccountManagement.Configuration.csproj",
       "msbuildProject": "../AccountManagement.Configuration/AccountManagement.Configuration.csproj"
+    },
+    "AccountManagement.Domain/1.0.0": {
+      "type": "project",
+      "path": "../AccountManagement.Domain/AccountManagement.Domain.csproj",
+      "msbuildProject": "../AccountManagement.Domain/AccountManagement.Domain.csproj"
     },
     "AccountMangement.Infrastructure.EFCore/1.0.0": {
       "type": "project",
@@ -11790,23 +11831,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\pgsoc\\.nuget\\packages\\": {},
+    "C:\\Users\\user\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\ServiceHost\\ServiceHost.csproj",
+      "projectUniqueName": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\ServiceHost\\ServiceHost.csproj",
       "projectName": "ServiceHost",
-      "projectPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\ServiceHost\\ServiceHost.csproj",
-      "packagesPath": "C:\\Users\\pgsoc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\ServiceHost\\obj\\",
+      "projectPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\ServiceHost\\ServiceHost.csproj",
+      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+      "outputPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\ServiceHost\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\pgsoc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -11820,26 +11861,26 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\AccountManagement.Configuration\\AccountManagement.Configuration.csproj": {
-              "projectPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\AccountManagement.Configuration\\AccountManagement.Configuration.csproj"
+            "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\AccountManagement.Configuration\\AccountManagement.Configuration.csproj": {
+              "projectPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\AccountManagement.Configuration\\AccountManagement.Configuration.csproj"
             },
-            "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Configuration\\AddressManagement.Configuration.csproj": {
-              "projectPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Configuration\\AddressManagement.Configuration.csproj"
+            "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Configuration\\AddressManagement.Configuration.csproj": {
+              "projectPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\AddressManagement.Configuration\\AddressManagement.Configuration.csproj"
             },
-            "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\BlogManagement.Infrastructure.Configuration\\BlogManagement.Infrastructure.Configuration.csproj": {
-              "projectPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\BlogManagement.Infrastructure.Configuration\\BlogManagement.Infrastructure.Configuration.csproj"
+            "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\BlogManagement.Infrastructure.Configuration\\BlogManagement.Infrastructure.Configuration.csproj": {
+              "projectPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\BlogManagement.Infrastructure.Configuration\\BlogManagement.Infrastructure.Configuration.csproj"
             },
-            "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\CommentManagement.Infrastructure.Configuration\\CommentManagement.Infrastructure.Configuration.csproj": {
-              "projectPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\CommentManagement.Infrastructure.Configuration\\CommentManagement.Infrastructure.Configuration.csproj"
+            "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\CommentManagement.Infrastructure.Configuration\\CommentManagement.Infrastructure.Configuration.csproj": {
+              "projectPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\CommentManagement.Infrastructure.Configuration\\CommentManagement.Infrastructure.Configuration.csproj"
             },
-            "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\DiscountManagement.Configuration\\DiscountManagement.Configuration.csproj": {
-              "projectPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\DiscountManagement.Configuration\\DiscountManagement.Configuration.csproj"
+            "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\DiscountManagement.Configuration\\DiscountManagement.Configuration.csproj": {
+              "projectPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\DiscountManagement.Configuration\\DiscountManagement.Configuration.csproj"
             },
-            "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\InventoryManagement.Infrastructure.Configuration\\InventoryManagement.Infrastructure.Configuration.csproj": {
-              "projectPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\InventoryManagement.Infrastructure.Configuration\\InventoryManagement.Infrastructure.Configuration.csproj"
+            "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\InventoryManagement.Infrastructure.Configuration\\InventoryManagement.Infrastructure.Configuration.csproj": {
+              "projectPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\InventoryManagement.Infrastructure.Configuration\\InventoryManagement.Infrastructure.Configuration.csproj"
             },
-            "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\ShopManagement.Configuration\\ShopManagement.Configuration.csproj": {
-              "projectPath": "C:\\Users\\pgsoc\\Desktop\\Projects\\bndshop\\Code\\bndshop\\ShopManagement.Configuration\\ShopManagement.Configuration.csproj"
+            "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\ShopManagement.Configuration\\ShopManagement.Configuration.csproj": {
+              "projectPath": "D:\\jahanpoor\\Projects\\bndshop\\Code\\bndshop\\ShopManagement.Configuration\\ShopManagement.Configuration.csproj"
             }
           }
         }

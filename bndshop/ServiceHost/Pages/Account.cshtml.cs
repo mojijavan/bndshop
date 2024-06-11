@@ -60,7 +60,18 @@ namespace ServiceHost.Pages
             {
                 var result = _accountApplication.Register(command);
                 if (result.IsSuccedded)
-                    return RedirectToPage("/Account");
+                {
+                    Login login = new Login();
+                    login.Username = command.Username;
+                    login.Password = command.Password;
+                    var result1 = _accountApplication.Login(login);
+                    if (result1.IsSuccedded)
+                    {
+                        return RedirectToPage("/Index");
+                    }
+                   
+                }
+                   
                 RegisterMessage = result.Message;
                 return RedirectToPage("/Account");
             }

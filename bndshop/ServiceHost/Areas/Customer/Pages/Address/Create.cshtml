@@ -20,7 +20,7 @@
                             <div class="form-group">
                                 <label asp-for="Command.ProvinceId">نام استان</label>
                                 <select class="form-control" asp-for="Command.ProvinceId" asp-items="Model.Provinces">
-                                    @*<option value="0">گروه مقاله ...</option>*@
+                                    @*<option value="0">هرمزگان</option>*@
                                 </select>
                             </div>
                         </div>
@@ -28,7 +28,7 @@
                             <div class="form-group">
                                 <label asp-for="Command.CityId">نام شهر</label>
                                 <select class="form-control" asp-for="Command.CityId" asp-items="Model.Cities">
-                                    @*<option value="0">گروه مقاله ...</option>*@
+                                    @*<option value="0">بندرعباس</option>*@
                                 </select>
                             </div>
                         </div>
@@ -48,14 +48,14 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="form-group no-margin">
-                                <label asp-for="Command.Description" class="control-label">توضیحات</label>
+                                <label asp-for="Command.Description" class="control-label">آدرس</label>
                                 <textarea class="form-control" id="BodyContent" asp-for="Command.Description"></textarea>
                                 <span asp-validation-for="Command.Description" class="error"></span>
                             </div>
                         </div>
                     </div>
                     <button type="submit" class="btn btn-success waves-effect waves-light m-b-5">ایجاد</button>
-                    <a asp-page="./Index" class="btn btn-dark waves-effect waves-light m-b-5">بازگشت</a>
+                    <a asp-page="/customer/address/Index" class="btn btn-dark waves-effect waves-light m-b-5">بازگشت</a>
                 </form>
             </div>
         </div>

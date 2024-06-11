@@ -69,14 +69,14 @@
             <div class="col-md-6">
                 <div class="form-group">
                     <label asp-for="PictureAlt" class="control-label">Alt</label>
-                    <input type="text" class="form-control" asp-for="PictureAlt">
+                    <input type="text" class="form-control default" asp-for="PictureAlt">
                     <span asp-validation-for="PictureAlt" class="error"></span>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="form-group">
                     <label asp-for="PictureTitle" class="control-label">عنوان</label>
-                    <input type="text" class="form-control" asp-for="PictureTitle">
+                    <input type="text" class="form-control default" asp-for="PictureTitle">
                     <span asp-validation-for="PictureTitle" class="error"></span>
                 </div>
             </div>
@@ -85,7 +85,7 @@
             <div class="col-md-12">
                 <div class="form-group no-margin">
                     <label asp-for="Description" class="control-label">توضیحات</label>
-                    <textarea class="form-control autogrow" asp-for="Description" onchange="fillField('Description', 'MetaDescription')"
+                    <textarea class="form-control autogrow default" asp-for="Description" onchange="fillField('Description', 'MetaDescription')"
                               style="overflow: hidden; word-wrap: break-word; resize: horizontal; height: 104px;"></textarea>
                     <span asp-validation-for="Description" class="error"></span>
                 </div>
@@ -93,9 +93,19 @@
         </div>
         <div class="row">
             <div class="col-md-12">
+                <div class="form-group no-margin">
+                    <label asp-for="Specifications" class="control-label">مشخصات</label>
+                    <textarea class="form-control autogrow default" asp-for="Specifications"
+                              style="overflow: hidden; word-wrap: break-word; resize: horizontal; height: 104px;"></textarea>
+                    <span asp-validation-for="Specifications" class="error"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
                 <div class="form-group">
                     <label asp-for="Keywords" class="control-label">کلمات کلیدی</label>
-                    <input type="text" class="form-control" asp-for="Keywords">
+                    <input type="text" class="form-control default" asp-for="Keywords">
                     <span asp-validation-for="Keywords" class="error"></span>
                 </div>
             </div>
@@ -104,7 +114,7 @@
             <div class="col-md-12">
                 <div class="form-group no-margin">
                     <label asp-for="MetaDescription" class="control-label">توضیحات متا</label>
-                    <textarea class="form-control autogrow" asp-for="MetaDescription"
+                    <textarea class="form-control autogrow default" asp-for="MetaDescription"
                               style="overflow: hidden; word-wrap: break-word; resize: horizontal; height: 104px;"></textarea>
                     <span asp-validation-for="MetaDescription" class="error"></span>
                 </div>
@@ -112,7 +122,7 @@
             <div class="col-md-12">
                 <div class="form-group no-margin">
                     <label asp-for="Label" class="control-label">لیبل</label>
-                    <textarea class="form-control autogrow" asp-for="Label"
+                    <textarea class="form-control autogrow default" asp-for="Label"
                               style="overflow: hidden; word-wrap: break-word; resize: horizontal; height: 104px;"></textarea>
                     <span asp-validation-for="Label" class="error"></span>
                 </div>

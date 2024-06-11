@@ -29,7 +29,7 @@ namespace ShopManagement.Application
             var FileName = _fileUploader.Upload(command.Picture, path);
             var code = GetCodeForCreate();
             var ProductCategory = new ProductCategory(command.Name, command.Description, FileName,
-                                        command.PictureAlt, command.PictureTitle, command.Keywords, command.MetaDescription, slug,code,command.ParentId,command.Priority,command.Label);
+                                        command.PictureAlt, command.PictureTitle, command.Keywords, command.MetaDescription, slug,code,command.ParentId,command.Priority,command.Label,command.Specifications);
             _productCategoryRepository.Create(ProductCategory);
             _productCategoryRepository.SaveChanges();
             return operation.Succedded();
@@ -47,7 +47,7 @@ namespace ShopManagement.Application
             var path = $"/ProductPictures//{slug}";
             var FileName = _fileUploader.Upload(command.Picture,path);
             productCategory.Edit(command.Name, command.Description, FileName,
-                command.PictureAlt, command.PictureTitle, command.Keywords, command.MetaDescription, slug,command.Code,command.LastProductCode,command.ParentId,command.Priority,command.Label);
+                command.PictureAlt, command.PictureTitle, command.Keywords, command.MetaDescription, slug,command.Code,command.LastProductCode,command.ParentId,command.Priority,command.Label,command.Specifications);
             _productCategoryRepository.SaveChanges();
             return operation.Succedded();
         }

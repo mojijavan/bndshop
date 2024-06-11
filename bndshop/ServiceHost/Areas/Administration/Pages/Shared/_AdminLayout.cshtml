@@ -37,11 +37,12 @@
 
     <link href="~/AdminTheme/assets/css/helper.css" rel="stylesheet" type="text/css" />
     <link href="~/AdminTheme/assets/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="assets/responsive-table/rwd-table.min.css" rel="stylesheet" type="text/css" media="screen">
     <script src="~/AdminTheme/assets/js/modernizr.min.js"></script>
 
 </head>
 
-<body class="fixed-left">
+<body class="fixed-left-void">
 
     <!-- Begin page -->
     <div id="wrapper">
@@ -50,7 +51,7 @@
             <!-- LOGO -->
             <div class="topbar-left">
                 <div class="text-center">
-                    <a href="/index" class="logo"><i class="md md-terrain"></i> <span> BndWeb </span></a>
+                    <a href="/index" class="logo"><i class="md md-terrain"></i> <span> bndplus </span></a>
                 </div>
             </div>
             <!-- Button mobile view to collapse sidebar menu -->
@@ -77,7 +78,7 @@
         </div>
 
         <partial name="_Menu" />
-        
+
         <div class="content-page">
             <!-- Start content -->
             <div class="content">
@@ -90,7 +91,6 @@
             </div> <!-- content -->
 
             <footer class="footer text-right">
-                
             </footer>
 
         </div>
@@ -149,7 +149,7 @@
 
     <!-- Todo -->
     <script src="~/AdminTheme/assets/js/jquery.todo.js"></script>
-
+    <script src="~/AdminTheme/assets/responsive-table/rwd-table.min.js"></script>
     <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
     <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
 
@@ -166,30 +166,29 @@
             autoClose: true,
             initialValueType: "persian"
         });
-        $(document).ready(function() {
+        $(document).ready(function () {
             //console.log(window.location.pathname);
             var elements = window.location.pathname.split('/');
             //console.log(elements[2]);
-            document.getElementById(elements[2]).style.display='block';
+            document.getElementById(elements[2]).style.display = 'block';
             document.getElementById(elements[3]).classList.add('active');
-            $(".ActiveLabel").click(function() {
+            $(".ActiveLabel").click(function () {
                 //console.log($(this).val());
-                if (!$(".label").val().includes($(this).val()))
-                {
+                if (!$(".label").val().includes($(this).val())) {
                     $(".label").val($(".label").val() + "،" + $(this).val());
                 }
-                
+
             });
         });
     </script>
 
     @*<script src="https://cdn.tiny.cloud/1/03bywyfc22f080o11wndvso5su892zkphj49li728tkw9f3f/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
-    <script>
-        tinymce.init({
-            selector: '#BodyContent',
-            plugins: 'advlist autolink lists link image charmap print preview hr anchor pagebreak',
-            toolbar_mode: 'floating',
-        });
-    </script>*@
+        <script>
+            tinymce.init({
+                selector: '#BodyContent',
+                plugins: 'advlist autolink lists link image charmap print preview hr anchor pagebreak',
+                toolbar_mode: 'floating',
+            });
+        </script>*@
 </body>
 </html>
