@@ -126,6 +126,15 @@
                                         <i class="fa fa-home"></i>  آدرس
                                     </a>
                                 </li>
+                                @if (!item.IsCanceled && !item.IsPaid)
+                                {
+                                    <li>
+                                        <a class="btn btn-primary pull-right m-rl-5"
+                                           href="/ipg?orderID=@item.Id&amount=@item.TotalAmount">
+                                            <i class="fa fa-home"></i>  پرداخت
+                                        </a>
+                                    </li>
+                                }
 
                             </ul>
                         </div>

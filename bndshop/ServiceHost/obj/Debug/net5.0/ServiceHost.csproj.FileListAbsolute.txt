@@ -562,9 +562,6 @@ D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Debug\net5.0\ServiceH
 D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Debug\net5.0\ServiceHost.MvcApplicationPartsAssemblyInfo.cache
 D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Debug\net5.0\ServiceHost.RazorAssemblyInfo.cache
 D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Debug\net5.0\ServiceHost.RazorAssemblyInfo.cs
-D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Debug\net5.0\staticwebassets\ServiceHost.StaticWebAssets.Manifest.cache
-D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Debug\net5.0\staticwebassets\ServiceHost.StaticWebAssets.xml
-D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Debug\net5.0\scopedcss\bundle\ServiceHost.styles.css
 D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Debug\net5.0\ServiceHost.TagHelpers.input.cache
 D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Debug\net5.0\ServiceHost.TagHelpers.output.cache
 D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Debug\net5.0\ServiceHost.RazorCoreGenerate.cache
@@ -666,3 +663,8 @@ D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Debug\net5.0\ServiceH
 D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Debug\net5.0\ref\ServiceHost.dll
 D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Debug\net5.0\ServiceHost.pdb
 D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Debug\net5.0\ServiceHost.genruntimeconfig.cache
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Debug\net5.0\Razor\Pages\Approve.cshtml.g.cs
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Debug\net5.0\Razor\Pages\Ipg.cshtml.g.cs
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\bin\Debug\net5.0\AspNetCore.Mvc.Extensions.RedirectAndPost.dll
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\bin\Debug\net5.0\RedirectAndPostCore.dll
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Debug\net5.0\Razor\Pages\ipg2.cshtml.g.cs

@@ -15,6 +15,7 @@
         public bool IsCanceled { get;  set; }
         public string IssueTrackingNo { get;  set; }
         public long RefId { get;  set; }
+        public string Token { get; set; }
         public string CreationDate { get; set; }
     }
 }

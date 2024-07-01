@@ -2,6 +2,19 @@
   "version": 3,
   "targets": {
     "net5.0": {
+      "AspNetCore.Mvc.Extensions.RedirectAndPost/1.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Mvc.Core": "2.2.5",
+          "Microsoft.AspNetCore.Mvc.ViewFeatures": "2.2.0"
+        },
+        "compile": {
+          "lib/netcoreapp2.0/AspNetCore.Mvc.Extensions.RedirectAndPost.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/AspNetCore.Mvc.Extensions.RedirectAndPost.dll": {}
+        }
+      },
       "BouncyCastle.Cryptography/2.2.1": {
         "type": "package",
         "compile": {
@@ -370,7 +383,7 @@
           "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.ApiExplorer.dll": {}
         }
       },
-      "Microsoft.AspNetCore.Mvc.Core/2.2.0": {
+      "Microsoft.AspNetCore.Mvc.Core/2.2.5": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNetCore.Authentication.Core": "2.2.0",
@@ -499,7 +512,8 @@
           "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Razor.Extensions.dll": {}
         },
         "build": {
-          "build/netstandard2.0/_._": {}
+          "build/netstandard2.0/Microsoft.AspNetCore.Mvc.Razor.Extensions.props": {},
+          "build/netstandard2.0/Microsoft.AspNetCore.Mvc.Razor.Extensions.targets": {}
         }
       },
       "Microsoft.AspNetCore.Mvc.RazorPages/2.2.0": {
@@ -565,10 +579,10 @@
       "Microsoft.AspNetCore.Razor.Design/2.2.0": {
         "type": "package",
         "build": {
-          "build/netstandard2.0/_._": {}
+          "build/netstandard2.0/Microsoft.AspNetCore.Razor.Design.props": {}
         },
         "buildMultiTargeting": {
-          "buildMultiTargeting/_._": {}
+          "buildMultiTargeting/Microsoft.AspNetCore.Razor.Design.props": {}
         }
       },
       "Microsoft.AspNetCore.Razor.Language/5.0.0": {
@@ -1730,6 +1744,18 @@
         },
         "runtime": {
           "lib/netstandard2.0/Newtonsoft.Json.Bson.dll": {}
+        }
+      },
+      "RedirectAndPostCore/1.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Mvc": "2.2.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/RedirectAndPostCore.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/RedirectAndPostCore.dll": {}
         }
       },
       "RestSharp/110.2.0": {
@@ -4247,6 +4273,19 @@
     }
   },
   "libraries": {
+    "AspNetCore.Mvc.Extensions.RedirectAndPost/1.0.2": {
+      "sha512": "MNaE6FhI1rBiBlrRB7dwhe/a/ePRpaLXissw8E9N+TAG320rLbefbEL9oGL1H3xNCH52RFurGLfjMYUPSUoSkg==",
+      "type": "package",
+      "path": "aspnetcore.mvc.extensions.redirectandpost/1.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "aspnetcore.mvc.extensions.redirectandpost.1.0.2.nupkg.sha512",
+        "aspnetcore.mvc.extensions.redirectandpost.nuspec",
+        "images/icon.png",
+        "lib/netcoreapp2.0/AspNetCore.Mvc.Extensions.RedirectAndPost.dll"
+      ]
+    },
     "BouncyCastle.Cryptography/2.2.1": {
       "sha512": "A6Zr52zVqJKt18ZBsTnX0qhG0kwIQftVAjLmszmkiR/trSp8H+xj1gUOzk7XHwaKgyREMSV1v9XaKrBUeIOdvQ==",
       "type": "package",
@@ -4648,16 +4687,16 @@
         "microsoft.aspnetcore.mvc.apiexplorer.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.Mvc.Core/2.2.0": {
-      "sha512": "ALiY4a6BYsghw8PT5+VU593Kqp911U3w9f/dH9/ZoI3ezDsDAGiObqPu/HP1oXK80Ceu0XdQ3F0bx5AXBeuN/Q==",
+    "Microsoft.AspNetCore.Mvc.Core/2.2.5": {
+      "sha512": "/8sr8ixIUD57UFwUntha9bOwex7/AkZfdk1f9oNJG1Ek7p/uuKVa7fuHmYZpQOf35Oxrt+2Ku4WPwMSbNxOuWg==",
       "type": "package",
-      "path": "microsoft.aspnetcore.mvc.core/2.2.0",
+      "path": "microsoft.aspnetcore.mvc.core/2.2.5",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Core.dll",
         "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Core.xml",
-        "microsoft.aspnetcore.mvc.core.2.2.0.nupkg.sha512",
+        "microsoft.aspnetcore.mvc.core.2.2.5.nupkg.sha512",
         "microsoft.aspnetcore.mvc.core.nuspec"
       ]
     },
@@ -6704,6 +6743,18 @@
         "lib/netstandard2.0/Newtonsoft.Json.Bson.xml",
         "newtonsoft.json.bson.1.0.2.nupkg.sha512",
         "newtonsoft.json.bson.nuspec"
+      ]
+    },
+    "RedirectAndPostCore/1.0.2": {
+      "sha512": "wwSRG4aTvejs+c+McH4jiwqJYF20cx/V06zrxaCFZB8fa+h0tmgCbPHakecx/4LTWZOfw1sV3qTmu4QRxzlp/w==",
+      "type": "package",
+      "path": "redirectandpostcore/1.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/RedirectAndPostCore.dll",
+        "redirectandpostcore.1.0.2.nupkg.sha512",
+        "redirectandpostcore.nuspec"
       ]
     },
     "RestSharp/110.2.0": {
@@ -11818,15 +11869,18 @@
     "net5.0": [
       "AccountManagement.Configuration >= 1.0.0",
       "AddressManagement.Configuration >= 1.0.0",
+      "AspNetCore.Mvc.Extensions.RedirectAndPost >= 1.0.2",
       "BlogManagement.Infrastructure.Configuration >= 1.0.0",
       "CommentManagement.Infrastructure.Configuration >= 1.0.0",
       "DiscountManagement.Configuration >= 1.0.0",
       "InventoryManagement.Infrastructure.Configuration >= 1.0.0",
+      "Microsoft.AspNetCore.Mvc >= 2.2.0",
       "Microsoft.AspNetCore.Mvc.NewtonsoftJson >= 5.0.17",
       "Microsoft.EntityFrameworkCore.Design >= 5.0.17",
       "Microsoft.EntityFrameworkCore.Tools >= 5.0.17",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 5.0.2",
       "Nancy >= 2.0.0",
+      "RedirectAndPostCore >= 1.0.2",
       "ShopManagement.Configuration >= 1.0.0"
     ]
   },
@@ -11895,6 +11949,14 @@
       "net5.0": {
         "targetAlias": "net5.0",
         "dependencies": {
+          "AspNetCore.Mvc.Extensions.RedirectAndPost": {
+            "target": "Package",
+            "version": "[1.0.2, )"
+          },
+          "Microsoft.AspNetCore.Mvc": {
+            "target": "Package",
+            "version": "[2.2.0, )"
+          },
           "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
             "target": "Package",
             "version": "[5.0.17, )"
@@ -11918,6 +11980,10 @@
           "Nancy": {
             "target": "Package",
             "version": "[2.0.0, )"
+          },
+          "RedirectAndPostCore": {
+            "target": "Package",
+            "version": "[1.0.2, )"
           }
         },
         "imports": [

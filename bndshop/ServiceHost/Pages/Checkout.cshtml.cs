@@ -87,7 +87,7 @@ namespace ServiceHost.Pages
                 return RedirectToPage("./Account");
             if (paymentMethod == 0)
                 return RedirectToPage("./Checkout");
-            if (addressMethod == 0)
+            if (addressMethod == 0&&paymentMethod!=3)
                 return RedirectToPage("./Checkout");
             var cart = _cartService.Get();
             cart.SetPaymentMethod(paymentMethod);
@@ -97,23 +97,20 @@ namespace ServiceHost.Pages
                 return RedirectToPage("/Cart");
 
             var orderId = _orderApplication.PlaceOrder(cart);
-            if (paymentMethod == 1)
-            {
-                var paymentResponse = _zarinPalFactory.CreatePaymentRequest(
-                    cart.PayAmount.ToString(CultureInfo.InvariantCulture), "", "",
-                    "خرید از درگاه بندرپلاس", orderId);
+            //if (paymentMethod == 1)
+            //{
+            //    var paymentResponse = _zarinPalFactory.CreatePaymentRequest(
+            //        cart.PayAmount.ToString(CultureInfo.InvariantCulture), "", "",
+            //        "خرید از درگاه بندرپلاس", orderId);
 
-                return Redirect(
-                    $"https://{_zarinPalFactory.Prefix}.zarinpal.com/pg/StartPay/{paymentResponse.Authority}");
-            }
+            //    return Redirect(
+            //        $"https://{_zarinPalFactory.Prefix}.zarinpal.com/pg/StartPay/{paymentResponse.Authority}");
+            //}
             if (paymentMethod == 4)
             {
-                var paymentResponse = _zarinPalFactory.CreatePaymentRequest(
-                    cart.PayAmount.ToString(CultureInfo.InvariantCulture), "", "",
-                    "خرید از درگاه بندرپلاس", orderId);
-
-                return Redirect(
-                    $"https://{_zarinPalFactory.Prefix}.zarinpal.com/pg/StartPay/{paymentResponse.Authority}");
+                string amount = _orderApplication.GetAmountBy(orderId).ToString();
+                return RedirectToPage("/Ipg", new { orderID = orderId.ToString(), amount=amount });
+                
             }
             var issueTrackingNo = orderId;
             var paymentResult = new PaymentResult();
@@ -143,90 +140,7 @@ namespace ServiceHost.Pages
                 "پرداخت با موفقیت انجام نشد. درصورت کسر وجه از حساب، مبلغ تا 24 ساعت دیگر به حساب شما بازگردانده خواهد شد.");
             return RedirectToPage("/PaymentResult", result);
         }
-        string TOKEN = string.Empty;
-        // GET: Ipg
-        //[HttpPost]
-        //public ActionResult Index(phase1 Phase1)
-        //{
-        //    generateTokenWithNoSignRequest tokenWithNoSignRequest = new generateTokenWithNoSignRequest()
-        //    {
-        //        //wSContext.UserId = "41979242",
-        //        // wSContext.Password = "698583",
-        //        Amount = Phase1.Amount,
-        //        //MerchantId = Phase1.MerchantId,
-        //        //411398675
-        //        RedirectUrl = Phase1.RedirectUrl,
-        //        ReserveNum = Phase1.ReserveNum,
-        //        TransType = Type.EN_GOODS.ToString()//"EN_GOODS"
-        //    };
-        //    tokenWithNoSignRequest.WSContext.UserId = "41726609";
-        //    tokenWithNoSignRequest.WSContext.Password = "073571";
-        //    tokenWithNoSignRequest.MerchantId = 411398675.ToString();
-
-
-        //    var request = (HttpWebRequest)WebRequest.Create("https://ref.sayancard.ir/ref-payment/RestServices/mts/generateTokenWithNoSign/");
-
-        //    //var postData = "{\"UserName\":41979242,\"Password\":698583}";
-
-        //    var postData = JsonConvert.SerializeObject(tokenWithNoSignRequest);
-
-
-        //    var data = Encoding.ASCII.GetBytes(postData);
-        //    request.Method = "POST";
-        //    request.ContentType = "application/json";
-        //    request.ContentLength = data.Length;
-        //    using (var stream = request.GetRequestStream())
-        //    {
-        //        stream.Write(data, 0, data.Length);
-        //    }
-        //    var response = (HttpWebResponse)request.GetResponse();
-        //    var responseString = new StreamReader(response.GetResponseStream()).ReadToEnd();
-        //    JObject json = JObject.Parse(responseString);
-        //    //WSContext a = new WSContext();
-        //    // a.
-        //    if (json.ContainsKey("Result")) if (json.GetValue("Result").ToString() == "erSucceed")
-        //        {
-        //            if (json.ContainsKey("Token")) TOKEN = json.GetValue("Token").ToString();
-        //            //if (json.ContainsKey("SessionId")) TOKEN = json.GetValue("SessionId").ToString();
-        //        }
-
-
-        //    //ViewBag.token = TOKEN;
-        //    //ViewBag.lang = "fa";
-
-        //    Dictionary<string, object> postIpgData = new Dictionary<string, object>();
-        //    postIpgData.Add("token", TOKEN);
-        //    postIpgData.Add("language", "fa");
-
-        //    //return this.RedirectAndPost("https://say.shaparak.ir/_ipgw_/MainTemplate/payment/", postIpgData);
-
-
-        //    // return View("test");
-        //}
-        enum Type
-        {
-            EN_GOODS,
-            EN_BILL_PAY,
-            EN_VOCHER,
-            EN_TOP_UP,
-            EN_THP_PAY
-        }
-
-        private class wSContext
-        {
-            public string UserId { get; set; }
-            public string Password { get; set; }
-        }
-
-        private class generateTokenWithNoSignRequest
-        {
-            public wSContext WSContext = new wSContext();
-            public string TransType { get; set; }
-            public string ReserveNum { get; set; }
-            public string MerchantId { get; set; }
-            public string Amount { get; set; }
-            public string RedirectUrl { get; set; }
-
-        }
+       
+    
     }
 }

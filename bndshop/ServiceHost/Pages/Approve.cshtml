@@ -1,0 +1,21 @@
+﻿@page
+@model ServiceHost.Pages.ApproveModel
+@{
+}
+
+    
+    <p>@Model.result2</p>
+    <div class="breadcrumb-area section-space--half">
+        <div class="container wide">
+            <div class="row">
+                <h3>@Model.result1</h3>
+                <div>
+                    <a class="btn btn-primary" href="//Customer/Orders/Index">حساب کاربری</a>
+                    <a class="btn btn-primary" href="/account">پیگیری سفارش</a>
+                    @if(@Model.resultTemp.ApproveState=="OK"){
+                        <p>شماره پیگیری: @Model.resultTemp.RefNum</p>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>

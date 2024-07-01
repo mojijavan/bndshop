@@ -187,15 +187,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FM.Domain", "FM.Domain", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FM.Infrastructure", "FM.Infrastructure", "{862E6EFD-ECBC-474B-A19F-9B2493A9D3A2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinanaceManagement.Application", "FinanaceManagement.Application\FinanaceManagement.Application.csproj", "{E5C8F2E9-8D84-4E22-957A-24D8F443DCFD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FinanaceManagement.Application", "FinanaceManagement.Application\FinanaceManagement.Application.csproj", "{E5C8F2E9-8D84-4E22-957A-24D8F443DCFD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinanaceManagement.Application.Contracts", "FinanaceManagement.Application.Contracts\FinanaceManagement.Application.Contracts.csproj", "{B8B8F6B9-9D58-4F6D-8635-8AE428E28D8D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FinanaceManagement.Application.Contracts", "FinanaceManagement.Application.Contracts\FinanaceManagement.Application.Contracts.csproj", "{B8B8F6B9-9D58-4F6D-8635-8AE428E28D8D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinanaceManagement.Domain", "FinanaceManagement.Domain\FinanaceManagement.Domain.csproj", "{96EC4FFF-D8AC-4054-AF3F-FEEB16A111A2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FinanaceManagement.Domain", "FinanaceManagement.Domain\FinanaceManagement.Domain.csproj", "{96EC4FFF-D8AC-4054-AF3F-FEEB16A111A2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinanaceManagement.Configuration", "FinanaceManagement.Configuration\FinanaceManagement.Configuration.csproj", "{00F6FF6A-A326-4FCA-8D21-F4A91B2230BD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FinanaceManagement.Configuration", "FinanaceManagement.Configuration\FinanaceManagement.Configuration.csproj", "{00F6FF6A-A326-4FCA-8D21-F4A91B2230BD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinanaceManagement.Infrastructure.EFCore", "FinanaceManagement.Infrastructure.EFCore\FinanaceManagement.Infrastructure.EFCore.csproj", "{9E37BF3A-2CDB-4660-8820-F7E5F6F848ED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FinanaceManagement.Infrastructure.EFCore", "FinanaceManagement.Infrastructure.EFCore\FinanaceManagement.Infrastructure.EFCore.csproj", "{9E37BF3A-2CDB-4660-8820-F7E5F6F848ED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

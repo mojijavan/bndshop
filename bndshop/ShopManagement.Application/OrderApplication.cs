@@ -62,7 +62,8 @@ namespace ShopManagement.Application
             var order = _orderRepository.Get(orderId);
             order.PaymentSucceeded(refId);
             var symbol = _configuration.GetValue<string>("Symbol");
-            var issueTrackingNo = CodeGenerator.Generate(symbol);
+            var issueTrackingNo = "U" + order.AccountId + "O" + order.Id + "D" + Tools.ToEnglishString(System.DateTime.Now);
+            //var issueTrackingNo = CodeGenerator.Generate(symbol);
             order.SetIssueTrackingNo(issueTrackingNo);
             if (!_shopInventoryAcl.ReduceFromInventory(order.Items)) return "";
 
@@ -83,6 +84,19 @@ namespace ShopManagement.Application
         public List<OrderViewModel> Search(OrderSearchModel searchModel)
         {
             return _orderRepository.Search(searchModel);
+        }
+
+        public void SetTokenForOrderId(long orderId, string token)
+        {
+            var order = _orderRepository.Get(orderId);
+            order.SetPaymentToken(token);
+            _orderRepository.SaveChanges();
+        }
+
+        public string GetTokenWithOrderId(long orderId)
+        {
+            return _orderRepository.Get(orderId).Token ;
+
         }
     }
 }

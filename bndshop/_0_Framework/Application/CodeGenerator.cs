@@ -7,6 +7,7 @@ namespace _0_Framework.Application
     {
         public static string Generate(string symbol)
         {
+
             return $"{symbol}{RandomString()}{RandomNumber()}";
         }
 

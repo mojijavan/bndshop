@@ -57,6 +57,9 @@ namespace ShopManagement.Infrastructure.EFCore.Migrations
                     b.Property<long>("RefId")
                         .HasColumnType("bigint");
 
+                    b.Property<string>("Token")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<double>("TotalAmount")
                         .HasColumnType("float");
 

@@ -276,8 +276,21 @@ D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp
 D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\AdminTheme\fonts\Material-Design-Iconic-Font.svg
 D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\AdminTheme\fonts\Material-Design-Iconic-Font.ttf
 D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\AdminTheme\fonts\Material-Design-Iconic-Font.woff
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\BlogPictures\بندرپلاس\تماس-با-بندرپلاس\2024-01-03-14-09-48-contact-us-pages-min.jpg
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\BlogPictures\بندرپلاس\درباره-بندرپلاس\2024-01-03-14-12-43-97566e.jpg
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\BlogPictures\بندرپلاس\شماره-حساب-های-بندرموبایل\2024-01-03-14-08-05-pardakht.jpg
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\BlogPictures\بندرپلاس\همکاری-با-بندرپلاس\2024-01-03-14-10-36-Cooperation-004-768x512.jpg
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\BlogPictures\بندرپلاس\وبلاگ-بندرموبایل\2024-01-03-14-07-08-blog-01.jpg
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\BlogPictures\خدمات-مشتریان\حریم-خصوصی\2024-01-03-13-48-32-dfgd.jpg
 D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\BlogPictures\خدمات-مشتریان\رویه-بازگرداندن-کالا\2024-01-01-10-30-04-delivery_services.jpg
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\BlogPictures\خدمات-مشتریان\رویه-بازگرداندن-کالا\2024-01-01-10-59-04-delivery_services.jpg
 D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\BlogPictures\خدمات-مشتریان\شرایط-استفاده\2024-01-01-11-30-41-terms-of-use-luxcity.jpg
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\BlogPictures\خدمات-مشتریان\شرایط-استفاده\2024-01-01-12-38-01-terms-of-use-luxcity.jpg
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\BlogPictures\خدمات-مشتریان\پاسخ-به-سوالات-متداول\2024-01-03-13-54-10-soalatmotdavel.jpg
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\BlogPictures\راهنمای خرید از بندرپلاس\ثبت-سفارش\2024-01-03-14-02-38-sabtsefaresh.jpg
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\BlogPictures\راهنمای خرید از بندرپلاس\راهنمای-پرداخت\2024-01-03-14-06-21-pay.JPG
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\BlogPictures\راهنمای خرید از بندرپلاس\رویه-ارسال-سفارشات\2024-01-03-14-03-58-delivery-shipping-process1.jpg
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\BlogPictures\راهنمای خرید از بندرپلاس\پیگیری-سفارش\2024-01-03-14-04-50-track.jpg
 D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\enamad.png
 D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\favicon.ico
 D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
@@ -332,9 +345,21 @@ D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp
 D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\slides\2023-12-31-11-53-49-bluspeak.jpg
 D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\slides\2023-12-31-12-12-37-blutoo.jpg
 D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\slides\2023-12-31-12-12-46-bluspeak.jpg
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\slides\2024-04-29-15-01-28-computeracc.jpg
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\slides\2024-04-29-15-10-49-caracc.jpg
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\slides\2024-04-29-15-16-32-handsfree.jpg
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\slides\2024-04-29-15-30-48-charger.jpg
 D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\slides\Thumbs.db
 D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\آداپتور-شارژر\آداپتور-اصلی-آیفون-سری-8\2023-12-31-10-16-00-49e41677-5e8a-4918-a94e-900fe81916f4.jpg
 D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\آداپتور-شارژر\آداپتور-اصلی-آیفون-سری-8\2023-12-31-15-13-37-49e41677-5e8a-4918-a94e-900fe81916f4.jpg
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\آداپتور-شارژر\آداپتور-سامسونگ-معمولی\2024-05-04-14-13-28-Untitled-1.jpg
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\آداپتور-شارژر\آداپتور-سامسونگ-معمولی\2024-05-04-14-23-03-Untitled-11.jpg
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\آداپتور-شارژر\آداپتور-هواوی-سوپرشارژ-کانکتور-تایپ-سی-و-usb\2024-05-03-14-45-10-Untitled-1.jpg
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\آداپتور-شارژر\آداپتور-هواوی-سوپرشارژ-کانکتور-تایپ-سی-و-usb\2024-05-03-14-52-51-Untitled-11.jpg
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\آداپتور-شارژر\آداپتورآیفون-سری-x\2024-05-04-13-56-55-Untitled-1.jpg
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\آداپتور-شارژر\آداپتورآیفون-سری-x\2024-05-04-14-24-56-Untitled-11.jpg
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\آداپتور-شارژر\هاب-شارژر-6-پورت-مدل-s6\2024-05-04-14-20-19-Untitled-1.jpg
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\آداپتور-شارژر\هاب-شارژر-6-پورت-مدل-s6\2024-05-04-14-21-56-Untitled-11.jpg
 D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\اسپیکر-بلوتوث\2023-12-31-11-53-20-bluspeak.jpg
 D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\اسپیکر-بلوتوث\2023-12-31-11-55-41-BndMobileCategory.jpg
 D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\اسپیکر-بلوتوث\2023-12-31-12-11-58-BndMobileCategory.jpg
@@ -348,9 +373,32 @@ D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp
 D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\اسپیکر\اسپیکر-2\2023-10-26-12-13-39-4ae2ab20-1bdd-46f8-81bf-088c2db3bcdf.jpg
 D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\اسپیکر\اسپیکر-3\2023-10-26-12-14-16-b70e54e4-0b6e-4bca-860c-8e276650a01b.jpg
 D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\اسپیکر\اسپیکر\2023-10-26-11-40-17-ce8bba50-b811-4702-a613-da93d7fa8c24.jpg
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\انواع-مبدل-ها\تبدیل-usb-to-otg\2024-05-04-14-21-04-Untitled-1.jpg
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\انواع-مبدل-ها\تبدیل-کابل-type-c-به-lightning-آیفون\2024-05-03-12-59-23-Untitled-1.jpg
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\انواع-مبدل-ها\تبدیل-کابل-type-c-به-lightning-آیفون\2024-05-03-12-59-37-Untitled-11.jpg
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\انواع-مبدل-ها\کابل-شارژر-مچ-بند-هوشمند-شیائومی-mi-band-3-طول-14cm\2024-05-04-14-05-01-Untitled-1.jpg
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\تجهیزات-بازی-کامپیوتر\دسته-بازی-ps4-های-کپی-سونی-مدل-dualshock-4\2024-05-04-14-17-27-Untitled-1.jpg
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\تجهیزات-بازی-کامپیوتر\دسته-بازی-ps4-های-کپی-سونی-مدل-dualshock-4\2024-05-04-14-22-19-Untitled-11.jpg
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\تجهیزات-بازی-کامپیوتر\دسته-بازی-دوتایی-مدل-فضایی-رنگ-مشکی\2024-05-04-13-54-03-Untitled-1.jpg
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\تجهیزات-بازی-کامپیوتر\دسته-بازی-دوتایی-مدل-فضایی-رنگ-مشکی\2024-05-04-14-24-44-Untitled-11.jpg
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\تجهیزات-بازی-کامپیوتر\دسته-بازی-دوتایی-مدل-فضایی\2024-05-04-13-53-14-Untitled-1.jpg
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\تجهیزات-بازی-کامپیوتر\دسته-بازی-دوتایی-مدل-فضایی\2024-05-04-14-25-30-Untitled-11.jpg
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\تجهیزات-بازی-کامپیوتر\دسته-بازی-دوتایی-یوکام-مدل-uc-js708s2-ا-ucom-uc-js708s2-double-gamepad\2024-05-03-15-15-07-Untitled-1.jpg
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\تجهیزات-بازی-کامپیوتر\دسته-بازی-وایرلس-ps4-مدل-t29\2024-05-04-14-11-15-Untitled-1.jpg
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\تجهیزات-بازی-کامپیوتر\دسته-بازی-وایرلس-ps4-مدل-t29\2024-05-04-14-23-29-Untitled-11.jpg
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\تجهیزات-برقی-کمپینگ-و-خودرو\2024-04-27-14-12-41-camping.jpg
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\شارژر-فندکی\شارژر-فندکی-بیبوشی-مدل-cc002a\2024-01-12-20-47-05-99341447-fa50-42ae-86c6-496c446fc4d1.jpg
 D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\شارژر-فندکی\شارژر-فندکی-سامسونگ-مدل-sx925u\2024-01-05-12-03-40-image_30791660660833.jpg
 D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\شارژر-فندکی\شارژر-فندکی-سامسونگ-مدل-sx925u\2024-01-05-12-04-10-image_307101660660831.jpg
 D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\شارژر-فندکی\شارژر-فندکی-سامسونگ-مدل-sx925u\2024-01-05-12-04-31-image_307141660660873.jpg
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\شارژر-فندکی\شارژر-فندکی-سامسونگ-مدل-sx925u\2024-05-03-15-09-32-Untitled-1.jpg
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\شارژر-فندکی\شارژر-فندکی-کانفلون-مدل-c17\2024-05-04-13-48-32-Untitled-1.jpg
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\شارژر-فندکی\شارژر-فندکی-کانفلون-مدل-c17\2024-05-04-14-25-52-Untitled-11.jpg
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\شارژر-و-کابل-گوشی\کابل-ldnio-مدل-ls63-پکدار-به-طول-1-متر-usb-به-type-c\2024-05-03-15-02-40-Untitled-1.jpg
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\شارژر-و-کابل-گوشی\کابل-ldnio-مدل-ls63-پکدار-به-طول-1-متر-usb-به-type-c\2024-05-03-15-04-16-Untitled-11.jpg
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\شارژر-و-کابل-گوشی\کابل-ldnio-مدل-ls63-پکدار-به-طول-1-متر-usb-به-type-c\2024-05-03-15-04-27-ldnio-ls-63-microusb-lightning-type-c-1-m-cable (1).jpg
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\شارژر-و-کابل-گوشی\کابل-ldnio-مدل-ls63-پکدار-به-طول-1-متر-usb-به-type-c\2024-05-03-15-04-40-ldnio-ls-63-microusb-lightning-type-c-1-m-cable.jpg
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\شارژر-و-کابل-گوشی\کابل-ldnio-مدل-ls63-پکدار-به-طول-1-متر-usb-به-type-c\2024-05-03-15-04-51-ldnio-ls-63-microusb-lightning-type-c-1-m-cable (2).jpg
 D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\شارژر\2023-10-26-10-03-19-Capture.JPG
 D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\شارژر\2023-10-26-10-35-14-Capture.JPG
 D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\شارژر\2023-11-22-10-59-34-charger.jpg
@@ -358,12 +406,32 @@ D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp
 D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\شارژر\شارژر-2\2023-11-17-15-13-51-5ed2bb5e-3aff-4e54-9cfb-a2a332d3ade1.jpg
 D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\شارژر\شارژر-3\2023-11-17-15-14-38-03fa75b3-5353-40ba-b8aa-7f9f9d0fe92b.jpg
 D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\لوازم-جانبی-کامپیوتر-و-لپ-تاپ\موس-گیمینگ-سیم-دار-hp-مدل-g580\2024-04-22-13-46-44-IMG_20231115_174936.jpg
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\لوازم-متفرقه-کامپیوتر\برچسب-حروف-فارسی-کیبورد-مدل-black-design\2024-04-29-16-23-34-Screenshot 2024-04-29 162110.jpg
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\لوازم-متفرقه-کامپیوتر\کابل-hdmi-3-متری-4k-جلد-سبز\2024-05-01-22-41-08-hdmi 3m.jpg
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\لوازم-متفرقه-کامپیوتر\کابل-hdmi-3-متری-4k-جلد-سبز\2024-05-01-22-52-13-hdmi 3m 2.jpg
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\لوازم-متفرقه-کامپیوتر\کابل-hdmi-4k-جلد-سبز-3-متری\2024-05-03-14-51-36-Untitled-2.jpg
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\لوازم-متفرقه-کامپیوتر\کابل-hdmi-4k-جلد-سبز-3-متری\2024-05-03-14-52-04-Untitled-1.jpg
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\لوازم-متفرقه-کامپیوتر\کابل-vga-سرعت-و-کیفیت-مناسب\2024-05-03-12-55-08-Untitled-1.jpg
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\لوازم-متفرقه-کامپیوتر\کابل-vga-سرعت-و-کیفیت-مناسب\2024-05-03-12-55-31-Untitled-2.jpg
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\لوازم-متفرقه-کامپیوتر\کابل-vga-سرعت-و-کیفیت-مناسب\2024-05-03-12-55-42-Untitled-3.jpg
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\لوازم-متفرقه-کامپیوتر\کابل-برق-کامپیوتربدون-پک\2024-05-03-12-52-36-Untitled-11.jpg
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\موس-و-کیبورد\ماوس-بی-سیم-اچ-پی-مدل-fm510a-hp-fm510a-wireless-mouse\2024-04-29-16-14-10-Screenshot 2024-04-29 161026.jpg
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\موس-و-کیبورد\ماوس-گیمینگ-اچ-پی-مدل-g580\2024-04-29-15-35-29-موس-گیمینگ-سیم-دار-hp-مدل-G580-5.jpg
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\موس-و-کیبورد\ماوس-گیمینگ-اچ-پی-مدل-g580\2024-04-29-15-36-07-موس-گیمینگ-سیم-دار-hp-مدل-G580-6.jpg
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\موس-و-کیبورد\ماوس-گیمینگ-اچ-پی-مدل-g580\2024-04-29-15-36-22-موس-گیمینگ-سیم-دار-hp-مدل-G580-7.jpg
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\موس-و-کیبورد\ماوس-گیمینگ-اچ-پی-مدل-g580\2024-04-29-15-36-35-Screenshot 2024-04-29 153335.jpg
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\موس-و-کیبورد\ماوس-گیمینگ-اچ-پی-مدل-g580\2024-04-29-15-53-43-موس-گیمینگ-سیم-دار-hp-مدل-G580-5.jpg
 D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\هندزفری-سیمی\2023-12-02-10-05-17-simi.jpg
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\هندزفری-سیمی\هندزفری-اصلی-سامسونگ-akg-تایپسی-type-c-رنگ-سفید\2024-05-03-12-45-40-Untitled-1.jpg
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\هندزفری-سیمی\هندزفری-اصلی-سامسونگ-akg-تایپسی-type-c-رنگ-سفید\2024-05-03-12-48-58-DzBuGuPg99XhOCqYSDjRBtkTuSJ2beMQGnnpiUD0VCFvbldLeJ.jpg_512X512X70.jpg
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\هندزفری-سیمی\هندزفری-اصلی-سامسونگ-akg-تایپسی-type-c-رنگ-مشکی\2024-05-04-14-14-53-Untitled-1.jpg
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\هندزفری-سیمی\هندزفری-اصلی-سامسونگ-akg-تایپسی-type-c-رنگ-مشکی\2024-05-04-14-22-38-Untitled-11.jpg
 D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\هندزفری\2023-10-26-09-55-48-handsfree.jpg
 D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\هندزفری\2023-10-26-10-34-47-handsfree.jpg
 D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\هندزفری\2023-11-22-10-50-46-Untitled-1.jpg
 D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\هندزفری\2023-12-31-11-48-07-hhhhhhhhhh.jpg
 D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\هندزفری\2024-01-06-09-13-53-2023-11-17-14-54-51-a698b7ef-7141-4aa3-b1aa-d8b9eab8d140.jpg
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\هندزفری\2024-01-13-10-54-29-2023-11-22-10-50-46-Untitled-1.jpg
 D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\هندزفری\Thumbs.db
 D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\هندزفری\هندزفری-1\2023-11-17-14-50-57-2b975ed8-92c5-4ebe-bf06-3ed8f7648c29.jpg
 D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\هندزفری\هندزفری-1\Thumbs.db
@@ -375,12 +443,29 @@ D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp
 D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\کابل-aux\کابل-aux-نیتو-ntiu-nt-aux002-طول-1-متر\2024-01-05-12-22-43-Nitu-Audio-Cable-NT-AUX002-3.jpg
 D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\کابل-aux\کابل-صدا-1-8-متری-nitu-aux-مدل-001-مشکی-طلایی\2024-01-05-12-27-53-Screenshot 2024-01-05 005639.jpg
 D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\کابل-micro-usb\کابل-mikro-usb-biboshi\2024-01-05-12-39-02-LiHeL80Jp7-ZZpTY.jpg
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\کابل-micro-usb\کابل-ogm-micro-usb-مدل-ca-02\2024-05-04-13-34-47-Untitled-1.jpg
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\کابل-micro-usb\کابل-ogm-micro-usb-مدل-ca-02\2024-05-04-14-27-06-Untitled-1.jpg
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\کابل-micro-usb\کابل-ogm-micro-usb-مدل-ca-03\2024-05-04-13-46-35-Untitled-1.jpg
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\کابل-micro-usb\کابل-ogm-micro-usb-مدل-ca-03\2024-05-04-14-26-19-Untitled-11.jpg
 D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\کابل-micro-usb\کابل-شارژ-konfulon-مدل-s53\2024-01-05-12-35-31-646db02115840572f7bc69a7f296b9b2 (1).jpg
 D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\کابل-type-c\نعغنعغالا\2023-12-30-11-44-02-biboshi.JPG
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\کابل-type-c\کابل-ogm-type-c-مدل-ca-02\2024-05-04-13-35-45-Untitled-1.jpg
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\کابل-type-c\کابل-ogm-type-c-مدل-ca-03\2024-05-04-14-26-42-Untitled-11.jpg
 D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\کابل-type-c\کابل-تایپ-سی-بیبوشی-مدل-ca003a-طول-1-متر\2024-01-05-12-44-21-c34b2a578c6cec87a99fb3d7f2949a74d3011f14_1605436931.jpg
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\کابل-type-c\کابل-تبدیل-usb-به-type-c-موکسوم-مدل-cc-31-تمام-فلزی-طول-1-متر\2024-04-29-17-09-30-9f6e4331fb9b3bfa63749c96dfe50170.jpg
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\کابل-type-c\کابل-تبدیل-usb-به-type-c-موکسوم-مدل-cc-31-تمام-فلزی-طول-1-متر\2024-04-29-17-09-53-CC31.png
 D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\کابل-type-c\کابل-شارژر-تایپ-سی-مدل-ogm-ca-02\2024-01-05-12-16-01-00b8a57676bfdea033a36955face41a70dd0de1d_1593600989.jpg
 D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\کابل-type-c\کابل-شارژر-تایپ-سی-مدل-ogm-ca-03\2024-01-05-12-14-37-ebe70f.jpg
 D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\کابل-type-c\کابل-شارژر-سامسونگ-s10\2024-01-03-07-16-23-5a000893-053d-4f74-a55d-c2b8f19cc82d.jpg
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\کابل-type-c\کابل-شارژر-سامسونگ-s10\2024-05-04-14-12-17-Untitled-1.jpg
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\کابل-دوسر-تایپ-سی\کابل-شارژر-تایپ-سی-type-c-به-type-c-برند-موکسوم-مدل-mx-cb69\2024-04-29-16-48-51-VAefkxfwQ04B2FNv.jpg
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\کابل-لایتنینگ\کابل-ogm-iphone-مدل-ca-02\2024-05-04-13-33-14-Untitled-1.jpg
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\کابل-لایتنینگ\کابل-ogm-iphone-مدل-ca-02\2024-05-04-14-27-29-Untitled-11.jpg
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\کابل-لایتنینگ\کابل-الدینیو-آیفون-ldnio-ls64-2-4a-2m-usb-to-lightning\2024-05-04-14-02-25-Untitled-1.jpg
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\کابل-لایتنینگ\کابل-الدینیو-آیفون-ldnio-ls64-2-4a-2m-usb-to-lightning\2024-05-04-14-24-02-Untitled-11.jpg
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\کامپیوتر-و-تجهیزات-جانبی\2024-04-26-13-10-40-all-in-one-8.jpg
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\کامپیوتر-و-تجهیزات-جانبی\2024-04-27-12-34-11-computer.jpg
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\ProductPictures\گلس-کاور-نگهدارنده\2024-01-15-14-37-47-cover.jpg
 D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\Theme\assets\css\Custom.css
 D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\Theme\assets\css\style.css
 D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\wwwroot\Theme\assets\css\vendors.css
@@ -498,6 +583,7 @@ D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp
 D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\ServiceHost.dll
 D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\ServiceHost.runtimeconfig.json
 D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\ServiceHost.pdb
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\AspNetCore.Mvc.Extensions.RedirectAndPost.dll
 D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\BouncyCastle.Cryptography.dll
 D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\Humanizer.dll
 D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\MailKit.dll
@@ -542,6 +628,7 @@ D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp
 D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\Nancy.dll
 D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\Newtonsoft.Json.dll
 D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\Newtonsoft.Json.Bson.dll
+D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\RedirectAndPostCore.dll
 D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\RestSharp.dll
 D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\RestSharp.Newtonsoft.Json.Extensions.dll
 D:\jahanpoor\Projects\bndshop\Code\bndshop\ServiceHost\obj\Release\net5.0\PubTmp\Out\RestSharp.Serializers.NewtonsoftJson.dll

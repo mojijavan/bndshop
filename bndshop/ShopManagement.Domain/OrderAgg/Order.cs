@@ -14,7 +14,7 @@ namespace ShopManagement.Domain.OrderAgg
         public bool IsPaid { get; private set; }
         public bool IsCanceled { get; private set; }
         public string IssueTrackingNo { get; private set; }
-        
+        public string Token { get;private set; }
         //this is payment id - bank send to me if payment be successful
         public long RefId { get; private set; }
         public List<OrderItem> Items { get; private set; }
@@ -31,6 +31,7 @@ namespace ShopManagement.Domain.OrderAgg
             IsCanceled = false;
             RefId = 0;
             Items = new List<OrderItem>();
+            Token = "";
         }
 
         public void PaymentSucceeded(long refId)
@@ -50,7 +51,10 @@ namespace ShopManagement.Domain.OrderAgg
         {
             IssueTrackingNo = number;
         }
+        public void SetPaymentToken(string token) {
 
+            Token = token;
+        }
         public void AddItem(OrderItem item)
         {
             Items.Add(item);

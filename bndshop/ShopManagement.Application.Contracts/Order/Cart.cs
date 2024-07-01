@@ -22,6 +22,7 @@ namespace ShopManagement.Application.Contracts.Order
             if (methodId == 1) DeliveryAmount = 30000;
             if (methodId == 2) DeliveryAmount = 30000;
             if (methodId == 3) DeliveryAmount = 0;
+            if (methodId == 4) DeliveryAmount = 0;
         }
         public void Add(CartItem cartItem)
         {
