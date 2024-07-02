@@ -3,6 +3,7 @@ using AccountManagement.Application.Contracts.Account;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
+using System.Threading.Tasks;
 
 namespace ServiceHost.Pages
 {
@@ -13,7 +14,8 @@ namespace ServiceHost.Pages
 
         [TempData]
         public string RegisterMessage { get; set; }
-
+        public RegisterAccount RegisterAccount { get; set; }
+        public Login Login { get; set; }
 
         private readonly IAccountApplication _accountApplication;
 
@@ -24,13 +26,15 @@ namespace ServiceHost.Pages
 
         public void OnGet()
         {
+            RegisterAccount = new RegisterAccount();
+            Login = new Login();
         }
 
-        public IActionResult OnPostLogin(Login command)
+        public IActionResult OnPostLogin(Login login)
         {
             if (ModelState.IsValid)
             {
-                var result = _accountApplication.Login(command);
+                var result = _accountApplication.Login(login);
                 if (result.IsSuccedded)
                 {
                     
@@ -53,17 +57,17 @@ namespace ServiceHost.Pages
             return RedirectToPage("/Index");
         }
 
-        public IActionResult OnPostRegister(RegisterAccount command)
+        public async Task<IActionResult> OnPostRegister(RegisterAccount registerAccount)
         {
             
             if (ModelState.IsValid)
             {
-                var result = _accountApplication.Register(command);
+                var result = _accountApplication.Register(registerAccount);
                 if (result.IsSuccedded)
                 {
                     Login login = new Login();
-                    login.Username = command.Username;
-                    login.Password = command.Password;
+                    login.Username = registerAccount.Username;
+                    login.Password = registerAccount.Password;
                     var result1 = _accountApplication.Login(login);
                     if (result1.IsSuccedded)
                     {
@@ -75,9 +79,9 @@ namespace ServiceHost.Pages
                 RegisterMessage = result.Message;
                 return RedirectToPage("/Account");
             }
-
-            RegisterMessage = "تمامی موارد ضروری را وارد کنید";
-            return RedirectToPage("/Account");
+            return Page();
+            //RegisterMessage = "تمامی موارد ضروری را وارد کنید";
+            //return RedirectToPage("/Account");
         }
     }
 }

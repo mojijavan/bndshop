@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using ShopManagement.Application.Contracts.Product;
 using ShopManagement.Application.Contracts.ProductCategory;
+using System.Threading.Tasks;
 
 namespace ServiceHost.Areas.Administration.Pages.Shop.Products
 {
@@ -27,10 +28,14 @@ namespace ServiceHost.Areas.Administration.Pages.Shop.Products
             ProductCategories = new SelectList(_productCategoryApplication.GetProductCategories(), "Id", "Name");
         }
 
-        public IActionResult OnPost(CreateProduct command)
+        public async Task<IActionResult> OnPost(CreateProduct command)
         {
-            var result = _productApplication.Create(command);
-            return RedirectToPage("./Index");
+            if (ModelState.IsValid)
+            {
+                var result = _productApplication.Create(command);
+                return RedirectToPage("./Index");
+            }
+            return Page();
         }
     }
 }

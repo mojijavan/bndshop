@@ -38,9 +38,13 @@ namespace ServiceHost.Areas.Customer.Pages.Address
         {
             if (_authHelper.IsAuthenticated())
             {
-                command.AccountId = _authHelper.CurrentAccountId();
-                var result = _addressQuery.Create(command);
-                return RedirectToPage("./Index");
+                if (ModelState.IsValid)
+                {
+                    command.AccountId = _authHelper.CurrentAccountId();
+                    var result = _addressQuery.Create(command);
+                    return RedirectToPage("./Index");
+                }
+                return Page();
             }
             return RedirectToPage("./account");
 

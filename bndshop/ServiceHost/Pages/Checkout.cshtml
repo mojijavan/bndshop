@@ -97,14 +97,13 @@
                                             <h4>نحوه پرداخت</h4>
                                             @foreach (var method in PaymentMethod.GetList())
                                             {
-                                                if (method.Id != 1)
-                                                {
+                                                
                                                     <div class="single-method">
                                                         <input type="radio" id="payment_@method.Id" name="paymentMethod" value="@method.Id" @(PaymentMethod.GetList().First().Id == method.Id ? "checked" : "")>
                                                         <label for="payment_@method.Id">@method.Name</label>
                                                         <p data-method="@method.Id" style="display:@(PaymentMethod.GetList().First().Id == method.Id ? "block" : "none")">@method.Description</p>
                                                     </div>
-                                                }
+                                                
 
                                             }
                                         </div>
@@ -112,20 +111,31 @@
                                     <div class="col-lg-6 col-12 d-flex">
                                         <div class="checkout-address-method">
                                             <h4>انتخاب آدرس</h4>
-                                           
-                                                @foreach (var address in Model.Addresses)
-                                                {
 
+                                            @foreach (var address in Model.Addresses)
+                                            {
+                                                if (Model.Addresses.IndexOf(address) == Model.Addresses.Count - 1)
+                                                {
+                                                    <div class="single-method">
+                                                        <input type="radio" id="address_@address.Id" name="addressMethod" value="@address.Id" checked="">
+                                                        <label for="address_@address.Id">@address.Description</label>
+
+                                                    </div>
+                                                }
+                                                else
+                                                {
                                                     <div class="single-method">
                                                         <input type="radio" id="address_@address.Id" name="addressMethod" value="@address.Id">
                                                         <label for="address_@address.Id">@address.Description</label>
 
                                                     </div>
-
-
                                                 }
-                                                <a class="btn btn-default" href="/customer/address/index">آدرس جدید</a>
-                                            
+
+
+
+                                            }
+                                            <a class="btn btn-primary" href="/customer/address/index"><i class="fa fa-plus"></i>آدرس جدید</a>
+
 
                                         </div>
                                     </div>

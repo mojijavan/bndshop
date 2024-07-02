@@ -40,11 +40,13 @@
                                         <div class="row">
                                             <div class="col-md-12 col-12">
                                                 <label>نام کاربری</label>
-                                                <input type="text" name="username" placeholder="نام کاربری">
+                                                <input type="text" asp-for="Login.Username" placeholder="نام کاربری-موبایل">
+                                                <span asp-validation-for="Login.Username" class="error"></span>
                                             </div>
                                             <div class="col-12">
                                                 <label>کلمه رمز</label>
-                                                <input type="password" name="password" placeholder="کلمه رمز">
+                                                <input type="password" asp-for="Login.Password" placeholder="کلمه رمز">
+                                                <span asp-validation-for="Login.Password" class="error"></span>
                                             </div>
 
                                             @*<div class="col-sm-6">
@@ -78,23 +80,28 @@
                                         <div class="row">
                                             <div class="col-md-6 col-12 mb-20">
                                                 <label>نام کامل</label>
-                                                <input type="text" name="fullname" placeholder="نام کامل">
+                                                <input type="text" asp-for="RegisterAccount.Fullname" placeholder="نام کامل">
+                                                <span asp-validation-for="RegisterAccount.Fullname" class="error"></span>
                                             </div>
                                             <div class="col-md-6 col-12 mb-20">
                                                 <label>نام کاربری</label>
-                                                <input type="text" name="username" placeholder="نام کاربری">
+                                                <input type="text" asp-for="RegisterAccount.Username" placeholder="نام کاربری و شماره موبایل">
+                                                <span asp-validation-for="RegisterAccount.Username" class="error"></span>
                                             </div>
-                                            <div class="col-md-12 mb-20">
-                                                <label>موبایل</label>
-                                                <input type="number" name="mobile" placeholder="موبایل">
+                                            <div class="col-md-6 col-12 mb-20">
+                                                <label>ایمیل</label>
+                                                <input type="text" asp-for="RegisterAccount.Email" placeholder="ایمیل">
+                                                <span asp-validation-for="RegisterAccount.Email" class="error"></span>
                                             </div>
                                             <div class="col-md-6 mb-20">
                                                 <label>کلمه رمز</label>
-                                                <input type="password" name="password" placeholder="کلمه رمز">
+                                                <input type="password" asp-for="RegisterAccount.Password" placeholder="کلمه رمز">
+                                                <span asp-validation-for="RegisterAccount.Password" class="error"></span>
                                             </div>
                                             <div class="col-md-6 mb-20">
                                                 <label>تایید کلمه رمز</label>
                                                 <input type="password" name="rePassword" placeholder="تایید کلمه رمز">
+                                                <span asp-validation-for="RegisterAccount.Password" class="error"></span>
                                             </div>
                                             <div class="col-12">
                                                 <button class="register-button mt-0">ثبت نام</button>

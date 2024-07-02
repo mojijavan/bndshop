@@ -106,7 +106,7 @@ namespace ServiceHost.Pages
             //    return Redirect(
             //        $"https://{_zarinPalFactory.Prefix}.zarinpal.com/pg/StartPay/{paymentResponse.Authority}");
             //}
-            if (paymentMethod == 4)
+            if (paymentMethod == 1)
             {
                 string amount = _orderApplication.GetAmountBy(orderId).ToString();
                 return RedirectToPage("/Ipg", new { orderID = orderId.ToString(), amount=amount });

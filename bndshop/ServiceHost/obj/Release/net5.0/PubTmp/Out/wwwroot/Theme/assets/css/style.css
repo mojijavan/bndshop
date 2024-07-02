@@ -73,6 +73,9 @@
     --shadow-nav: rgba(0,0,0,.08);
     --swiper-pagination-color: var(--bg-primary-1);
 }
+.page-content-area{
+    min-height:500px;
+}
 .footer-bottom .footer-text p {
     font-size: 11px;
     line-height: 20px;
@@ -5239,7 +5242,7 @@ select {
 
 /*-- Checkout Payment Method --*/
 
-.checkout-payment-method {
+.checkout-payment-method, .checkout-address-method {
     padding: 45px;
     /*background-color: #f2f2f2;*/
 }
